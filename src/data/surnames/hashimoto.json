@@ -1,0 +1,23 @@
+{
+  "slug": "hashimoto",
+  "kanji": "橋本",
+  "readings": ["はしもと"],
+  "rankNational": 24,
+  "populationEstimate": "約44万人",
+  "origin": "「橋本」は橋のたもと、橋に近い土地を意味する地形由来の名字で、古くから交通や交易の要所であったことから各地に同名の地名が生まれ、独立に複数箇所で発祥したとされる。系譜の異なる橋本氏が各地に伝わっており、越前の足利氏系、近江の佐々木氏系（宇多源氏）、下総の相馬氏系、陸奥の田村氏系、和泉の楠木氏系、備前の宇喜多氏系、因幡の日下部氏系など、出自の異なる一族が「橋本」を名乗った。読みは全国的に「はしもと」で統一されている。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "「橋のたもと」を意味する地形、各地の橋本という地名から独立に発祥したとされる",
+  "regionDistribution": { "多い": ["東京", "大阪", "埼玉", "兵庫", "神奈川"], "やや多い": [] },
+  "kamon": [{ "name": "丸に四つ目結", "description": "近江の佐々木氏（宇多源氏）の流れをくむ橋本氏の系統に伝わるとされる家紋。" }],
+  "famousPeople": [
+    { "name": "橋本龍太郎", "note": "政治家。1996年1月から1998年7月まで内閣総理大臣を務めた。" },
+    { "name": "橋本環奈", "note": "女優。2017年の第40回日本アカデミー賞で新人俳優賞を受賞。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%A9%8B%E6%9C%AC",
+    "https://name-power.net/fn/%E6%A9%8B%E6%9C%AC.html",
+    "https://ja.wikipedia.org/wiki/橋本氏",
+    "https://ja.wikipedia.org/wiki/橋本龍太郎",
+    "https://ja.wikipedia.org/wiki/橋本環奈"
+  ]
+}
