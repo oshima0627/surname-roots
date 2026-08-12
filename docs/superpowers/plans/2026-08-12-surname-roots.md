@@ -131,14 +131,17 @@ APIを持たないので Worker スクリプト（`main`）は置かない。ア
 }
 ```
 
-- [ ] **Step 7: .gitignore に out/ を足す**
+- [ ] **Step 7: .gitignore を整える**
 
-`.gitignore` の末尾に追記する。
+`create-next-app` が `.gitignore` を作り直すので、末尾に次を追記する。
 
 ```
 # Cloudflare
 out/
 .wrangler/
+
+# 作業用スクラッチ（コミットしない）
+.superpowers/
 ```
 
 - [ ] **Step 8: セットアップが通ることを確認する**
