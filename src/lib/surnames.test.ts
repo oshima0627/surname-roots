@@ -63,3 +63,23 @@ describe("getSearchIndex", () => {
     expect(getSearchIndex()[0]).not.toHaveProperty("origin");
   });
 });
+
+describe("memoization and mutation protection", () => {
+  it("getAllSurnames() は複数呼び出しで同じデータを返す", () => {
+    const first = getAllSurnames();
+    const second = getAllSurnames();
+    expect(first).toEqual(second);
+    expect(JSON.stringify(first)).toEqual(JSON.stringify(second));
+  });
+
+  it("getAllSurnames() の戻り値を変更しても、次の呼び出しに影響しない", () => {
+    const first = getAllSurnames();
+    if (first.length > 0) {
+      // 最初の呼び出しの配列を変更
+      first.length = 0;
+    }
+    const second = getAllSurnames();
+    // 2回目の呼び出しは元のデータが返されていること
+    expect(second.length).toBeGreaterThan(0);
+  });
+});
