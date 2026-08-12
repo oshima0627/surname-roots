@@ -61,6 +61,12 @@ describe("JapanMap", () => {
     expect(htmlLegend?.closest("figcaption")).toBeTruthy();
   });
 
+  it("HTML凡例は sm:hidden クラスを持つ（sm以下で表示、sm以上では非表示）", () => {
+    const { container } = render(<JapanMap distribution={distribution} />);
+    const htmlLegend = container.querySelector('[data-testid="html-legend"]');
+    expect(htmlLegend).toHaveClass("sm:hidden");
+  });
+
   it("※免責事項が表示される", () => {
     render(<JapanMap distribution={distribution} />);
     expect(screen.getByText(/着色のない県はデータがないことを意味します/)).toBeTruthy();
