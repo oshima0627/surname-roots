@@ -8,5 +8,11 @@
     "directory": "./out",
     // 存在しない苗字のURLで Next の 404 ページを返す
     "not_found_handling": "404-page"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "myoji.nexeed-lab.com",
+      "custom_domain": true
+    }
+  ]
 }
