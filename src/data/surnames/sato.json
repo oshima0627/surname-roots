@@ -3,11 +3,18 @@
   "kanji": "佐藤",
   "readings": ["さとう"],
   "rankNational": 1,
-  "populationEstimate": "約190万人",
-  "origin": "藤原氏に由来する苗字とされる。藤原氏の一族が地名や官職名の一字と「藤」を組み合わせて名乗ったもののひとつで、「佐」は下野国佐野の地名、あるいは左衛門尉という官職に由来するという説がある。東北地方に特に多く見られ、藤原氏の一族が奥州に広く根を下ろした歴史との関わりが指摘されている。諸説あり、単一の起源に定まってはいない。",
-  "originRegion": "藤原氏の流れを汲むとされる",
-  "regionDistribution": { "多い": ["岩手", "秋田", "山形", "福島"], "やや多い": ["宮城", "新潟"] },
-  "kamon": [{ "name": "下がり藤", "description": "藤原氏ゆかりの家紋。藤の花が下向きに垂れる図案。" }],
-  "famousPeople": [{ "name": "佐藤栄作", "note": "第61-63代内閣総理大臣" }],
-  "sources": ["https://ja.wikipedia.org/wiki/佐藤"]
+  "populationEstimate": "約183万人",
+  "origin": "藤原秀郷の子孫とされる藤原公清に由来するというのが有力な説である。公清が佐渡守に任じられたことから「佐渡の藤原」を意味して佐藤と称した、あるいは左衛門尉という官職から「左衛門尉の藤原」を略して佐藤と称したなど、名字の成り立ちには複数の説がある。奥州藤原氏を補佐する意味の「佐」を用いたとする説も伝わる。全国的に分布するが、特に秋田県・山形県では人口の7%を超える地域もあるなど東北地方で顕著に多く見られ、藤原氏の一族が奥州に広く根を下ろした歴史と関連づけて語られることが多い。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "藤原秀郷の子孫（藤原公清）に由来するとされる",
+  "regionDistribution": { "多い": ["秋田", "山形"], "やや多い": ["北海道", "宮城", "福島", "岩手"] },
+  "kamon": [{ "name": "源氏車", "description": "車輪を意匠化した紋。旗本佐藤氏の定紋として伝わる。" }],
+  "famousPeople": [{ "name": "佐藤栄作", "note": "第61〜63代内閣総理大臣。1974年に日本人として初めてノーベル平和賞を受賞した。" }],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/佐藤",
+    "https://ja.wikipedia.org/wiki/佐藤氏",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%BD%90%E8%97%A4",
+    "https://name-power.net/fn/%E4%BD%90%E8%97%A4.html",
+    "https://irohakamon.com/myouji/satou.html"
+  ]
 }

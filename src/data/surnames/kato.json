@@ -1,0 +1,22 @@
+{
+  "slug": "kato",
+  "kanji": "加藤",
+  "readings": ["かとう"],
+  "rankNational": 10,
+  "populationEstimate": "約87万人",
+  "origin": "藤原北家利仁流の藤原景道が加賀国（現在の石川県南部）の国司である加賀介に任じられ、「加賀の藤原」を略して加藤と称したのが始まりとされる。この系統からは戦国大名の加藤光泰・嘉明が、また同じ藤原北家でも道長流からは熊本城主として知られる加藤清正が出ている。加賀国を発祥としながらも子孫は東海地方へ広がったとされ、清正をはじめ尾張（現在の愛知県）に根付いた一族の存在もあって、現在は愛知県で鈴木に次いで人数の多い名字となっている。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "加賀国の藤原氏（加賀の藤原）に由来するとされる",
+  "regionDistribution": { "多い": ["愛知"], "やや多い": [] },
+  "kamon": [
+    { "name": "下がり藤", "description": "藤原氏ゆかりの藤の花を意匠化した紋。近江水口藩加藤家の定紋として伝わる。" },
+    { "name": "蛇の目", "description": "輪を二重に描いた図案。加藤清正が用いたことで知られる。" }
+  ],
+  "famousPeople": [{ "name": "加藤清正", "note": "戦国武将・肥後熊本藩主。熊本城を築城した築城の名手として知られる。" }],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/加藤氏",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%8A%A0%E8%97%A4",
+    "https://name-power.net/fn/%E5%8A%A0%E8%97%A4.html",
+    "https://nlab.itmedia.co.jp/research/articles/3564145/"
+  ]
+}

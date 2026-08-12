@@ -1,0 +1,19 @@
+{
+  "slug": "ito",
+  "kanji": "伊藤",
+  "readings": ["いとう"],
+  "rankNational": 5,
+  "populationEstimate": "約105万人",
+  "origin": "藤原秀郷の子孫が伊勢国（現在の三重県）に領地を得て、「伊勢の藤原」を意味する伊藤を名乗ったのが始まりとされる説が広く知られている。これとは別に、藤原南家の流れをくむ工藤氏が伊豆国に移り「伊豆工藤」と称し、のちに「伊東」あるいは同じ読みの「伊藤」に転じたとする系統も伝わる。伊勢を発祥とする一族は伊勢湾を渡って尾張・美濃方面へも広がったとされ、現在も三重県を筆頭に岐阜県・愛知県で人口比が高いことがこの伝承と結び付けて語られる。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "伊勢国の藤原氏（伊勢の藤原）に由来するとされる",
+  "regionDistribution": { "多い": ["三重", "岐阜"], "やや多い": ["愛知"] },
+  "kamon": [],
+  "famousPeople": [{ "name": "伊藤博文", "note": "初代内閣総理大臣。大日本帝国憲法の起草を主導した。" }],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/伊藤氏",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%BC%8A%E8%97%A4",
+    "https://name-power.net/fn/%E4%BC%8A%E8%97%A4.html",
+    "https://e-kakeizu.com/2881/"
+  ]
+}

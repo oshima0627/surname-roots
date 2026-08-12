@@ -1,0 +1,18 @@
+{
+  "slug": "watanabe",
+  "kanji": "渡辺",
+  "readings": ["わたなべ"],
+  "rankNational": 6,
+  "populationEstimate": "約104万人",
+  "origin": "摂津国西成郡渡辺（現在の大阪市中央区付近）という地名に由来する。この地は淀川河口にあった渡し場・港であったとされ、「渡辺」という地名も渡し場を意味する言葉から生まれたと考えられている。嵯峨源氏源融の流れをくむ源綱がこの地に住んで渡辺綱と称したのが渡辺氏の祖とされ、その子孫は瀬戸内海の水運にも関わる武士団「渡辺党」を形成した。全国に広まった渡辺という名字の多くはこの渡辺氏の一族、またはそれにあやかって称したものとされる。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "摂津国渡辺（現在の大阪市）の地名、嵯峨源氏渡辺氏に由来するとされる",
+  "regionDistribution": { "多い": [], "やや多い": [] },
+  "kamon": [{ "name": "渡辺星", "description": "星3つと文字を組み合わせた図案。渡辺氏の代表的な家紋として広く用いられる。" }],
+  "famousPeople": [{ "name": "渡辺謙", "note": "俳優。映画『ラストサムライ』でアカデミー賞助演男優賞にノミネートされた。" }],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/渡辺氏",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%B8%A1%E8%BE%BA",
+    "https://name-power.net/fn/%E6%B8%A1%E8%BE%BA.html"
+  ]
+}
