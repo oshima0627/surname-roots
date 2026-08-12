@@ -47,6 +47,13 @@ describe("JapanMap", () => {
     expect(svgLegend?.parentElement?.tagName).toBe("svg");
   });
 
+  it("SVG凡例は hidden sm:block クラスを持つ（sm以下では非表示、sm以上で表示）", () => {
+    const { container } = render(<JapanMap distribution={distribution} />);
+    const svgLegend = container.querySelector('[data-testid="svg-legend"]');
+    expect(svgLegend).toHaveClass("hidden");
+    expect(svgLegend).toHaveClass("sm:block");
+  });
+
   it("HTML凡例がfigcaptionに存在する", () => {
     const { container } = render(<JapanMap distribution={distribution} />);
     const htmlLegend = container.querySelector('[data-testid="html-legend"]');
