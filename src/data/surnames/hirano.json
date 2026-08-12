@@ -1,0 +1,22 @@
+{
+  "slug": "hirano",
+  "kanji": "平野",
+  "readings": ["ひらの"],
+  "rankNational": 84,
+  "populationEstimate": "約20万人",
+  "origin": "平野は「平らな野」を意味する地形由来の名字で、同名の地名が各地にあったため独立に複数箇所で発祥したと考えられている。代表的なのは摂津国住吉郡平野郷（現在の大阪市平野区）を発祥とする系統で、坂上田村麻呂の子孫が拠点としたと伝わる。このほか岐阜・愛知・埼玉・山形・和歌山など各地の「平野」という地名を由来とする系統も伝わっている。桓武平氏（平家）の子孫が源平合戦での敗北後に身元を隠すため「平」に「野」を加えて名乗ったとする説もあり、由来は一様ではない。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "「平らな野」を意味する地形由来の地名姓とされ、摂津国住吉郡平野郷（現・大阪市平野区）を発祥とする系統が知られる",
+  "regionDistribution": { "多い": ["東京", "千葉", "愛知", "神奈川"], "やや多い": [] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "平野歩夢", "note": "スノーボード選手・スケートボード選手。2022年北京オリンピックのハーフパイプ種目で金メダルを獲得した。" },
+    { "name": "平野レミ", "note": "料理研究家・タレント。1985年にNHK『きょうの料理』に初出演し、自由な発想の料理で知られるようになった。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B9%B3%E9%87%8E",
+    "https://name-power.net/fn/%E5%B9%B3%E9%87%8E.html",
+    "https://ja.wikipedia.org/wiki/平野歩夢",
+    "https://ja.wikipedia.org/wiki/平野レミ"
+  ]
+}
