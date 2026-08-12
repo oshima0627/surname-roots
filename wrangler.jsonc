@@ -1,0 +1,18 @@
+// Cloudflare Workers (Static Assets) の設定
+// デプロイ: npm run deploy（要 `wrangler login`）
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "surname-roots",
+  "compatibility_date": "2026-07-01",
+  "assets": {
+    "directory": "./out",
+    // 存在しない苗字のURLで Next の 404 ページを返す
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {
+      "pattern": "myoji.nexeed-lab.com",
+      "custom_domain": true
+    }
+  ]
+}

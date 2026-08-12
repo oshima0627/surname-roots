@@ -1,0 +1,22 @@
+{
+  "slug": "mori",
+  "kanji": "森",
+  "readings": ["もり"],
+  "rankNational": 22,
+  "populationEstimate": "約45万人",
+  "origin": "「森」は樹木がこんもりと茂る場所、特に神社の鎮守の森のような場所を指す言葉に由来する地形由来の名字とされる。日本各地に「森」を含む地名が点在したため、各地で独立に発祥したと考えられており、清和源氏義家流の子孫が相模国の森郷を発祥としたとする系統や、宇多源氏の流れをくむ系統、藤原氏（中臣鎌足）を祖とする系統など、複数の由来が伝わっている。現在は愛知県を中心に大阪府・神奈川県などにも広く分布しており、単一の起源には定まっていない。諸説あり。",
+  "originRegion": "樹木の茂る「森」という地形、各地の森という地名から独立に発祥したとされる",
+  "regionDistribution": { "多い": ["愛知", "大阪", "神奈川"], "やや多い": [] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "森鷗外", "note": "明治・大正期の作家・軍医。『舞姫』などの作品で知られ、陸軍軍医のトップも務めた。" },
+    { "name": "森喜朗", "note": "政治家。2000年4月から2001年4月まで内閣総理大臣を務めた。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%A3%AE",
+    "https://name-power.net/fn/%E6%A3%AE.html",
+    "https://ja.wikipedia.org/wiki/森鷗外",
+    "https://ja.wikipedia.org/wiki/森喜朗"
+  ]
+}

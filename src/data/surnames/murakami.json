@@ -1,0 +1,21 @@
+{
+  "slug": "murakami",
+  "kanji": "村上",
+  "readings": ["むらかみ"],
+  "rankNational": 37,
+  "populationEstimate": "約35万人",
+  "origin": "「村上」は「村の中心・上手」を意味する地形由来の説と、第62代村上天皇の皇子の子孫を称する系統に由来する説とが伝わり、単一の起源に定まらない。信濃国（現在の長野県）に土着した清和源氏の一族が村上を名乗り、鎌倉時代以降に北信濃で勢力を広げた信濃村上氏が特に知られる。瀬戸内海で活動した村上水軍（能島・来島・因島の三家）はこの信濃村上氏の分かれとする説が伝わるが、系譜には不明な点が多いとされる。瀬戸内に面した愛媛県・広島県で人口比が高いことは、村上水軍の歴史的な影響を反映しているとみられる。諸説あり、単一の系譜には定まってはいない。",
+  "originRegion": "地形由来、または村上天皇の皇子の子孫を称する系統など複数の説が伝わる",
+  "regionDistribution": { "多い": ["大阪", "広島"], "やや多い": ["愛媛", "兵庫"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "村上春樹", "note": "小説家。『ノルウェイの森』『1Q84』などの作品で知られ、世界的に高い評価を受けている。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/村上氏",
+    "https://ja.wikipedia.org/wiki/村上春樹",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9D%91%E4%B8%8A",
+    "https://name-power.net/fn/%E6%9D%91%E4%B8%8A.html"
+  ]
+}

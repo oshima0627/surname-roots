@@ -1,0 +1,22 @@
+{
+  "slug": "matsui",
+  "kanji": "松井",
+  "readings": ["まつい"],
+  "rankNational": 90,
+  "populationEstimate": "約19万人",
+  "origin": "松井は「松の生えるそばの井戸・水汲み場」を意味する地形由来の名字とされる。松は縁起の良い木として尊ばれたことから、松のそばの井戸のある土地に付けられた地名が名字になったと考えられている。山城国（現在の京都府）の古代氏族「松井連」に連なるとする系統や、清和源氏・宇多源氏の流れをくむとする系統など、出自の異なる松井氏が各地に伝わっている。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "「松の生えるそばの井戸」を意味する地形由来の地名姓とされ、山城国（現・京都府）の古代氏族「松井連」に連なるとする系統が伝わる",
+  "regionDistribution": { "多い": ["大阪", "愛知", "東京", "兵庫"], "やや多い": [] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "松井秀喜", "note": "元プロ野球選手。読売ジャイアンツで活躍後、2002年にメジャーリーグ移籍を表明し、ニューヨーク・ヤンキースなどで活躍した。" },
+    { "name": "松井玲奈", "note": "俳優・小説家。2018年公開の映画『劇場版 仮面ライダービルド Be The One』で特撮作品に初出演した。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9D%BE%E4%BA%95",
+    "https://name-power.net/fn/%E6%9D%BE%E4%BA%95.html",
+    "https://ja.wikipedia.org/wiki/松井秀喜",
+    "https://ja.wikipedia.org/wiki/松井玲奈"
+  ]
+}

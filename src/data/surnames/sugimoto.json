@@ -1,0 +1,22 @@
+{
+  "slug": "sugimoto",
+  "kanji": "杉本",
+  "readings": ["すぎもと"],
+  "rankNational": 100,
+  "populationEstimate": "約18万人",
+  "origin": "「杉本」は杉の木のそば、あるいは杉の木の根元を意味する地形由来の名字とされる。相模国鎌倉郡杉本村（現在の神奈川県鎌倉市二階堂付近、旧称は椙本）が発祥地の一つとされ、鎌倉時代にはすでに記録のある古い地名で、鎌倉幕府の御家人に杉本氏を名乗る一族もいたと伝わる。このほか静岡・大阪・愛知など各地に同名の地名や集落があり、それぞれの土地から独立に名字として広まったと考えられている。特定の一族の系統に限らず、各地の杉本という地名を発祥とする家が全国に分布しているとされる。",
+  "originRegion": "相模国鎌倉郡杉本村（現在の鎌倉市二階堂付近）などに由来する地形・地名由来とされる",
+  "regionDistribution": { "多い": ["大阪", "静岡"], "やや多い": ["東京", "愛知"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "杉本昌隆", "note": "将棋棋士（八段）。振り飛車を得意とし、弟子の藤井聡太を史上最年少でのプロ入りへと導いたことで知られる。" },
+    { "name": "杉本博司", "note": "写真家・現代美術家。ジオラマや劇場を撮影したシリーズで知られ、2001年にハッセルブラード国際写真賞、2017年に文化功労者に選ばれた。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9D%89%E6%9C%AC",
+    "https://name-power.net/fn/%E6%9D%89%E6%9C%AC.html",
+    "https://ja.wikipedia.org/wiki/杉本昌隆",
+    "https://ja.wikipedia.org/wiki/杉本博司"
+  ]
+}

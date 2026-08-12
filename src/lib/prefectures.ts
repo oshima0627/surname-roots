@@ -1,0 +1,76 @@
+export type Prefecture = {
+  name: string;
+  /** タイルマップの行（0 が最北） */
+  row: number;
+  /** タイルマップの列（0 が最西） */
+  col: number;
+};
+
+/** タイルマップの盤面サイズ。SVGのviewBox算出に使う */
+export const TILE_COLS = 14;
+export const TILE_ROWS = 12;
+
+/**
+ * 47都道府県のタイルマップ配置。
+ * 実地図のSVGは配布ライセンスの確認が要るため、面積の歪みがなく
+ * 小さい県も潰れないタイル配置を自作している。
+ * 地理的な正確さより、隣接関係が直感に合うことを優先している。
+ */
+export const PREFECTURES: readonly Prefecture[] = [
+  { name: "北海道", row: 0, col: 12 },
+
+  { name: "青森", row: 1, col: 12 },
+  { name: "秋田", row: 2, col: 11 },
+  { name: "岩手", row: 2, col: 12 },
+  { name: "山形", row: 3, col: 11 },
+  { name: "宮城", row: 3, col: 12 },
+  { name: "新潟", row: 4, col: 11 },
+  { name: "福島", row: 4, col: 12 },
+
+  { name: "石川", row: 5, col: 8 },
+  { name: "富山", row: 5, col: 9 },
+  { name: "長野", row: 5, col: 10 },
+  { name: "群馬", row: 5, col: 11 },
+  { name: "栃木", row: 5, col: 12 },
+  { name: "茨城", row: 5, col: 13 },
+
+  { name: "島根", row: 6, col: 4 },
+  { name: "鳥取", row: 6, col: 5 },
+  { name: "兵庫", row: 6, col: 6 },
+  { name: "京都", row: 6, col: 7 },
+  { name: "福井", row: 6, col: 8 },
+  { name: "岐阜", row: 6, col: 9 },
+  { name: "山梨", row: 6, col: 10 },
+  { name: "埼玉", row: 6, col: 11 },
+  { name: "東京", row: 6, col: 12 },
+  { name: "千葉", row: 6, col: 13 },
+
+  { name: "長崎", row: 7, col: 1 },
+  { name: "佐賀", row: 7, col: 2 },
+  { name: "福岡", row: 7, col: 3 },
+  { name: "広島", row: 7, col: 4 },
+  { name: "岡山", row: 7, col: 5 },
+  { name: "大阪", row: 7, col: 6 },
+  { name: "滋賀", row: 7, col: 7 },
+  { name: "三重", row: 7, col: 8 },
+  { name: "愛知", row: 7, col: 9 },
+  { name: "静岡", row: 7, col: 10 },
+  { name: "神奈川", row: 7, col: 11 },
+
+  { name: "熊本", row: 8, col: 1 },
+  { name: "大分", row: 8, col: 2 },
+  { name: "山口", row: 8, col: 3 },
+  { name: "愛媛", row: 8, col: 4 },
+  { name: "香川", row: 8, col: 5 },
+  { name: "和歌山", row: 8, col: 6 },
+  { name: "奈良", row: 8, col: 7 },
+
+  { name: "宮崎", row: 9, col: 1 },
+  { name: "高知", row: 9, col: 4 },
+  { name: "徳島", row: 9, col: 5 },
+
+  { name: "鹿児島", row: 10, col: 1 },
+  { name: "沖縄", row: 11, col: 0 },
+];
+
+export const PREFECTURE_NAMES: readonly string[] = PREFECTURES.map((p) => p.name);

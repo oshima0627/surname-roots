@@ -1,0 +1,22 @@
+{
+  "slug": "nakayama",
+  "kanji": "中山",
+  "readings": ["なかやま"],
+  "rankNational": 57,
+  "populationEstimate": "約26万人",
+  "origin": "「中山」は多くの山々の中心にある山、周囲を山に囲まれた土地を意味する地形由来の名字で、同名の地名が全国各地にあったため独立に複数箇所で発祥したとされる。中臣鎌足を祖とする藤原氏（藤原南家・北家）の一族や、桓武天皇の子孫にあたる桓武平氏の一族、武蔵国入間郡中山（現在の埼玉県）を発祥とする武蔵七党丹党の一族など、出自の異なる中山氏が各地に伝わっている。ほかにも兵庫県淡路市や千葉県安房郡、鹿児島県南さつま市などで、明治の新姓制定の際に地名や旧制度の名称から中山を名乗った例も伝わる。読みは全国的に「なかやま」で統一されている。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "「中央にある山」を意味する地形、各地の中山という地名から独立に発祥したとされる",
+  "regionDistribution": { "多い": ["東京", "神奈川", "大阪"], "やや多い": ["埼玉", "福岡"] },
+  "kamon": [{ "name": "丸に木瓜", "description": "中山氏の一系統に伝わるとされる家紋。" }],
+  "famousPeople": [
+    { "name": "中山みき", "note": "天理教の教祖。1838年（天保9年）に天啓を受けたとされ、天理教の始まりとなった。" },
+    { "name": "中山美穂", "note": "女優・歌手。1985年に歌手デビューし、映画やドラマでも活躍した。2024年12月に54歳で死去。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%B8%AD%E5%B1%B1",
+    "https://name-power.net/fn/%E4%B8%AD%E5%B1%B1.html",
+    "https://ja.wikipedia.org/wiki/中山みき",
+    "https://ja.wikipedia.org/wiki/中山美穂"
+  ]
+}

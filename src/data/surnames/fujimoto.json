@@ -1,0 +1,22 @@
+{
+  "slug": "fujimoto",
+  "kanji": "藤本",
+  "readings": ["ふじもと"],
+  "rankNational": 85,
+  "populationEstimate": "約20万人",
+  "origin": "藤本は「藤原氏の本流・本家」を意味するとされる名字で、藤原氏（中臣鎌足を祖とする氏族）の系統に由来する系統が知られる。信濃国（現在の長野県）に広まった藤原兼家の子孫の系統のほか、摂津・和泉・紀伊国など近畿地方にも複数の系統が伝わっている。地名の「藤崎」の略とする説や、藤（フジ）の生える土地に由来する地形由来の説も伝わっており、由来は一様ではない。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "「藤原氏の本流」を意味するとされ、藤原氏の子孫を称する系統が信濃や近畿地方に伝わる",
+  "regionDistribution": { "多い": ["兵庫", "大阪"], "やや多い": ["山口", "広島"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "藤本タツキ", "note": "漫画家。2019年から『週刊少年ジャンプ』で『チェンソーマン』の連載を開始した。" },
+    { "name": "藤本美貴", "note": "歌手・タレント。2002年にソロデビューし、同年の『第53回NHK紅白歌合戦』に初出場した。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E8%97%A4%E6%9C%AC",
+    "https://name-power.net/fn/%E8%97%A4%E6%9C%AC.html",
+    "https://ja.wikipedia.org/wiki/藤本タツキ",
+    "https://ja.wikipedia.org/wiki/藤本美貴"
+  ]
+}

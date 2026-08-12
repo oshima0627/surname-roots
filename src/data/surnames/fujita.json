@@ -1,0 +1,21 @@
+{
+  "slug": "fujita",
+  "kanji": "藤田",
+  "readings": ["ふじた"],
+  "rankNational": 34,
+  "populationEstimate": "約37万人",
+  "origin": "「藤田」は地名由来説と、「藤原」を略した略称由来説の両方が伝わる名字である。武蔵国榛沢郡藤田郷（現在の埼玉県寄居町付近）を発祥地とする系統では、猪俣党の猪俣政行がこの地に拠って藤田を名乗り、小田原合戦の頃まで有力な武士団として続いたとされる。一方で藤原姓を名乗った家が「藤」に田を添えて藤田と改めた例も各地にあり、藤原氏の子孫を称する系統や桓武平氏・清和源氏の流れをくむ系統も伝わる。江戸時代には水戸藩に仕えた常陸国の藤田氏なども知られる。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "武蔵国藤田郷の地名、または藤原姓の略称に由来するとされる",
+  "regionDistribution": { "多い": ["大阪", "兵庫"], "やや多い": ["東京", "北海道"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "藤田田", "note": "実業家。日本マクドナルドの創業者として知られ、日本での外食チェーン展開を主導した。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/藤田氏",
+    "https://ja.wikipedia.org/wiki/藤田田",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E8%97%A4%E7%94%B0",
+    "https://name-power.net/fn/%E8%97%A4%E7%94%B0.html"
+  ]
+}

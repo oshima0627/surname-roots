@@ -1,0 +1,22 @@
+{
+  "slug": "noguchi",
+  "kanji": "野口",
+  "readings": ["のぐち", "のくち"],
+  "rankNational": 86,
+  "populationEstimate": "約19万人",
+  "origin": "野口は「野の入り口」や「野への入り口となる場所」を意味する地形由来の名字で、野原と集落の境目にあたる土地を指したとされる。常陸国（現在の茨城県）や下野国（現在の栃木県）を発祥とする系統が知られ、室町時代の茨城、戦国時代の長野など各地で記録が残る。清和源氏の流れをくむとする系統や藤原氏の系統も伝わっているほか、「野呂」の合略字（文字を組み合わせて略した表記）に由来するとの説もある。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "「野の入り口」を意味する地形由来の地名姓とされ、常陸国（現・茨城県）を発祥とする系統が知られる",
+  "regionDistribution": { "多い": ["東京", "埼玉"], "やや多い": ["千葉", "福岡"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "野口聡一", "note": "元宇宙飛行士。2009年12月にソユーズTMA-17号で打ち上げられ、国際宇宙ステーションに長期滞在した。" },
+    { "name": "野口みずき", "note": "元陸上競技選手（マラソン）。2004年アテネオリンピックの女子マラソンで金メダルを獲得した。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E9%87%8E%E5%8F%A3",
+    "https://name-power.net/fn/%E9%87%8E%E5%8F%A3.html",
+    "https://ja.wikipedia.org/wiki/野口聡一",
+    "https://ja.wikipedia.org/wiki/野口みずき"
+  ]
+}

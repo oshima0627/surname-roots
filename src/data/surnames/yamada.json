@@ -1,0 +1,26 @@
+{
+  "slug": "yamada",
+  "kanji": "山田",
+  "readings": ["やまだ", "やまた", "ようだ"],
+  "rankNational": 12,
+  "populationEstimate": "約80万人",
+  "origin": "山田という名字は「山の中を切り開いてつくった田」を意味する地形姓とされ、全国各地に山田という地名が数多く存在することが、この名字の発祥地を一つに絞れない大きな要因になっている。中世には尾張国山田郡（現在の名古屋市北区）を本拠とした清和源氏満政流をはじめ、信濃の村上源氏流、播磨国神東郡の赤松氏流、伊賀国山田荘の桓武平氏、土佐国香美郡の香宗我部氏族、薩摩国日置郡の桓武平氏など、出自の異なる山田氏が各地で興ったとされる。さらに古代には山田臣・山田連・山田宿禰といった氏族の存在も伝わり、起源は古代から中世にまたがる。諸説あり、単一の系統に定まってはいない。現在は東海・北陸地方で人口比率が高く、特に愛知県・岐阜県で顕著に多い。",
+  "originRegion": "「山の中の田」を意味する地形姓で、発祥地は尾張国山田郡など各地に分かれるとされる",
+  "regionDistribution": { "多い": ["愛知", "岐阜"], "やや多い": ["福井", "石川"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "山田洋次", "note": "映画監督。「男はつらいよ」シリーズなどを手がけ、2012年に文化勲章を受章した。" },
+    { "name": "山田耕筰", "note": "作曲家・指揮者。「赤とんぼ」などの童謡や歌曲を手がけ、1956年に文化勲章を受章した。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/山田氏",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=山田",
+    "https://name-power.net/fn/山田.html",
+    "https://tabi-mag.jp/roots-yamada/",
+    "https://www.kakeisi.com/roots/myoji_yosida.html",
+    "https://ja.wikipedia.org/wiki/山田洋次",
+    "https://ja.wikipedia.org/wiki/山田耕筰",
+    "https://myoji-yurai.net/myojiCelebrity.htm?myojiKanji=山田"
+  ]
+}

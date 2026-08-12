@@ -1,0 +1,22 @@
+{
+  "slug": "takeda",
+  "kanji": "武田",
+  "readings": ["たけだ", "たけた"],
+  "rankNational": 89,
+  "populationEstimate": "約20万人",
+  "origin": "武田は「武」と「田」を組み合わせた名字で、常陸国那珂郡武田郷（現在の茨城県ひたちなか市）を発祥とし、清和源氏の流れをくむ系統が知られる。この常陸源氏の一族が甲斐国（現在の山梨県）に移り住んで武田氏を名乗り、戦国時代には武田信玄を輩出する甲斐源氏の名族として全国に知られるようになった。このほか福岡県の武田という地名を由来とする系統も伝わっており、「竹田」に通じる地形由来の説もある。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "常陸国那珂郡武田郷（現・茨城県ひたちなか市）を発祥とし、甲斐国（現・山梨県）に移り住んだ一族が戦国大名武田氏となったことで知られる",
+  "regionDistribution": { "多い": ["東京", "北海道", "大阪", "神奈川"], "やや多い": ["山形"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "武田鉄矢", "note": "俳優・歌手。1977年公開の映画『幸福の黄色いハンカチ』に出演し、日本アカデミー賞助演男優賞を受賞した。" },
+    { "name": "武田真治", "note": "俳優・サクソフォーン奏者。1999年公開の映画『御法度』の土方歳三役で第42回ブルーリボン賞助演男優賞を受賞した。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%AD%A6%E7%94%B0",
+    "https://name-power.net/fn/%E6%AD%A6%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/武田鉄矢",
+    "https://ja.wikipedia.org/wiki/武田真治"
+  ]
+}

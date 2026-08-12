@@ -1,0 +1,21 @@
+{
+  "slug": "takahashi",
+  "kanji": "高橋",
+  "readings": ["たかはし"],
+  "rankNational": 3,
+  "populationEstimate": "約138万人",
+  "origin": "「高い橋」を意味する地名に由来するというのが基本的な語源で、川に高い橋を架けることや天地を結ぶ柱を立てることが古代の祭祀と結びついていたとされる。古代氏族としては、内膳司を代々務めた膳部氏の系統が磐鹿六雁命を祖として高橋氏を称したという説があり、宮廷の食に関わる家柄として知られる。中世以降は筑後国御原郡高橋（現在の福岡県）や駿河国高橋（現在の静岡県）など各地の高橋という地名を名字とした武家も多く、出自の異なる高橋氏が全国各地で並立した。人口に占める割合では岩手県・秋田県で特に高く、東北地方との結びつきも指摘される。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "「高い橋」を意味する地名・古代氏族に由来するとされる（諸説あり）",
+  "regionDistribution": { "多い": ["岩手", "秋田"], "やや多い": [] },
+  "kamon": [{ "name": "丸に笠", "description": "笠を丸で囲んだ図案。「高橋」に通じる「笠」の字にちなむ紋とされる。" }],
+  "famousPeople": [{ "name": "高橋是清", "note": "第20代内閣総理大臣。日本銀行総裁や大蔵大臣も歴任した財政家。" }],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/高橋氏",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E9%AB%98%E6%A9%8B",
+    "https://name-power.net/fn/%E9%AB%98%E6%A9%8B.html",
+    "https://news.mynavi.jp/article/20151030-a100/",
+    "https://irohakamon.com/myouji/takahashi.html",
+    "https://kisetsumimiyori.com/takahashi/"
+  ]
+}

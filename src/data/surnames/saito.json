@@ -1,0 +1,29 @@
+{
+  "slug": "saito",
+  "kanji": "斎藤",
+  "readings": ["さいとう"],
+  "rankNational": 19,
+  "populationEstimate": "約53万人",
+  "origin": "平安時代、鎮守府将軍・藤原利仁の子である叙用が、伊勢神宮に奉仕する斎宮寮の長官「斎宮頭」に任じられたことから、その官職名の「斎」と一族の姓「藤原」の「藤」を組み合わせて「斎藤」と称したのが始まりとされる。利仁の母方が越前国（現在の福井県）の豪族出身であったため、一族はまず越前に広がり、のちに疋田・河合など複数の系統に分かれて各地へ展開したと伝わる。齋藤・斉藤・齊藤など多くの異体字を持つのも特徴で、正字である「齋」の字画が複雑なため、簡略化された字体が広く使われるようになったことによるとされる。戦国時代に美濃国（現在の岐阜県）を掌握した斎藤道三もこの流れをくむ一族と伝わる。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "斎宮頭を務めた藤原利仁の子・叙用に由来し、越前国（現在の福井県）が発祥地とされる",
+  "regionDistribution": { "多い": ["山形", "福島"], "やや多い": ["秋田", "青森"] },
+  "kamon": [{ "name": "撫子", "description": "秋の七草のひとつ、撫子の花を図案化した紋。美濃斎藤氏をはじめ、疋田・河合など同族の家でも用いられたと伝わる。戦国大名・斎藤道三は自ら考案した「二頭波」の紋を用いたことでも知られる。" }],
+  "famousPeople": [
+    { "name": "斎藤道三", "note": "戦国時代の美濃国主。守護・土岐氏の家臣から下克上を遂げて戦国大名となり、稲葉山城（現在の岐阜城）を居城とした「美濃のマムシ」として知られる。" },
+    { "name": "斎藤茂吉", "note": "歌人・精神科医。アララギ派の中心人物として活躍し、1951年に文化勲章を受章した。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/斎藤氏",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://ja.wikipedia.org/wiki/斎藤道三",
+    "https://ja.wikipedia.org/wiki/斎藤茂吉",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=斎藤",
+    "https://myoji-yurai.net/myojiPrefectureRanking.htm?myojiKanji=斎藤",
+    "https://name-power.net/fn/斎藤.html",
+    "https://www.kateigaho.com/culture/hobby/177402",
+    "https://tabi-mag.jp/roots-saitoh/",
+    "https://guide.e-ohaka.com/column/ohakamon/saitodozan/",
+    "https://kisetsumimiyori.com/saito/",
+    "https://www.kakeisi.com/roots/myoji_saitou.html"
+  ]
+}

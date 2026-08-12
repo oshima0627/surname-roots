@@ -1,0 +1,30 @@
+{
+  "slug": "shimizu",
+  "kanji": "清水",
+  "readings": ["しみず"],
+  "rankNational": 20,
+  "populationEstimate": "約52万人",
+  "origin": "「清らかな水が湧き出る場所」を意味する地名に由来する地形姓で、こうした地名は全国各地に見られたため、清水を名乗る一族も一箇所に定まらず各地で個別に興ったとされる。美濃国（現・岐阜県揖斐川町）の清和源氏山県氏流、備中国（現・岡山県）の田使氏を祖とする一族、伊豆国の後北条氏家臣団、出羽国の最上氏庶流など複数の武家系統が知られるほか、京都の清水坂周辺を発祥とする説も伝わる。姓氏研究家の間では、もともと大和言葉の「しみず」と呼ばれていた地名に後から「清水」の字を当てたとする指摘もある。現在は特定の地域に偏らず全国に広く分布する名字となっている。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "「清らかな水が湧く場所」を意味する地名（地形姓）に由来するとされる",
+  "regionDistribution": { "多い": ["東京", "埼玉", "神奈川"], "やや多い": ["大阪", "愛知", "兵庫", "北海道"] },
+  "kamon": [
+    { "name": "左三つ巴", "description": "勾玉を三つ組み合わせて渦を描いた紋。戦国武将で備中高松城主だった清水宗治が用いたことで知られる。" },
+    { "name": "三つ柏", "description": "神饌を盛る器として古くから神聖視されてきた柏の葉を三枚あしらった紋。清水姓の家々で広く用いられてきた家紋の一つとされる。" }
+  ],
+  "famousPeople": [
+    { "name": "清水宗治", "note": "戦国時代の武将・備中高松城主。1582年、羽柴秀吉の水攻めの末、城兵の助命と引き換えに自刃した。" },
+    { "name": "清水宏保", "note": "スピードスケート選手。1998年長野オリンピック500mで日本人初の金メダルを獲得した。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/清水氏",
+    "https://ja.wikipedia.org/wiki/清水",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%B8%85%E6%B0%B4",
+    "https://myoji-yurai.net/myojiPrefectureRanking.htm?myojiKanji=%E6%B8%85%E6%B0%B4",
+    "https://name-power.net/fn/%E6%B8%85%E6%B0%B4.html",
+    "https://www.kateigaho.com/culture/hobby/177413",
+    "https://kisetsumimiyori.com/simizu/",
+    "https://ja.wikipedia.org/wiki/清水宗治",
+    "https://ja.wikipedia.org/wiki/清水宏保"
+  ]
+}

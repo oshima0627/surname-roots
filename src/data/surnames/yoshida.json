@@ -1,0 +1,29 @@
+{
+  "slug": "yoshida",
+  "kanji": "吉田",
+  "readings": ["よしだ"],
+  "rankNational": 11,
+  "populationEstimate": "約81万人",
+  "origin": "「吉田」は、豊かに実る田を意味する「良い田」に佳字を当てたとする地形由来の名字とされる。一説には葦(あし)の茂る湿田を指す「葦田」が、「悪し」に通じるのを忌んで「吉」の字に置き換えられたとも伝わる。全国各地に同名の地名が数多く残ることから、特定の一族が起源ではなく、各地でそれぞれ独立して名字となったと考えられている。中でも著名なのが、京都・吉田神社の神職を務めた卜部氏の流れをくむ公家の吉田家で、吉田兼熙が吉田神社の社務であったことにちなんで家名を「吉田」と改めたのが始まりとされ、同族には『徒然草』の兼好法師とのつながりも語られる。このほか近江の佐々木氏や常陸の桓武平氏大掾氏など、各地の武家がそれぞれこの名字を称した例も伝わる。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "「良い田」を意味する地形由来説を中心に、京都・吉田神社の卜部氏系公家など各地で独立して発祥したとされる",
+  "regionDistribution": { "多い": ["富山", "石川", "福井"], "やや多い": ["奈良", "大阪", "徳島"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "吉田茂", "note": "第45・48〜51代内閣総理大臣。日本国憲法の制定やサンフランシスコ平和条約の締結など戦後日本の礎を築いた。" },
+    { "name": "吉田松陰", "note": "幕末の思想家・教育者。松下村塾で伊藤博文や高杉晋作ら明治維新の中心人物を育てた。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/吉田氏",
+    "https://ja.wikipedia.org/wiki/吉田家",
+    "https://ja.wikipedia.org/wiki/吉田",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://ja.wikipedia.org/wiki/吉田茂",
+    "https://ja.wikipedia.org/wiki/吉田松陰",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%90%89%E7%94%B0",
+    "https://myoji-yurai.net/myojiPrefectureRanking.htm?myojiKanji=%E5%90%89%E7%94%B0",
+    "https://name-power.net/fn/%E5%90%89%E7%94%B0.html",
+    "https://tabi-mag.jp/yoshida-roots/",
+    "https://www.kateigaho.com/culture/hobby/177404",
+    "https://www.kakeisi.com/roots/myoji_yosida.html"
+  ]
+}

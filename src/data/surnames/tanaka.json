@@ -1,0 +1,20 @@
+{
+  "slug": "tanaka",
+  "kanji": "田中",
+  "readings": ["たなか"],
+  "rankNational": 4,
+  "populationEstimate": "約131万人",
+  "origin": "田んぼの中、という地形を表す言葉がそのまま名字になったとされ、日本で最も数の多い地形由来の名字のひとつである。平安時代以降は近江国田中村（現在の滋賀県高島市）や常陸国田中荘（現在の茨城県つくば市）など各地の田中という地名を発祥とする武家が現れ、出自の異なる田中氏が全国各地で並立した。江戸時代には水田耕作に従事する農民が新たに田中を名乗った例も多いとされる。稲作文化が西日本から広まった経緯と関連づけられ、現在も近畿地方を中心に西日本に濃く分布し、大阪府・京都府・兵庫県・滋賀県では名字順位の1位を占める。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "「田の中」を意味する地形に由来するとされる",
+  "regionDistribution": { "多い": ["大阪", "兵庫"], "やや多い": ["京都", "滋賀"] },
+  "kamon": [],
+  "famousPeople": [{ "name": "田中角栄", "note": "第64・65代内閣総理大臣。日中国交正常化を実現した。" }],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/田中氏",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%94%B0%E4%B8%AD",
+    "https://name-power.net/fn/%E7%94%B0%E4%B8%AD.html",
+    "https://news.mynavi.jp/article/20151201-a174/",
+    "https://gentosha-go.com/articles/-/23810"
+  ]
+}

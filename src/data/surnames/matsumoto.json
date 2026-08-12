@@ -1,0 +1,28 @@
+{
+  "slug": "matsumoto",
+  "kanji": "松本",
+  "readings": ["まつもと"],
+  "rankNational": 15,
+  "populationEstimate": "約62万人",
+  "origin": "松本という名字は、松の木がある土地を指す地名に由来するという地名由来説が最も広く知られている。松は常緑樹で神が宿る依代とされ縁起の良い木とされたことから、各地で松にちなむ土地が「松本」と呼ばれ、そこに住んだ一族が地名を名字としたと考えられている。中でも信濃国筑摩郡松本（現在の長野県松本市）を発祥とし、清和源氏の流れをくむ一族が名乗ったとする説が有力視される一方、下総国海上郡松本を発祥とし桓武平氏千葉氏の流れをくむ一族に由来するという説、京都・伏見稲荷大社に仕えた社家（神官の家系）が名乗ったとする説も伝わり、単一の起源には定まっていない。諸説あり、地域ごとに複数の系統が存在するとみられる。",
+  "originRegion": "信濃国筑摩郡松本（現・長野県松本市）などの地名に由来するとされる（諸説あり）",
+  "regionDistribution": { "多い": ["大阪"], "やや多い": ["東京", "兵庫"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "松本清張", "note": "小説家。社会派推理小説の先駆者として知られ、1953年に芥川賞を受賞した。代表作に「点と線」「砂の器」など。" },
+    { "name": "松本良順", "note": "幕末から明治期の医師。日本初の西洋式医学校を長崎に設立し、1873年に初代陸軍軍医総監となった。" },
+    { "name": "松本零士", "note": "漫画家。「宇宙戦艦ヤマト」「銀河鉄道999」などの作品で知られ、1970〜80年代のアニメブームに大きな影響を与えた。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/松本",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=松本",
+    "https://name-power.net/fn/松本.html",
+    "https://kisetsumimiyori.com/matsumoto/",
+    "https://mnk-news.net/detail.htm?articleId=447",
+    "https://www.kakeisi.com/roots/myoji_sasaki.html",
+    "https://ja.wikipedia.org/wiki/松本清張",
+    "https://ja.wikipedia.org/wiki/松本良順",
+    "https://ja.wikipedia.org/wiki/松本零士"
+  ]
+}

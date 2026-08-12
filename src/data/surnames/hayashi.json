@@ -1,0 +1,36 @@
+{
+  "slug": "hayashi",
+  "kanji": "林",
+  "readings": ["はやし", "りん"],
+  "rankNational": 18,
+  "populationEstimate": "約54万人",
+  "origin": "「林」は、樹木が生い茂った土地を意味する地形にちなむ姓とする説が広く知られている。これとは別に、河内国拝志郷（現在の大阪府藤井寺市付近）を本拠とした古代の氏族・林直や林宿禰の子孫が地名を姓に用いたとする説もあり、地形由来説と地名由来説は表裏一体のものとして語られることが多い。武家としては、藤原利仁の流れをくむ加賀林氏、小笠原一族とされる三河林氏、尾張の地で興った尾張林氏など、各地で独立して林を名乗る一族が生まれた。江戸幕府に仕えた儒学者・林羅山の家系も加賀林氏の系統と伝わる。山や森の多い日本各地に同様の地形があったため、単一の発祥地には限定されない全国的な大姓になったと考えられている。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "樹木の茂った土地を表す地形由来説と、河内国拝志郷（現在の大阪府藤井寺市周辺）の古代豪族に由来する説が有力とされる",
+  "regionDistribution": { "多い": ["富山"], "やや多い": ["岐阜", "石川", "愛知", "大阪", "東京"] },
+  "kamon": [{ "name": "丸に林の字紋", "description": "「林」の一字を円形の枠内に図案化した文字紋。名字の文字そのものを紋章化したもので、高林家とともに林家でも用いられたと伝わる。" }],
+  "famousPeople": [
+    { "name": "林銑十郎", "note": "陸軍出身の政治家。1937年に第33代内閣総理大臣に就任したが、在任123日で衆議院を解散（食い逃げ解散）した後に退陣した。" },
+    { "name": "林修", "note": "予備校講師・タレント。CMでの台詞「いつやるか？今でしょ！」が2013年のユーキャン新語・流行語大賞の年間大賞に選ばれた。" },
+    { "name": "林芳正", "note": "自由民主党の衆議院議員。外務大臣、内閣官房長官、総務大臣などの閣僚を歴任した。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9E%97",
+    "https://myoji-yurai.net/myojiPrefectureRanking.htm?myojiKanji=%E6%9E%97",
+    "https://name-power.net/fn/%E6%9E%97.html",
+    "https://ja.wikipedia.org/wiki/林氏",
+    "https://ja.wikipedia.org/wiki/林_(日本姓)",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://yurai.hateblo.jp/entry/2024/03/17/162824",
+    "https://tabi-mag.jp/hayashi/",
+    "https://nlab.itmedia.co.jp/research/articles/2711675/",
+    "https://nlab.itmedia.co.jp/research/articles/2846710/",
+    "https://kisetsumimiyori.com/hayashi/",
+    "https://irohakamon.com/kamon/ji/marunihayashi.html",
+    "https://irohakamon.com/kamon/ji/marunihayashinoji.html",
+    "https://ja.wikipedia.org/wiki/林修",
+    "https://ja.wikipedia.org/wiki/林芳正",
+    "https://ja.wikipedia.org/wiki/林銑十郎",
+    "https://www.kantei.go.jp/jp/104/meibo/daijin/hayashi_yoshimasa.html",
+    "https://www.kantei.go.jp/jp/rekidainaikaku/033.html"
+  ]
+}

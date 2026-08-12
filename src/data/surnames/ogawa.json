@@ -1,0 +1,23 @@
+{
+  "slug": "ogawa",
+  "kanji": "小川",
+  "readings": ["おがわ"],
+  "rankNational": 30,
+  "populationEstimate": "約39万人",
+  "origin": "「小川」は小さな川や流れを意味する地形由来の名字で、同名の地名が全国各地にあったため独立に複数箇所で発祥したと考えられている。陸奥国の佐竹氏・岩城氏の系統、近江国神崎郡の系統、肥後国の菊池氏の系統など、出自の異なる小川氏が各地に伝わっている。一説には、武蔵国多摩郡（現在の東京都・埼玉県・神奈川県境付近）を本拠とした武蔵七党の一族に連なるとされる系統もある。現在は関東地方（東京・千葉・神奈川・埼玉）と愛知県に広く分布している。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "「小さな川」を意味する地形、各地の小川という地名から独立に発祥したとされる",
+  "regionDistribution": { "多い": ["東京", "千葉", "神奈川", "埼玉", "愛知"], "やや多い": [] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "小川洋子", "note": "小説家。1991年『妊娠カレンダー』で芥川賞受賞。2004年『博士の愛した数式』で読売文学賞など受賞。" },
+    { "name": "小川直也", "note": "柔道家。1987年世界柔道選手権無差別級で当時史上最年少優勝。1992年バルセロナ五輪で銀メダル獲得。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B0%8F%E5%B7%9D",
+    "https://name-power.net/fn/%E5%B0%8F%E5%B7%9D.html",
+    "https://ja.wikipedia.org/wiki/小川氏",
+    "https://ja.wikipedia.org/wiki/小川洋子",
+    "https://ja.wikipedia.org/wiki/小川直也"
+  ]
+}
