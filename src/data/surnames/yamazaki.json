@@ -1,0 +1,23 @@
+{
+  "slug": "yamazaki",
+  "kanji": "山崎",
+  "readings": ["やまざき", "やまさき"],
+  "rankNational": 21,
+  "populationEstimate": "約47万人",
+  "origin": "「山崎」は山の突き出た端や岬状の地形を指す言葉に由来する地形由来の名字で、日本各地に同名の地名が点在したため、各地で独立に発祥したと考えられている。代表的な系統として、宇多源氏の流れをくむ近江国の佐々木氏一族が近江国犬上郡山崎（現在の滋賀県）に住んで山崎を名乗ったとされる家系があり、豊臣秀吉に仕えた山崎片家の子孫はのちに丸亀藩主となった。このほかにも越前の赤松氏系、駿河・相模の藤原氏系、薩摩・武蔵・土佐など、系譜の異なる山崎氏が各地に伝わっており、単一の起源には定まっていない。読みは「やまざき」「やまさき」の両方が広く用いられる。",
+  "originRegion": "「山の端・岬」を意味する地形、近江国など各地の「山崎」という地名から独立に発祥したとされる",
+  "regionDistribution": { "多い": ["東京", "埼玉", "神奈川", "大阪"], "やや多い": [] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "山崎豊子", "note": "小説家。『白い巨塔』『不毛地帯』など綿密な取材に基づく社会派作品で知られる。" },
+    { "name": "山崎努", "note": "俳優。『天国と地獄』『お葬式』『おくりびと』などで日本アカデミー賞を複数回受賞。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B1%B1%E5%B4%8E",
+    "https://name-power.net/fn/%E5%B1%B1%E5%B4%8E.html",
+    "https://ja.wikipedia.org/wiki/山崎氏",
+    "https://ja.wikipedia.org/wiki/山崎豊子",
+    "https://ja.wikipedia.org/wiki/山崎努"
+  ]
+}
