@@ -34,7 +34,9 @@ export function SurnameDetail({ entry }: { entry: SurnameEntry }) {
       </Section>
 
       <Section title="分布">
-        <JapanMap distribution={entry.regionDistribution} />
+        <div className="lg:-mx-40">
+          <JapanMap distribution={entry.regionDistribution} />
+        </div>
       </Section>
 
       {entry.kamon.length > 0 && (

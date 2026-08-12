@@ -63,10 +63,37 @@ export function JapanMap({ distribution }: { distribution: Distribution }) {
               </g>
             );
           })}
+          {/* In-SVG legend for wide screens (sm and above) */}
+          <g className="hidden sm:block" data-testid="svg-legend">
+            {/* Background for legend */}
+            <rect x="10" y="10" width="130" height="70" fill="#ffffff" rx="4" opacity="0.95" />
+            {/* High level swatch and label */}
+            <rect x="20" y="20" width="12" height="12" fill={FILL.high} rx="2" />
+            <text x="38" y="28" fontSize="11" fill="#44403c" fontWeight="500">
+              多い
+            </text>
+            {/* Mid level swatch and label */}
+            <rect x="20" y="40" width="12" height="12" fill={FILL.mid} rx="2" />
+            <text x="38" y="48" fontSize="11" fill="#44403c" fontWeight="500">
+              やや多い
+            </text>
+          </g>
         </svg>
       </div>
       <figcaption className="mt-3 text-sm text-stone-600">
-        <span className="inline-flex items-center gap-4">
+        {/* HTML swatch legend for narrow screens (below sm) */}
+        <span className="inline-flex items-center gap-4 sm:hidden">
+          <span className="inline-flex items-center gap-1">
+            <span className="inline-block w-3 h-3 rounded-sm" style={{ background: FILL.high }} />
+            多い
+          </span>
+          <span className="inline-flex items-center gap-1">
+            <span className="inline-block w-3 h-3 rounded-sm" style={{ background: FILL.mid }} />
+            やや多い
+          </span>
+        </span>
+        {/* HTML swatch legend for wide screens (sm and above) - kept for consistency with in-SVG */}
+        <span className="hidden sm:inline-flex items-center gap-4" data-testid="html-legend">
           <span className="inline-flex items-center gap-1">
             <span className="inline-block w-3 h-3 rounded-sm" style={{ background: FILL.high }} />
             多い

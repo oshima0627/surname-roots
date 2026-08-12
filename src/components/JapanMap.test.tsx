@@ -39,4 +39,23 @@ describe("JapanMap", () => {
     render(<JapanMap distribution={distribution} />);
     expect(screen.getByText(/概略/)).toBeTruthy();
   });
+
+  it("SVG内の凡例グループが存在する", () => {
+    const { container } = render(<JapanMap distribution={distribution} />);
+    const svgLegend = container.querySelector('[data-testid="svg-legend"]');
+    expect(svgLegend).toBeTruthy();
+    expect(svgLegend?.parentElement?.tagName).toBe("svg");
+  });
+
+  it("HTML凡例がfigcaptionに存在する", () => {
+    const { container } = render(<JapanMap distribution={distribution} />);
+    const htmlLegend = container.querySelector('[data-testid="html-legend"]');
+    expect(htmlLegend).toBeTruthy();
+    expect(htmlLegend?.closest("figcaption")).toBeTruthy();
+  });
+
+  it("※免責事項が表示される", () => {
+    render(<JapanMap distribution={distribution} />);
+    expect(screen.getByText(/着色のない県はデータがないことを意味します/)).toBeTruthy();
+  });
 });
