@@ -34,7 +34,7 @@ export function SurnameDetail({ entry }: { entry: SurnameEntry }) {
       </Section>
 
       <Section title="分布">
-        <div className="lg:-mx-40">
+        <div className="lg:-mx-20">
           <JapanMap distribution={entry.regionDistribution} />
         </div>
       </Section>

@@ -82,18 +82,7 @@ export function JapanMap({ distribution }: { distribution: Distribution }) {
       </div>
       <figcaption className="mt-3 text-sm text-stone-600">
         {/* HTML swatch legend for narrow screens (below sm) */}
-        <span className="inline-flex items-center gap-4 sm:hidden">
-          <span className="inline-flex items-center gap-1">
-            <span className="inline-block w-3 h-3 rounded-sm" style={{ background: FILL.high }} />
-            多い
-          </span>
-          <span className="inline-flex items-center gap-1">
-            <span className="inline-block w-3 h-3 rounded-sm" style={{ background: FILL.mid }} />
-            やや多い
-          </span>
-        </span>
-        {/* HTML swatch legend for wide screens (sm and above) - kept for consistency with in-SVG */}
-        <span className="hidden sm:inline-flex items-center gap-4" data-testid="html-legend">
+        <span className="inline-flex items-center gap-4 sm:hidden" data-testid="html-legend">
           <span className="inline-flex items-center gap-1">
             <span className="inline-block w-3 h-3 rounded-sm" style={{ background: FILL.high }} />
             多い
