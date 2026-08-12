@@ -30,38 +30,41 @@ export function JapanMap({ distribution }: { distribution: Distribution }) {
 
   return (
     <figure className="m-0">
-      <svg
-        viewBox={`0 0 ${width} ${height}`}
-        className="w-full h-auto"
-        role="img"
-        aria-label="都道府県別の分布"
-      >
-        {PREFECTURES.map((pref) => {
-          const level = levelOf(pref.name);
-          return (
-            <g key={pref.name} data-prefecture={pref.name} data-level={level}>
-              <rect
-                x={pref.col * (TILE + GAP)}
-                y={pref.row * (TILE + GAP)}
-                width={TILE}
-                height={TILE}
-                rx={4}
-                fill={FILL[level]}
-              />
-              <text
-                x={pref.col * (TILE + GAP) + TILE / 2}
-                y={pref.row * (TILE + GAP) + TILE / 2}
-                textAnchor="middle"
-                dominantBaseline="central"
-                fontSize={11}
-                fill={TEXT[level]}
-              >
-                {pref.name}
-              </text>
-            </g>
-          );
-        })}
-      </svg>
+      <div className="overflow-x-auto">
+        <svg
+          viewBox={`0 0 ${width} ${height}`}
+          className="w-full h-auto"
+          style={{ minWidth: `${width}px` }}
+          role="img"
+          aria-label="都道府県別の分布"
+        >
+          {PREFECTURES.map((pref) => {
+            const level = levelOf(pref.name);
+            return (
+              <g key={pref.name} data-prefecture={pref.name} data-level={level}>
+                <rect
+                  x={pref.col * (TILE + GAP)}
+                  y={pref.row * (TILE + GAP)}
+                  width={TILE}
+                  height={TILE}
+                  rx={4}
+                  fill={FILL[level]}
+                />
+                <text
+                  x={pref.col * (TILE + GAP) + TILE / 2}
+                  y={pref.row * (TILE + GAP) + TILE / 2}
+                  textAnchor="middle"
+                  dominantBaseline="central"
+                  fontSize={11}
+                  fill={TEXT[level]}
+                >
+                  {pref.name}
+                </text>
+              </g>
+            );
+          })}
+        </svg>
+      </div>
       <figcaption className="mt-3 text-sm text-stone-600">
         <span className="inline-flex items-center gap-4">
           <span className="inline-flex items-center gap-1">
