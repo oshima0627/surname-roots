@@ -22,6 +22,18 @@ describe("normalizeQuery", () => {
     expect(normalizeQuery("さとう")).toBe("さとう");
     expect(normalizeQuery("佐藤")).toBe("佐藤");
   });
+
+  it("範囲の最初の文字ァを変換する", () => {
+    expect(normalizeQuery("ァ")).toBe("ぁ");
+  });
+
+  it("範囲の最後の文字ヶを変換する", () => {
+    expect(normalizeQuery("ヶ")).toBe("ゖ");
+  });
+
+  it("長音記号ーは範囲外で変換されない", () => {
+    expect(normalizeQuery("ー")).toBe("ー");
+  });
 });
 
 describe("searchSurnames", () => {
