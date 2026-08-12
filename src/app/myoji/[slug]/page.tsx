@@ -13,9 +13,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const entry = getSurnameBySlug(slug);
   if (!entry) return {};
+  const codePoints = [...entry.origin];
+  const description =
+    codePoints.length > 100 ? `${codePoints.slice(0, 100).join("")}…` : entry.origin;
   return {
     title: `${entry.kanji}（${entry.readings.join("・")}）の由来とルーツ`,
-    description: entry.origin.slice(0, 100),
+    description,
   };
 }
 

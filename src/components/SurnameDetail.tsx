@@ -18,12 +18,14 @@ export function SurnameDetail({ entry }: { entry: SurnameEntry }) {
       <header>
         <h1 className="text-4xl font-bold">{entry.kanji}</h1>
         <p className="mt-2 text-stone-600">{entry.readings.join(" / ")}</p>
-        <p className="mt-3 text-sm text-stone-600">
-          {entry.rankNational !== null && (
-            <span className="mr-3">全国{entry.rankNational}位</span>
-          )}
-          {entry.populationEstimate !== "" && <span>{entry.populationEstimate}</span>}
-        </p>
+        {(entry.rankNational !== null || entry.populationEstimate !== "") && (
+          <p className="mt-3 text-sm text-stone-600">
+            {entry.rankNational !== null && (
+              <span className="mr-3">全国{entry.rankNational}位</span>
+            )}
+            {entry.populationEstimate !== "" && <span>{entry.populationEstimate}</span>}
+          </p>
+        )}
       </header>
 
       <Section title="由来">

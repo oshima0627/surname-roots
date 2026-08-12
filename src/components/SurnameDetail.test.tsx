@@ -70,4 +70,16 @@ describe("SurnameDetail", () => {
     render(<SurnameDetail entry={entry} />);
     expect(screen.queryByText(/example\.com/)).toBeNull();
   });
+
+  it("推定人口が空文字なら人口を出さない", () => {
+    render(<SurnameDetail entry={{ ...entry, populationEstimate: "" }} />);
+    expect(screen.queryByText(/約190万人/)).toBeNull();
+  });
+
+  it("順位も人口も不明なら空の段落を残さない", () => {
+    const { container } = render(
+      <SurnameDetail entry={{ ...entry, rankNational: null, populationEstimate: "" }} />,
+    );
+    expect(container.querySelector("p.mt-3")).toBeNull();
+  });
 });
