@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 苗字ルーツ辞典
 
-## Getting Started
+日本の苗字の由来・語源と、都道府県別の分布を調べられる静的サイト。
 
-First, run the development server:
+- 公開先: <https://myoji.nexeed-lab.com>
+- 設計: `docs/superpowers/specs/2026-08-12-surname-roots-design.md`
+- 実装計画: `docs/superpowers/plans/2026-08-12-surname-roots.md`
+
+## 開発
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # 開発サーバー
+npm test           # テスト
+npm run typecheck  # 型チェック
+npm run lint       # lint
+npm run build      # 静的エクスポート（out/ を生成）
+npm run deploy     # ビルドして Cloudflare Workers へデプロイ
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 構成
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Next.js の静的エクスポート（`output: "export"`）を Cloudflare Workers の Static Assets で配信する。
+サーバーロジックもDBも持たない。検索は苗字インデックスをクライアントに載せてブラウザ内で完結させる。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**開発環境が Windows のため OpenNext による SSR は使えない。** この構成を崩さないこと。
 
-## Learn More
+## データの追加
 
-To learn more about Next.js, take a look at the following resources:
+`src/data/surnames/<slug>.json` に1件 = 1ファイルで置く。スキーマは `src/lib/schema.ts`。
+追加したら `npm test` で検証する（全ファイルがスキーマ・slug整合・県名・配列の排他性を自動チェックされる）。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 記述のルール
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**記憶で書かない。** 公開情報を実際に読み、裏を取ってから自分の言葉で書く。
 
-## Deploy on Vercel
+- **情報源とは、実際に fetch して本文を読んだページのこと。** 検索結果のスニペットは情報源ではない
+- **媒体が違っても署名が同じなら1つの情報源。** 苗字解説は同じ研究者が複数媒体で執筆していることが多い
+- **独立した2つの情報源が一致した内容のみ採用する。** 1つしか無いものは本文で出典を明示するか、載せない
+- **有名人は1件ずつ本人のページを開いて確認する。** 芸名・旧姓・異体字で外れる例が実際にあった
+- **裏が取れない項目は空にする。** `kamon: []` や `rankNational: null` は正当な値。埋めるための創作をしない
+- 参照したURLは `sources` に記録する（画面には出さない、裏取りの証跡）
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 既知の限界
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **全国順位は51位以降、出典が実質1系統しかない。** Wikipedia の一覧は50位までで、
+  それ以降は同記事が出典に挙げる名字由来netに依拠している。別の資料とは最大6位の差がある
+  （例: 市川 99位 / 105位）。詳細ページとランキングページにその旨を明記している
+- 苗字の由来には諸説ある。全ページのフッターに「本サイトの解説は諸説あるうちの一説です。」を常時表示している
+
+## 字体違いの扱い
+
+斎藤と斉藤のように字体が異なる苗字は別ページにする。URLは半角英字のみなので、
+**最も一般的な字体が素の slug を取り、以降は区別する漢字の音読みを付す**（斎藤=`saito` / 斉藤=`saito-sei`）。
