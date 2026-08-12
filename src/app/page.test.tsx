@@ -47,10 +47,15 @@ describe("Home (トップページ)", () => {
   });
 
   it("よく調べられる苗字のグリッドから詳細ページへリンクする", () => {
+    // 苗字の漢字は互いの部分文字列になり得る（例: 林 ⊂ 小林）ため、
+    // name への正規表現マッチではなくリンク先の href（一意な /myoji/<slug>）で
+    // 要素を特定してから表示テキストを検証する。
     render(<Home />);
     const top = getAllSurnames()[0];
-    const links = screen.getAllByRole("link", { name: new RegExp(top.kanji) });
-    expect(links.some((link) => link.getAttribute("href") === `/myoji/${top.slug}`)).toBe(true);
+    const links = screen.getAllByRole("link");
+    const topLink = links.find((link) => link.getAttribute("href") === `/myoji/${top.slug}`);
+    expect(topLink, `${top.slug} へのリンクが見つからない`).toBeTruthy();
+    expect(topLink).toHaveTextContent(top.kanji);
   });
 
   it("「全国ランキングをすべて見る」が /ranking を指す", () => {
