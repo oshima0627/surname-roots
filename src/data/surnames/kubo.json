@@ -1,0 +1,22 @@
+{
+  "slug": "kubo",
+  "kanji": "久保",
+  "readings": ["くぼ"],
+  "rankNational": 95,
+  "populationEstimate": "約18万人",
+  "origin": "「久保」は周囲より低くくぼんだ土地を意味する「窪（くぼ）」に由来する地形由来の名字で、各地の窪地・低地に住んだ人々が独立に名乗ったとされる。表記には本来の「窪」ではなく、長く久しく保つという縁起の良い意味を持つ「久保」の字が当てられることが多い。清和源氏や桓武平氏の流れをくむ家のなかにも各地の「久保」という地名を名字とした系統が伝わるほか、鹿児島県では江戸時代の門割制度に由来する「久保門」から発祥したとする例もあり、由来は一つに定まらず諸説ある。",
+  "originRegion": "低くくぼんだ土地を意味する「窪」に由来する地形由来とされ、各地の窪地から独立に発祥したとされる",
+  "regionDistribution": { "多い": ["大阪", "東京"], "やや多い": ["福岡", "北海道"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "久保建英", "note": "サッカー選手。レアル・マドリード下部組織を経て2022年からレアル・ソシエダードに所属し、日本代表としても活躍する。" },
+    { "name": "久保純子", "note": "フリーアナウンサー。1994年にNHK入局後、「NHKニュース11」やNHK紅白歌合戦の司会を務め、2004年からフリーに転向した。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%B9%85%E4%BF%9D",
+    "https://name-power.net/fn/%E4%B9%85%E4%BF%9D.html",
+    "https://ja.wikipedia.org/wiki/久保建英",
+    "https://ja.wikipedia.org/wiki/久保純子"
+  ]
+}

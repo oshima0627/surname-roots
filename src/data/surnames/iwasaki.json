@@ -1,0 +1,22 @@
+{
+  "slug": "iwasaki",
+  "kanji": "岩崎",
+  "readings": ["いわさき", "いわざき"],
+  "rankNational": 91,
+  "populationEstimate": "約19万人",
+  "origin": "岩崎は「岩」と、突き出た地形を意味する「崎」を組み合わせた地形由来の名字で、岩が突き出た土地を指すとされる。甲斐国（現在の山梨県）の岩崎を発祥とし清和源氏の流れをくむとする系統や、岩代国（現在の福島県・宮城県一帯）の岩崎を発祥とし桓武平氏の流れをくむとする系統が伝わっている。このほか栃木・茨城など各地の「岩崎」という地名を由来とする系統も伝わっており、独立に複数箇所で発祥したと考えられている。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "「岩の突き出た土地」を意味する地形由来の地名姓とされ、甲斐国（現・山梨県）の岩崎を発祥とする系統が知られる",
+  "regionDistribution": { "多い": ["東京", "神奈川", "埼玉"], "やや多い": ["大阪", "静岡"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "岩崎弥太郎", "note": "実業家。三菱財閥の創業者で、1873年に社名を三菱商会に改めて海運業を発展させた。" },
+    { "name": "岩崎宏美", "note": "歌手・女優。1982年のシングル『聖母たちのララバイ』がオリコン1位・売上80万枚の大ヒットとなり、日本レコード大賞を受賞した。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B2%A9%E5%B4%8E",
+    "https://name-power.net/fn/%E5%B2%A9%E5%B4%8E.html",
+    "https://ja.wikipedia.org/wiki/岩崎弥太郎",
+    "https://ja.wikipedia.org/wiki/岩崎宏美"
+  ]
+}

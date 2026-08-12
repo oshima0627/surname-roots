@@ -1,0 +1,22 @@
+{
+  "slug": "ichikawa",
+  "kanji": "市川",
+  "readings": ["いちかわ"],
+  "rankNational": 99,
+  "populationEstimate": "約18万人",
+  "origin": "「市川」は「市」と「川」を組み合わせた地形由来の名字で、市（いち）が立つ川のほとりの土地を意味するとされる。下総国市川（現在の千葉県市川市）をはじめ、山梨県・佐賀県・長野県・静岡県など各地に同名の地名が古くから記録されており、それぞれの土地から独立に名字として広まったと考えられている。特定の一族に限らず各地の市川という地名を発祥とする家が全国に分布しており、由来は一つに定まらず諸説ある。",
+  "originRegion": "市が立つ川のほとりの土地を意味する地形由来とされ、各地の市川という地名から独立に発祥したとされる",
+  "regionDistribution": { "多い": ["東京", "神奈川"], "やや多い": ["愛知", "静岡", "埼玉"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "市川実日子", "note": "女優。1994年にモデルとしてデビューし、2016年『シン・ゴジラ』での演技で2017年日本アカデミー賞優秀助演女優賞を受賞した。" },
+    { "name": "市川崑", "note": "映画監督。『ビルマの竪琴』『炎上』などの文芸作品や、記録映画『東京オリンピック』（1965年）で知られ、国際的にも高く評価された。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B8%82%E5%B7%9D",
+    "https://name-power.net/fn/%E5%B8%82%E5%B7%9D.html",
+    "https://ja.wikipedia.org/wiki/市川実日子",
+    "https://ja.wikipedia.org/wiki/市川崑"
+  ]
+}

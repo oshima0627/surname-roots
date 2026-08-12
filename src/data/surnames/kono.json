@@ -1,0 +1,22 @@
+{
+  "slug": "kono",
+  "kanji": "河野",
+  "readings": ["こうの", "かわの"],
+  "rankNational": 87,
+  "populationEstimate": "約20万人",
+  "origin": "河野は伊予国（現在の愛媛県）の河野郷（松山市付近）を発祥とする名字で、物部氏の子孫を称する越智氏の系統である河野氏に由来するとされる。平安時代から鎌倉時代にかけて瀬戸内海に勢力を持つ水軍として知られ、南北朝時代・戦国時代にも伊予の有力豪族として活動した。刀を地面に突き立てたところ水が湧き出たことから地名が生まれたとする伝承も残る。このほか兵庫・長野の「河野」という地名を由来とする系統も伝わっている。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "伊予国河野郷（現・愛媛県松山市付近）を発祥とし、瀬戸内海の水軍として知られた河野氏に由来するとされる",
+  "regionDistribution": { "多い": ["大分", "大阪"], "やや多い": [] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "河野太郎", "note": "政治家・衆議院議員。2022年8月に第4代デジタル大臣に就任した。" },
+    { "name": "河野洋平", "note": "政治家。2003年から2009年まで衆議院議長を務めた。" }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/prefectureRanking.htm",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%B2%B3%E9%87%8E",
+    "https://name-power.net/fn/%E6%B2%B3%E9%87%8E.html",
+    "https://ja.wikipedia.org/wiki/河野太郎",
+    "https://ja.wikipedia.org/wiki/河野洋平"
+  ]
+}
