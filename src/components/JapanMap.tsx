@@ -15,7 +15,7 @@ const FILL: Record<Level, string> = {
 const TEXT: Record<Level, string> = {
   high: "#ffffff",
   mid: "#44403c",
-  none: "#a8a29e",
+  none: "#57534e",
 };
 
 export function JapanMap({ distribution }: { distribution: Distribution }) {
@@ -53,7 +53,7 @@ export function JapanMap({ distribution }: { distribution: Distribution }) {
                 y={pref.row * (TILE + GAP) + TILE / 2}
                 textAnchor="middle"
                 dominantBaseline="central"
-                fontSize={pref.name.length > 3 ? 9 : 11}
+                fontSize={11}
                 fill={TEXT[level]}
               >
                 {pref.name}
