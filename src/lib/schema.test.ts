@@ -50,4 +50,18 @@ describe("surnameEntrySchema", () => {
   it("sources が空配列だと弾く（裏取りの証跡を必須にする）", () => {
     expect(() => surnameEntrySchema.parse({ ...valid, sources: [] })).toThrow();
   });
+
+  it("同じ県が「多い」と「やや多い」に重複していると弾く", () => {
+    const broken = { ...valid, regionDistribution: { 多い: ["岩手"], やや多い: ["岩手"] } };
+    expect(() => surnameEntrySchema.parse(broken)).toThrow();
+  });
+
+  it("「多い」と「やや多い」が重複していなければ受け入れる", () => {
+    const ok = { ...valid, regionDistribution: { 多い: ["岩手"], やや多い: ["秋田"] } };
+    expect(() => surnameEntrySchema.parse(ok)).not.toThrow();
+  });
+
+  it("origin が100文字の空白だと弾く", () => {
+    expect(() => surnameEntrySchema.parse({ ...valid, origin: " ".repeat(100) })).toThrow();
+  });
 });

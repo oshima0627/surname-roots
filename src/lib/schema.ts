@@ -15,7 +15,7 @@ export const surnameEntrySchema = z.object({
   /** "約190万人" のような概略表記。不明なら空文字 */
   populationEstimate: z.string(),
   /** 由来・語源の本文。裏取り済みの内容だけを書く */
-  origin: z.string().min(100),
+  origin: z.string().trim().min(100),
   originRegion: z.string().min(1),
   /**
    * 該当する県だけを列挙する。47県すべてを埋めない。
@@ -24,6 +24,13 @@ export const surnameEntrySchema = z.object({
   regionDistribution: z.object({
     多い: z.array(prefectureName),
     やや多い: z.array(prefectureName),
+  }).refine((dist) => {
+    const set多い
+= new Set(dist.多い);
+    const hasOverlap = dist.やや多い.some((p) => set多い.has(p));
+    return !hasOverlap;
+  }, {
+    message: "同じ県が「多い」と「やや多い」に重複して登録されている",
   }),
   kamon: z.array(z.object({ name: z.string().min(1), description: z.string().min(1) })),
   famousPeople: z.array(z.object({ name: z.string().min(1), note: z.string().min(1) })),
