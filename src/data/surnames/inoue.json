@@ -1,0 +1,32 @@
+{
+  "slug": "inoue",
+  "kanji": "井上",
+  "readings": ["いのうえ"],
+  "rankNational": 16,
+  "populationEstimate": "約60万人",
+  "origin": "井上という名字は成り立ちに複数の説がある地形由来の名字である。もっとも広く知られるのは、生活の要であった井戸のほとりや「井戸の上手」に住んだことにちなむとする説で、地名としての「井上」も全国各地にみられる。一方で、平安時代後期に信濃国高井郡井上（現在の長野県須坂市）を本拠とした清和源氏頼季流の武家・井上氏に由来するとの説も伝わる。この井上氏はのちに信濃・安芸・三河などに分かれ、幕末には長州藩士の井上馨を輩出した安芸井上氏が侯爵家となった。地名由来の説と、特定の武家の名乗りに由来する説のどちらが起源かは定まっておらず、諸説あり複合的に広まったと考えられている。",
+  "originRegion": "地形由来（井戸の上手）の説と、信濃国井上（現長野県須坂市）の武家・清和源氏井上氏に由来する説がある",
+  "regionDistribution": { "多い": ["兵庫", "福岡", "京都"], "やや多い": ["佐賀", "愛媛"] },
+  "kamon": [
+    { "name": "鷹の羽紋（黒餅に八鷹羽）", "description": "三河国を発祥とする井上氏（江戸時代の下総高岡藩主家や旗本井上氏)が用いたと伝わる定紋。鷹の羽を意匠化した紋様である。" },
+    { "name": "井の字紋", "description": "安芸井上氏（幕末の井上馨を輩出し侯爵家となった系統）が用いたと伝わる紋で、名字の「井」の字をそのまま図案化したもの。「井」を含む名字の家で丸に井の字紋などが採用された例も知られる。" }
+  ],
+  "famousPeople": [
+    { "name": "井上馨", "note": "幕末の長州藩士、明治の元勲。外務卿・外務大臣として条約改正に尽力し、1907年に侯爵に叙せられた（1836年〜1915年）。" },
+    { "name": "井上靖", "note": "小説家。『天平の甍』『敦煌』などの歴史小説で知られ、1976年に文化勲章を受章した（1907年〜1991年）。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/井上氏",
+    "https://ja.wikipedia.org/wiki/井上",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=井上",
+    "https://name-power.net/fn/井上.html",
+    "https://tabi-mag.jp/inoue/",
+    "https://irohakamon.com/kamon/taka/inouetakanoha.html",
+    "https://irohakamon.com/kamon/idutsu/maruniinoji2.html",
+    "https://myoji-yurai.net/myojiCelebrity.htm?myojiKanji=井上",
+    "https://myoji-yurai.net/myojiPrefectureRanking.htm?myojiKanji=井上",
+    "https://ja.wikipedia.org/wiki/井上馨",
+    "https://ja.wikipedia.org/wiki/井上靖"
+  ]
+}

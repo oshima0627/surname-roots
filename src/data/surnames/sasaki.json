@@ -1,0 +1,29 @@
+{
+  "slug": "sasaki",
+  "kanji": "佐々木",
+  "readings": ["ささき"],
+  "rankNational": 13,
+  "populationEstimate": "約66万人",
+  "origin": "佐々木は近江国蒲生郡佐々木荘（現在の滋賀県近江八幡市安土町付近）という地名に由来する名字である。地名自体の語源にも「小さな崎」「酒器」など複数の説がある。この地には奈良時代から沙沙貴神社を氏神とする豪族が根づいており、そこへ平安時代末期に宇多天皇の皇子敦実親王を祖とする宇多源氏の一族が入り、両者が混じり合って佐々木氏を称するようになったとされる。源平合戦や鎌倉幕府創設で活躍した佐々木秀義とその子らを通じて一族は各地の守護職などを得て全国に広がり、出雲・隠岐などにも分派を残した。近江という一つの地名からこれほど広範囲に広がった名字は珍しいとされ、後世には東北地方をはじめ全国各地で多く見られるようになったと考えられている。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "近江国佐々木荘（現・滋賀県近江八幡市）の地名に由来するとされる",
+  "regionDistribution": { "多い": ["岩手", "秋田"], "やや多い": ["宮城", "北海道"] },
+  "kamon": [
+    { "name": "隅立て四つ目", "description": "近江源氏佐々木氏を代表する家紋で、目結紋の一種。江戸時代の記録『寛政重修諸家譜』では目結紋を用いた幕臣77家が佐々木氏族を称したと伝わり、嫡流の六角氏などが用いた。" }
+  ],
+  "famousPeople": [
+    { "name": "佐々木朗希", "note": "プロ野球選手（投手）。2022年4月10日、千葉ロッテマリーンズ在籍時にオリックス戦で完全試合を達成し、19奪三振と13者連続奪三振の記録を樹立した。" },
+    { "name": "佐々木則夫", "note": "サッカー指導者。2008〜2016年になでしこジャパン監督を務め、2011年FIFA女子ワールドカップで日本を優勝に導いた。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/佐々木氏",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=佐々木",
+    "https://name-power.net/fn/佐々木.html",
+    "https://www.njg.co.jp/column/morioka-1859/",
+    "https://www.kateigaho.com/culture/hobby/177406",
+    "https://irohakamon.com/kamon/meyui/sumitateyotsume.html",
+    "https://ja.wikipedia.org/wiki/目結紋",
+    "https://ja.wikipedia.org/wiki/佐々木朗希",
+    "https://ja.wikipedia.org/wiki/佐々木則夫_(サッカー指導者)"
+  ]
+}

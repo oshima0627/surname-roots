@@ -1,0 +1,21 @@
+{
+  "slug": "endo",
+  "kanji": "遠藤",
+  "readings": ["えんどう"],
+  "rankNational": 38,
+  "populationEstimate": "約32万人",
+  "origin": "遠江国（現在の静岡県西部）の国司などを務めた藤原氏の一族が、任国の「遠江」の「遠」と藤原の「藤」を組み合わせて遠藤と名乗ったのが始まりとされる。系譜としては藤原秀郷の子孫を称する流れのほか、藤原南家や桓武平氏千葉氏の一族が挙げられることもあり、諸説がある。鎌倉時代末期には千葉氏の庶流である東氏に従って下総国から美濃国郡上郡に移った一族が勢力を広げ、江戸時代の郡上藩主家に続いたことでも知られる。東北地方の福島県・宮城県で人口比が高い。諸説あり、単一の系譜に定まってはいない。",
+  "originRegion": "遠江国司を務めた藤原氏に由来するとされる氏族姓",
+  "regionDistribution": { "多い": ["福島", "東京"], "やや多い": ["神奈川", "宮城"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "遠藤周作", "note": "小説家。カトリック信仰を背景にした作品『沈黙』などで知られ、日本人とキリスト教という主題を追求した。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/遠藤氏",
+    "https://ja.wikipedia.org/wiki/遠藤周作",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E9%81%A0%E8%97%A4",
+    "https://name-power.net/fn/%E9%81%A0%E8%97%A4.html"
+  ]
+}

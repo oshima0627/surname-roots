@@ -1,0 +1,35 @@
+{
+  "slug": "yamaguchi",
+  "kanji": "山口",
+  "readings": ["やまぐち", "やまくち"],
+  "rankNational": 14,
+  "populationEstimate": "約63万人",
+  "origin": "山口という名字は、山のふもとが平地へ開ける出入り口の地形を指す「山の口」に由来するとされる地形由来の地名姓である。同名の地名は全国各地に見られたため単一の一族に発するものではなく、武蔵の村山党一族、常陸牛久藩主となった大内氏庶流、相模の三浦氏一族、信濃を本拠とした清和源氏赤井氏庶流など、出自の異なる山口氏が各地でそれぞれ名乗ったとされる。中でも周防国（現在の山口県）を本拠とした大内氏ゆかりの系統がよく知られ、常陸牛久藩主家の家紋にも大内氏との関わりをうかがわせるものが伝わる。地名としての「山口」は西日本、とりわけ九州に多く見られたとの指摘もあり、現在も佐賀県・長崎県で山口姓が最も多い名字となっていることと関連づけて語られる。諸説あり、単一の起源に定まってはいない。",
+  "originRegion": "山のふもとの出入り口を意味する地形に由来する地名姓とされる（諸説あり）",
+  "regionDistribution": {
+    "多い": ["佐賀", "長崎", "大阪", "福岡"],
+    "やや多い": ["東京", "神奈川", "愛知", "千葉", "鹿児島", "兵庫", "埼玉", "北海道"]
+  },
+  "kamon": [
+    { "name": "山口笹紋", "description": "笹の葉9枚の中に向かい合う雀2羽を描いた上杉笹の一種。常陸牛久藩主となった大内氏庶流・山口氏の家紋として伝わる。" },
+    { "name": "山口撫子紋", "description": "唐撫子を裏側から見たように描く紋。信濃を本拠とした清和源氏赤井氏庶流・山口氏の家紋であることから、この名で呼ばれる。" }
+  ],
+  "famousPeople": [
+    { "name": "山口百恵", "note": "昭和を代表するアイドル歌手・女優。1980年に21歳で芸能界を電撃引退したことで知られる。" },
+    { "name": "山口那津男", "note": "公明党代表を2009〜2024年に務めた政治家。参議院議員を4期務めた。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/山口氏",
+    "https://ja.wikipedia.org/wiki/山口",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=山口",
+    "https://name-power.net/fn/山口.html",
+    "https://myoji-yurai.net/myojiPrefectureRanking.htm?myojiKanji=山口",
+    "https://hakko-daiodo.com/kamon-c/cate5/hishi/hishi76.html",
+    "https://irohakamon.com/kamon/nadeshiko/yamaguchinadeshiko.html",
+    "https://irohakamon.com/kamon/sasa/yamaguchizasa.html",
+    "https://ja.wikipedia.org/wiki/山口百恵",
+    "https://ja.wikipedia.org/wiki/山口那津男",
+    "https://nlab.itmedia.co.jp/research/articles/2819058/"
+  ]
+}

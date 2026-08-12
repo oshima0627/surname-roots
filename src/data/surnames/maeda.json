@@ -1,0 +1,30 @@
+{
+  "slug": "maeda",
+  "kanji": "前田",
+  "readings": ["まえだ", "まえた"],
+  "rankNational": 31,
+  "populationEstimate": "約37万人",
+  "origin": "「前田」は「前の田（家や社寺の前にある田）」を意味する地形由来の名字で、全国各地に同名の地名があったため、発祥地は一つに定まらない。美濃国安八郡前田村（現在の岐阜県）を発祥とする系統や、尾張国愛知郡荒子（現在の名古屋市）から身を起こした前田利家の一族が特に知られ、利家は豊臣秀吉に仕えて加賀百万石の基礎を築いた。加賀藩主前田家は菅原道真の子孫を称したが、これは後世に権威づけのために唱えられた説とみられ、利家の父の代より前の系譜ははっきりしない。ほかにも岐阜・京都・秋田・三重など各地の前田という地名にちなんで名乗った家が多数あり、単一の起源に定まってはいない。",
+  "originRegion": "「前の田」という地形に由来する地名姓。美濃・尾張など各地の前田という地名から複数系統が起こったとされる",
+  "regionDistribution": { "多い": ["大阪", "兵庫"], "やや多い": ["愛知"] },
+  "kamon": [
+    {
+      "name": "剣梅鉢（加賀梅鉢）",
+      "description": "梅鉢紋に剣をあしらった意匠。加賀藩主前田家が用いたことで知られ、祖と称した菅原道真ゆかりの梅にちなむと伝わるが、その系譜自体は後世の権威づけとみる見方もある。"
+    }
+  ],
+  "famousPeople": [
+    { "name": "前田利家", "note": "戦国時代から江戸時代初期の武将。豊臣政権の五大老の一人となり、加賀藩百万石の基礎を築いた。" },
+    { "name": "前田敦子", "note": "女優・歌手。アイドルグループAKB48の元センターとして活動し、卒業後は映画や舞台で活躍している。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/前田氏",
+    "https://ja.wikipedia.org/wiki/前田利家",
+    "https://ja.wikipedia.org/wiki/前田敦子",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%89%8D%E7%94%B0",
+    "https://name-power.net/fn/%E5%89%8D%E7%94%B0.html",
+    "https://sengoku-g.net/crests/view/11",
+    "https://hakko-daiodo.com/kamon-c/cate1/ume/ume25.html"
+  ]
+}

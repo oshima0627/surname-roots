@@ -1,0 +1,21 @@
+{
+  "slug": "kondo",
+  "kanji": "近藤",
+  "readings": ["こんどう"],
+  "rankNational": 36,
+  "populationEstimate": "約36万人",
+  "origin": "藤原秀郷の子孫にあたる人物が近江国の掾（役人）を務め、任国の「近江」から「近」の字を取って藤原の「藤」と組み合わせ、近藤と名乗ったのが始まりとされる。近江国（現在の滋賀県）を発祥地とし、平安時代末期から武士として各地に広がった。系統としては藤原秀郷流が最も知られるが、藤原利仁流や、院の警護にあたった北面武士の系統、鹿ケ谷の陰謀に連座した西光（藤原師光）の系統など複数の流れが伝わる。江戸時代末期には新選組局長の近藤勇を輩出した多摩地方の近藤家も知られる。愛知県で人口比が高い。諸説あり、単一の系譜に定まってはいない。",
+  "originRegion": "近江国（滋賀県）の「近」と藤原氏の「藤」を組み合わせたとされる氏族姓",
+  "regionDistribution": { "多い": ["愛知"], "やや多い": ["東京", "神奈川"] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "近藤勇", "note": "幕末の剣客。新選組局長として京都の治安維持にあたり、戊辰戦争中の1868年に処刑された。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/近藤氏",
+    "https://ja.wikipedia.org/wiki/近藤勇",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E8%BF%91%E8%97%A4",
+    "https://name-power.net/fn/%E8%BF%91%E8%97%A4.html"
+  ]
+}

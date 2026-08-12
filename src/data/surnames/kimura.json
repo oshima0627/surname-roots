@@ -1,0 +1,32 @@
+{
+  "slug": "kimura",
+  "kanji": "木村",
+  "readings": ["きむら"],
+  "rankNational": 17,
+  "populationEstimate": "約57万人",
+  "origin": "木村という名字は「木」と「村」を組み合わせた地形由来の名字で、樹木の茂る村を指す名称に由来するというのが有力な説である。発祥地には諸説あり、近江国（現在の滋賀県）を起源として宇多源氏佐々木氏の一族が名乗ったとする説では、大坂の陣で豊臣秀頼に仕えて戦死した木村重成を輩出したと伝わる。これとは別に、下野国（現在の栃木県）を発祥とし藤原秀郷の子孫にあたる足利氏の一族が称したとする説や、古代豪族の紀氏の系統に由来するとの説も伝わっており、単一の起源には定まっていない。全国的に広く分布し特定地域への偏りは比較的小さいとされるが、都道府県内の人口比率でみると青森県で際立って高い割合を示している。",
+  "originRegion": "地形由来（木＋村）とされ、近江国の佐々木氏流や下野国の藤原氏流など複数の発祥説がある",
+  "regionDistribution": { "多い": ["青森"], "やや多い": ["滋賀", "京都", "茨城"] },
+  "kamon": [
+    { "name": "四つ目菱", "description": "戦国武将・木村重成（豊臣秀頼の家臣、大坂の陣で戦死）が用いたと伝わる紋。近江国発祥とされる佐々木氏流木村氏に伝わる家紋の一つとされる。" }
+  ],
+  "famousPeople": [
+    { "name": "木村重成", "note": "安土桃山時代の武将。豊臣秀頼の重臣で、大坂夏の陣の若江の戦いで戦死した。" },
+    { "name": "木村拓哉", "note": "俳優・歌手。アイドルグループSMAPの元メンバーで、ドラマ・映画の主演を多数務める。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/木村氏",
+    "https://ja.wikipedia.org/wiki/木村",
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=木村",
+    "https://myoji-yurai.net/myojiPrefectureRanking.htm?myojiKanji=木村",
+    "https://name-power.net/fn/木村.html",
+    "https://www.kateigaho.com/culture/hobby/177411",
+    "https://tabi-mag.jp/kimura/",
+    "https://irohakamon.com/kamon/meyui/yotsumebishi.html",
+    "https://www.kakeisi.com/roots/myoji_inoue.html",
+    "https://kisetsumimiyori.com/kimura/",
+    "https://ja.wikipedia.org/wiki/木村重成",
+    "https://ja.wikipedia.org/wiki/木村拓哉"
+  ]
+}
