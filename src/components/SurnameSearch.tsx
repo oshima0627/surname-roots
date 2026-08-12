@@ -17,6 +17,7 @@ export function SurnameSearch({ entries }: { entries: SearchTarget[] }) {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="苗字を入力（例: 佐藤 / さとう）"
+        aria-label="苗字を検索"
         className="w-full rounded-lg border border-stone-300 bg-white px-4 py-3 text-lg outline-none focus:border-amber-700"
       />
 
