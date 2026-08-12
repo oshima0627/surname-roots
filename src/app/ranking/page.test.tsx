@@ -40,6 +40,15 @@ describe("RankingPage (全国ランキング)", () => {
     }
   });
 
+  it("順位の典拠と参照元による違いを明示する注記を出す", () => {
+    render(<RankingPage />);
+    expect(
+      screen.getByText(
+        "順位は名字由来netの集計に基づく参考値です。他の資料では順位が異なることがあります。",
+      ),
+    ).toBeTruthy();
+  });
+
   it("行が全国順位の昇順で並ぶ", () => {
     render(<RankingPage />);
     const all = getAllSurnames();

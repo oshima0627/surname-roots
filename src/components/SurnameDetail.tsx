@@ -26,6 +26,11 @@ export function SurnameDetail({ entry }: { entry: SurnameEntry }) {
             {entry.populationEstimate !== "" && <span>{entry.populationEstimate}</span>}
           </p>
         )}
+        {entry.rankNational !== null && (
+          <p className="mt-1 text-sm text-stone-600">
+            出典: 名字由来net。順位は参照元によって異なることがあります。
+          </p>
+        )}
       </header>
 
       <Section title="由来">

@@ -66,6 +66,18 @@ describe("SurnameDetail", () => {
     expect(screen.queryByText(/全国.*位/)).toBeNull();
   });
 
+  it("順位を出すときは出典と参照元による違いを明示する", () => {
+    render(<SurnameDetail entry={entry} />);
+    expect(
+      screen.getByText("出典: 名字由来net。順位は参照元によって異なることがあります。"),
+    ).toBeTruthy();
+  });
+
+  it("順位が不明なら出典の注記も出さない", () => {
+    render(<SurnameDetail entry={{ ...entry, rankNational: null }} />);
+    expect(screen.queryByText(/名字由来net/)).toBeNull();
+  });
+
   it("裏取り用の sources を画面に出さない", () => {
     render(<SurnameDetail entry={entry} />);
     expect(screen.queryByText(/example\.com/)).toBeNull();

@@ -13,7 +13,9 @@ export default function RankingPage() {
   return (
     <div>
       <h1 className="text-2xl font-bold">全国ランキング</h1>
-      <p className="mt-2 text-sm text-stone-600">順位は概略です。</p>
+      <p className="mt-2 text-sm text-stone-600">
+        順位は名字由来netの集計に基づく参考値です。他の資料では順位が異なることがあります。
+      </p>
 
       <table className="mt-6 w-full border-collapse bg-white text-left">
         <caption className="sr-only">全国順位順の苗字一覧</caption>
