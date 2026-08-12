@@ -1,0 +1,22 @@
+{
+  "slug": "sugiyama",
+  "kanji": "杉山",
+  "readings": ["すぎやま"],
+  "rankNational": 79,
+  "populationEstimate": "約20万人",
+  "origin": "「杉山」は杉の木が生い茂る山を意味する地形由来の名字とされる。同名の地名が三河国渥美郡（現在の愛知県東部）や伊豆国（現在の静岡県東部）など各地にあったため、独立に複数箇所で発祥したと考えられている。三河の杉山村を発祥とし藤原氏（中臣鎌足）に連なるとされる系統のほか、伊豆の杉山では源頼朝にゆかりがあるとの伝承も残る。伊賀国の下柘植氏から分かれた系統も伝わっており、武蔵・下野など東国にも古くから広がっていた。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "杉の生い茂る山を意味する地形、各地の杉山という地名から独立に発祥したとされる",
+  "regionDistribution": { "多い": ["静岡", "神奈川", "愛知"], "やや多い": [] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "杉山愛", "note": "元プロテニス選手。2000年にダブルスで世界ランキング1位となり、グランドスラムのダブルスで4度優勝した。" },
+    { "name": "杉山清貴", "note": "シンガーソングライター。1985年発表の「ふたりの夏物語 -NEVER ENDING SUMMER-」などがヒットした。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9D%89%E5%B1%B1",
+    "https://name-power.net/fn/%E6%9D%89%E5%B1%B1.html",
+    "https://ja.wikipedia.org/wiki/杉山愛",
+    "https://ja.wikipedia.org/wiki/杉山清貴"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "murata",
+  "kanji": "村田",
+  "readings": ["むらた", "むらだ"],
+  "rankNational": 81,
+  "populationEstimate": "約20万人",
+  "origin": "「村田」は「村」と「田」を組み合わせた地形由来の名字で、村にある田や、田の広がる集落を意味するとされる。同名の地名が茨城・佐賀・上野（群馬）・新潟・千葉・陸奥（宮城）など全国各地にあったため、独立に複数箇所で発祥したと考えられている。地名を名字としたのちに、清和源氏や宇多源氏、藤原氏、橘氏など出自の異なる氏族の一部がこの地に住んで村田を称した例も伝わっており、平安時代から戦国時代にかけて各地で記録が残る。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "村にある田を意味する地形、各地の村田という地名から独立に発祥したとされる",
+  "regionDistribution": { "多い": ["東京", "大阪", "神奈川"], "やや多い": [] },
+  "kamon": [],
+  "famousPeople": [
+    { "name": "村田諒太", "note": "元プロボクサー。2012年ロンドンオリンピック・ミドル級金メダリストで、2017年にWBA世界ミドル級王座を獲得した。" },
+    { "name": "村田沙耶香", "note": "小説家。2016年発表の「コンビニ人間」で芥川龍之介賞を受賞した。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9D%91%E7%94%B0",
+    "https://name-power.net/fn/%E6%9D%91%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/村田諒太",
+    "https://ja.wikipedia.org/wiki/村田沙耶香"
+  ]
+}
