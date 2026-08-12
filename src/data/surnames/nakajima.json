@@ -1,0 +1,23 @@
+{
+  "slug": "nakajima",
+  "kanji": "中島",
+  "readings": ["なかじま", "なかしま"],
+  "rankNational": 28,
+  "populationEstimate": "約39万人",
+  "origin": "「中島」は水中や周囲より高くなった中央の土地を意味する地形由来の名字で、同名の地名が全国に300か所以上あったとされ、各地で独立に発祥したと考えられている。有力な系統の一つに、尾張国中島郡（現在の愛知県）を発祥とする一族があり、清和源氏や藤原氏の流れをくむとする系統も伝わる。読みは東日本で「なかじま」、西日本で「なかしま」と使われる傾向があり、清音の「なかしま」から時代とともに濁音の「なかじま」に変化した家系もあるとされる。諸説あり、単一の起源には定まっていない。",
+  "originRegion": "水中や周囲より高い「中島」という地形、尾張国中島郡など各地の地名から独立に発祥したとされる",
+  "regionDistribution": { "多い": ["東京", "埼玉", "愛知", "福岡"], "やや多い": [] },
+  "kamon": [{ "name": "筌", "description": "魚を捕らえる仕掛け（うけ）をかたどった中島氏の一系統に伝わる家紋。" }],
+  "famousPeople": [
+    { "name": "中島みゆき", "note": "シンガーソングライター。オリコン週間シングルチャートで4つの異なる年代に1位を獲得した唯一のソロアーティスト。" },
+    { "name": "中島敦", "note": "小説家。代表作『山月記』は高校国語教科書の定番教材として広く読まれている。" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/人数の多い日本の苗字一覧",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%B8%AD%E5%B3%B6",
+    "https://name-power.net/fn/%E4%B8%AD%E5%B3%B6.html",
+    "https://ja.wikipedia.org/wiki/中島氏",
+    "https://ja.wikipedia.org/wiki/中島みゆき",
+    "https://ja.wikipedia.org/wiki/中島敦"
+  ]
+}
