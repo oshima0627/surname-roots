@@ -54,7 +54,7 @@ export const surnameEntrySchema = z.object({
   ),
   famousPeople: z.array(z.object({ name: z.string().min(1), note: z.string().min(1) })),
   /**
-   * 裏取りに使ったURL。画面には出さない。
+   * 裏取りに使ったURL。詳細ページに「参考資料」として公開表示される。
    * zod のバージョン間で `z.string().url()` の扱いが変わるため、正規表現で判定する
    */
   sources: z.array(z.string().regex(/^https?:\/\//)).min(1),
