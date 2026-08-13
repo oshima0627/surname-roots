@@ -59,6 +59,11 @@ function KamonSvg({
  * トレードオフであり、隠さず素直にそのまま出す。
  * `<img>` は静的エクスポート（next.config.ts の output: "export"）でも
  * そのまま `public/` 配下を指せるため、ビルド時読み込みなしで扱える。
+ *
+ * SVGパス（loadKamonSvg）は readFileSync がファイル欠落時に自動で例外を投げるが、
+ * `<img src>` はブラウザ側の参照でしかなく、存在しないファイルを指しても
+ * ビルドは通ってしまい、本番で壊れた画像アイコンになるだけで気づけない。
+ * SVGパスと同じ強さの検知にするため、ここで明示的に存在確認する。
  */
 function KamonImg({
   file,
@@ -69,6 +74,9 @@ function KamonImg({
   size: number;
   className: string;
 }) {
+  if (!fs.existsSync(path.join(KAMON_DIR, file))) {
+    throw new Error(`家紋画像ファイルが見つかりません: public/kamon/${file}`);
+  }
   return (
     <img
       src={`/kamon/${file}`}
@@ -86,6 +94,16 @@ function KamonImg({
  * SVG専用のまま拡張せず、ファイル名の拡張子に見た目の描画方式の判断を委ねる
  * （出典情報を必須にするスキーマ制約は形式に関わらずそのまま適用されるため、
  * この振り分けは表示方法だけの話で、出典の必須性には影響しない）。
+ *
+ * 対応拡張子（svg/png）以外は明示的に例外を投げる。スキーマ側
+ * （src/lib/schema.ts の file の正規表現）でも同じ拡張子制限をかけているが、
+ * ここでも同じ判定を行うのは、この関数がスキーマを経由しない呼び出し
+ * （テストや将来の別経路）でも安全側に倒れるようにするため。
+ * 「.pngでなければSVGとして扱う」という以前の実装だと、typoや将来の
+ * .webp/.jpg等がSVG側の readFileSync(..., "utf-8") に渡り、バイナリを
+ * 文字列として読んで dangerouslySetInnerHTML に流し込んでしまう
+ * （例外を投げずに文字化けをそのまま描画する）ため、拡張子を列挙して
+ * 一致しないものは投げる形にしている。
  */
 export function Kamon({
   file,
@@ -96,8 +114,12 @@ export function Kamon({
   size: number;
   className?: string;
 }) {
-  if (file.toLowerCase().endsWith(".png")) {
+  const lower = file.toLowerCase();
+  if (lower.endsWith(".svg")) {
+    return <KamonSvg file={file} size={size} className={className} />;
+  }
+  if (lower.endsWith(".png")) {
     return <KamonImg file={file} size={size} className={className} />;
   }
-  return <KamonSvg file={file} size={size} className={className} />;
+  throw new Error(`対応していない家紋ファイル形式です（svg/pngのみ対応）: ${file}`);
 }

@@ -48,7 +48,16 @@ export const surnameEntrySchema = z.object({
        */
       svg: z
         .object({
-          file: z.string().min(1),
+          /**
+           * 表示側（Kamon.tsx）は拡張子でSVG/PNGの描画方式を振り分けるため、
+           * 対応していない拡張子（typoや将来のwebp/jpgなど）がデータに混入すると
+           * 意図しない描画（バイナリをSVGとして読んでUTF-8展開する等）につながる。
+           * データ読み込み時点（ビルド・テストの両方）で弾けるよう、ここで拡張子を
+           * svg/pngのみに制限する。
+           */
+          file: z.string().min(1).regex(/\.(svg|png)$/i, {
+            message: "対応していない拡張子（svg/pngのみ許可）",
+          }),
           license: z.string().min(1),
           author: z.string().min(1),
           sourceUrl: z.string().regex(/^https?:\/\//),

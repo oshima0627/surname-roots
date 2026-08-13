@@ -60,5 +60,34 @@ describe("Kamon", () => {
       expect(container.querySelector("img")).not.toBeNull();
       expect(container.querySelector("svg")).toBeNull();
     });
+
+    it("存在しないPNGファイルを指定すると例外を投げる（<img>はブラウザ側の参照でしかなく" +
+      "readFileSyncのように自動では失敗しないため、明示的な存在確認が必要）", () => {
+      expect(() => render(<Kamon file="nonexistent.png" size={64} />)).toThrow(
+        /家紋画像ファイルが見つかりません/,
+      );
+    });
+
+    it("拡張子の大文字小文字が違っても、存在確認はPNGパスに入る（SVGの読み込みにフォールバックしない）", () => {
+      // 実ファイルは小文字（nadeshiko.png）のため大文字拡張子の指定自体は存在しないファイル扱いになるが、
+      // エラーメッセージがPNGパス側のものであることから、SVGパスに落ちていないと確認できる。
+      expect(() => render(<Kamon file="nonexistent.PNG" size={64} />)).toThrow(
+        /家紋画像ファイルが見つかりません/,
+      );
+    });
+  });
+
+  describe("対応していない拡張子", () => {
+    it("svg/png以外の拡張子を指定すると例外を投げる（バイナリをSVGとして誤読し、文字化けをそのまま表示することを防ぐ）", () => {
+      expect(() => render(<Kamon file="nadeshiko.jpg" size={64} />)).toThrow(
+        /対応していない家紋ファイル形式です/,
+      );
+    });
+
+    it("拡張子が無いファイル名でも例外を投げる", () => {
+      expect(() => render(<Kamon file="nadeshiko" size={64} />)).toThrow(
+        /対応していない家紋ファイル形式です/,
+      );
+    });
   });
 });

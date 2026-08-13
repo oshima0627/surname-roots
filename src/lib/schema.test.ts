@@ -134,4 +134,20 @@ describe("家紋のライセンス情報", () => {
     };
     expect(() => surnameEntrySchema.parse(broken)).toThrow();
   });
+
+  it("file の拡張子がsvg/png以外だと弾く（表示側はこの2形式しか振り分けられないため）", () => {
+    const broken = {
+      ...valid,
+      kamon: [{ ...kamonWithSvg, svg: { ...kamonWithSvg.svg, file: "kaga-umebachi.jpg" } }],
+    };
+    expect(() => surnameEntrySchema.parse(broken)).toThrow();
+  });
+
+  it("file に拡張子が無いと弾く", () => {
+    const broken = {
+      ...valid,
+      kamon: [{ ...kamonWithSvg, svg: { ...kamonWithSvg.svg, file: "kaga-umebachi" } }],
+    };
+    expect(() => surnameEntrySchema.parse(broken)).toThrow();
+  });
 });
