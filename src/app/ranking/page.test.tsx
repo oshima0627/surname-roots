@@ -11,9 +11,13 @@ import { getAllSurnames } from "@/lib/surnames";
  * 構造的に破綻する。ここでは名前（テキスト）でリンクを一意に
  * 特定するのではなく、一意性が保証されている href（/myoji/<slug>）で
  * 要素を特定し、そのうえで表示テキストを検証する。
+ *
+ * `getAllByRole("link")` はツリー全体を舐めてアクセシブルロールを
+ * 計算し直す高コストな呼び出しなので、苗字ごとのループの中で毎回
+ * 呼ぶと O(n^2) になる（100件で約100回のフルスキャン）。
+ * 呼び出し側で一度だけ取得したリストを受け取り、href で引くだけにする。
  */
-function findLinkBySlug(slug: string) {
-  const links = screen.getAllByRole("link");
+function findLinkBySlug(links: HTMLElement[], slug: string) {
   return links.find((link) => link.getAttribute("href") === `/myoji/${slug}`);
 }
 
@@ -32,8 +36,9 @@ describe("RankingPage (全国ランキング)", () => {
   it("各苗字が自身の詳細ページへリンクする", () => {
     render(<RankingPage />);
     const all = getAllSurnames();
+    const links = screen.getAllByRole("link");
     for (const entry of all) {
-      const link = findLinkBySlug(entry.slug);
+      const link = findLinkBySlug(links, entry.slug);
       expect(link, `${entry.slug} へのリンクが見つからない`).toBeTruthy();
       expect(link).toHaveAttribute("href", `/myoji/${entry.slug}`);
       expect(link).toHaveTextContent(entry.kanji);
