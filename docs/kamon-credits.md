@@ -61,11 +61,22 @@ sagari-fuji, kaga-umebachi, katabami, genji-guruma, umebachi, watanabe-boshi）�
 
 全22ファイルに共通して行った作業:
 
-- Inkscape/Illustrator が埋め込むコメント・`<metadata>`（RDF/Dublin Core）ブロック・
-  `sodipodi:`/`inkscape:` 属性や要素、未使用のDTDエンティティ宣言を削除
+- Inkscape/Illustrator が埋め込むコメント、未使用のDTDエンティティ宣言を削除
 - ルート`<svg>`から`width`/`height`属性を削除し、元になければ`viewBox`を追加
   （表示側でサイズを制御できるようにするため）
 - 塗り色（`fill`）をすべて`currentColor`に変更し、サイトの地色（藍）に追従するようにした
+
+**`<metadata>`（RDF/Dublin Core）ブロックと`sodipodi:`/`inkscape:` 属性・要素は、
+上記の作業では削除していない。** 実際に確認したところ、22ファイル中9ファイル
+（`chigai-takanoha`, `futatsu-karigane`, `hidari-mitsudomoe`, `janome`,
+`maru-ni-mitsubiki`, `maru-ni-mokko`, `mokko`, `sumitate-yotsume`, `yotsume-yui`）
+には現在も`<metadata><rdf:RDF>`ブロックが残っている。そのうち2ファイル
+（`hidari-mitsudomoe`, `yotsume-yui`）にはInkscapeの`namedview`要素も残っている
+（`sodipodi:`/`inkscape:` という名前空間プレフィックス文字列は`ns1:`/`ns2:`に
+置き換わっているが、参照先の名前空間URI自体はsodipodi/inkscapeのままで、要素の
+実体は変わっていない）。これらは編集ツールが残した非表示のメタデータ・エディタ設定
+（グリッド・ズーム倍率・レイヤー名など）であり、著作権表示やライセンス表示を含む
+ものではないため、ライセンス遵守上の問題はない。
 
 このうち12ファイル（`bizen-cho`, `futatsu-karigane`, `genji-guruma`, `gosan-no-kiri`,
 `janome`, `kaga-umebachi`, `katabami`, `maru-ni-mitsubiki`, `mokko`, `sagari-fuji`,

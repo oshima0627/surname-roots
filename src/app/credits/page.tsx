@@ -1,4 +1,10 @@
+import path from "node:path";
 import type { Metadata } from "next";
+// fontkit の dist/module.mjs は default export を持たず openSync 等を名前付きで
+// export しているため、default import ではなく namespace import を使う
+// （scripts/build-font.mjs, scripts/font-coverage.test.mjs と同じ理由）。
+import * as fontkit from "fontkit";
+import type { Font } from "fontkit";
 import { Kamon } from "@/components/Kamon";
 import { getAllSurnames } from "@/lib/surnames";
 import type { SurnameEntry } from "@/lib/schema";
@@ -10,6 +16,43 @@ export const metadata: Metadata = {
 
 type KamonSvg = NonNullable<SurnameEntry["kamon"][number]["svg"]>;
 type KamonCredit = KamonSvg & { name: string; surnames: string[] };
+
+/**
+ * `src/data/surnames/*.json` の `kamon[].svg.license` に現れる文字列から、
+ * ライセンス文（CC BY-SA 3.0）の実際のURLへの厳密なマップ。
+ *
+ * CC BY-SA 3.0 §4(a) は「配布する各コピーにライセンス文（またはそのURI）を
+ * 添付すること」を求めている。データには表記ゆれが3種類あるが、Commonsの
+ * ファイルページを確認した限りいずれも実際に選べるバージョンは3.0のみ
+ * （docs/kamon-credits.md の[注1][注2]参照）なので、リンク先は同一でよい。
+ * "Public domain" はライセンス文が存在しないためリンクしない。
+ *
+ * ゆるいパターンマッチ（"CC BY-SA" を含むかどうか等）ではなく文字列の完全一致で
+ * 引くのは、間違ったライセンスへのリンクはリンク無しより有害なため。
+ * 未知の文字列は意図的にリンクなし（安全側）で扱う。
+ */
+const CC_BY_SA_3_0_URL = "https://creativecommons.org/licenses/by-sa/3.0/";
+const KAMON_LICENSE_URLS: Record<string, string> = {
+  "CC BY-SA 3.0": CC_BY_SA_3_0_URL,
+  "CC BY-SA 3.0 / GFDL 1.2+": CC_BY_SA_3_0_URL,
+  "CC BY-SA 3.0 (also GFDL 1.2+)": CC_BY_SA_3_0_URL,
+};
+
+const OFL_URL = "/fonts/OFL.txt";
+
+/**
+ * 配布しているサブセットフォントの著作権表示を、フォント本体（vendor/fonts/NotoSerifJP.ttf）
+ * の name テーブルから直接読み取る。scripts/build-font.mjs が public/fonts/OFL.txt へ
+ * 書き出す表記と同じ変換（"(c)" → "Copyright"）をここでも行い、常に一致させる。
+ * public/fonts/ はgitignore対象で `npm test` 単体では生成されないため、そちらではなく
+ * リポジトリに入っている vendor/fonts/NotoSerifJP.ttf を直接読む。
+ */
+function getFontCopyright(): string {
+  // vendor/fonts/NotoSerifJP.ttf は単体の .ttf であり .ttc コレクションではないため、
+  // 常に Font（FontCollection ではない）が返る。
+  const font = fontkit.openSync(path.join(process.cwd(), "vendor/fonts/NotoSerifJP.ttf")) as Font;
+  return font.copyright.replace(/^\(c\)/, "Copyright");
+}
 
 /**
  * 家紋SVGのファイル単位でクレジットをまとめる。
@@ -34,6 +77,7 @@ function getKamonCredits(): KamonCredit[] {
 
 export default function CreditsPage() {
   const credits = getKamonCredits();
+  const fontCopyright = getFontCopyright();
 
   return (
     <div>
@@ -65,7 +109,15 @@ export default function CreditsPage() {
               <dt className="text-sumi-muted">作者</dt>
               <dd>{c.author}</dd>
               <dt className="text-sumi-muted">ライセンス</dt>
-              <dd>{c.license}</dd>
+              <dd>
+                {KAMON_LICENSE_URLS[c.license] ? (
+                  <a href={KAMON_LICENSE_URLS[c.license]} className="underline">
+                    {c.license}
+                  </a>
+                ) : (
+                  c.license
+                )}
+              </dd>
               <dt className="text-sumi-muted">出典</dt>
               <dd>
                 <a href={c.sourceUrl} className="underline break-all">
@@ -78,6 +130,22 @@ export default function CreditsPage() {
           </li>
         ))}
       </ul>
+
+      <section className="mt-10 border-t border-keisen pt-8">
+        <h2 className="text-lg font-bold">使用フォント</h2>
+        <dl className="mt-4 grid grid-cols-[5.5em_1fr] gap-x-4 gap-y-1 text-sm">
+          <dt className="text-sumi-muted">フォント名</dt>
+          <dd>Noto Serif JP（本文の明朝体として、表示に必要な文字だけを抜き出したサブセット版を配信）</dd>
+          <dt className="text-sumi-muted">著作権者</dt>
+          <dd>{fontCopyright}</dd>
+          <dt className="text-sumi-muted">ライセンス</dt>
+          <dd>
+            <a href={OFL_URL} className="underline">
+              SIL Open Font License, Version 1.1（OFL.txt）
+            </a>
+          </dd>
+        </dl>
+      </section>
     </div>
   );
 }

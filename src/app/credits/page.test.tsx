@@ -42,6 +42,54 @@ describe("クレジットページ", () => {
 
   it("家紋の意匠自体は著作権が切れていること、SVGには作者の著作権があることを説明する", () => {
     render(<CreditsPage />);
-    expect(screen.getByText(/著作権/)).toBeTruthy();
+    expect(screen.getAllByText(/著作権/).length).toBeGreaterThan(0);
+  });
+
+  it("CC BY-SAのライセンス表記はすべてライセンス文へのリンクになっている（Public domainはリンクなし）", () => {
+    render(<CreditsPage />);
+
+    const byFile = new Map<string, string>();
+    for (const entry of getAllSurnames()) {
+      for (const k of entry.kamon) {
+        if (!k.svg) continue;
+        byFile.set(k.svg.file, k.svg.license);
+      }
+    }
+    const licenses = [...byFile.values()];
+    expect(licenses.length).toBeGreaterThan(0);
+
+    const ccLicenses = licenses.filter((l) => l.startsWith("CC BY-SA"));
+    expect(ccLicenses.length).toBeGreaterThan(0);
+    // Public domain のファイルが実在することを前提に確認する（そうでなければ
+    // 後半の「リンクなし」検証が意味を持たない）
+    expect(licenses).toContain("Public domain");
+
+    for (const license of new Set(ccLicenses)) {
+      const matches = screen.getAllByText(license);
+      const linked = matches.filter((el) => el.tagName === "A");
+      expect(linked.length).toBeGreaterThan(0);
+      for (const link of linked) {
+        expect(link.getAttribute("href")).toBe("https://creativecommons.org/licenses/by-sa/3.0/");
+      }
+    }
+
+    // "Public domain" はライセンス文が存在しないためリンク化されていないこと
+    const publicDomainMatches = screen.getAllByText("Public domain");
+    expect(publicDomainMatches.length).toBeGreaterThan(0);
+    for (const el of publicDomainMatches) {
+      expect(el.tagName).not.toBe("A");
+    }
+  });
+
+  it("使用フォント（Noto Serif JP）の著作権者・ライセンス・サブセットである旨を説明し、OFLライセンス文にリンクする", () => {
+    render(<CreditsPage />);
+    expect(screen.getByText("使用フォント")).toBeTruthy();
+    expect(screen.getByText(/Noto Serif JP/)).toBeTruthy();
+    expect(screen.getByText(/サブセット/)).toBeTruthy();
+    expect(screen.getByText(/Adobe/)).toBeTruthy();
+
+    const oflLink = screen.getByText(/OFL\.txt/);
+    expect(oflLink.tagName).toBe("A");
+    expect(oflLink.getAttribute("href")).toBe("/fonts/OFL.txt");
   });
 });

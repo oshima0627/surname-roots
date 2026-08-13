@@ -8,8 +8,8 @@
     "lint": "eslint",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "deploy": "next build && wrangler deploy",
-    "preview": "next build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev",
     "font:glyphs": "node scripts/write-glyphs.mjs",
     "font:build": "npm run font:glyphs && node scripts/build-font.mjs",
     "font:verify": "vitest run --config vitest.font.config.mts"
