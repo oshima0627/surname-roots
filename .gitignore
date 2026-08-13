@@ -46,3 +46,7 @@ out/
 
 # 作業用スクラッチ（コミットしない）
 .superpowers/
+
+# フォントの中間生成物
+.glyphs.txt
+public/fonts/
