@@ -1,0 +1,36 @@
+{
+  "slug": "yoneda",
+  "kanji": "米田",
+  "readings": [
+    "よねだ",
+    "こめだ",
+    "まいた"
+  ],
+  "rankNational": 312,
+  "populationEstimate": "約7万人",
+  "origin": "米と田を組み合わせた地名に由来する。石川県珠洲市正院町岡田には、江戸時代に村で最も収穫の多かった家が名乗ったとの伝えがある。奈良県五條市三在町・富山県高岡市醍醐・鳥取県東伯郡北栄町妻波などでは、江戸時代に農業に従事していた家と伝える。読みは「よねだ」のほか「こめだ」「まいた」にも分かれる。奈良県・鳥取県に多い。",
+  "originRegion": "米と田を組み合わせた地名に由来し、読み方が土地によって分かれる",
+  "regionDistribution": {
+    "多い": [
+      "奈良",
+      "鳥取"
+    ],
+    "やや多い": [
+      "富山",
+      "徳島",
+      "石川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "米田雄郎",
+      "note": "歌人。奈良に住み、仏教的な感性による作歌で知られた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%B1%B3%E7%94%B0",
+    "https://name-power.net/fn/%E7%B1%B3%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E7%B1%B3%E7%94%B0%E9%9B%84%E9%83%8E"
+  ]
+}
