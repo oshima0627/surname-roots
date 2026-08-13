@@ -1,0 +1,34 @@
+{
+  "slug": "yamane",
+  "kanji": "山根",
+  "readings": [
+    "やまね"
+  ],
+  "rankNational": 282,
+  "populationEstimate": "約7万人",
+  "origin": "山のふもと、山の裾を意味する地形に由来する。島根県大田市温泉津町には、同地の温泉城の南にあたる山の根に江戸時代に住んで名乗ったと伝える家がある。出雲国大原郡佐世荘の山根から起こった一族も伝わる。分布は山陰・山陽に強く偏り、鳥取県では人口の1.3%を占める。",
+  "originRegion": "山のふもと、山の裾を意味する地形に由来し、山陰・山陽に強く偏る",
+  "regionDistribution": {
+    "多い": [
+      "鳥取",
+      "島根"
+    ],
+    "やや多い": [
+      "山口",
+      "広島",
+      "岡山"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "山根一眞",
+      "note": "ジャーナリスト・ノンフィクション作家。科学技術やものづくりの取材で知られる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B1%B1%E6%A0%B9",
+    "https://name-power.net/fn/%E5%B1%B1%E6%A0%B9.html",
+    "https://ja.wikipedia.org/wiki/%E5%B1%B1%E6%A0%B9%E4%B8%80%E7%9C%9E"
+  ]
+}

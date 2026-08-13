@@ -1,0 +1,35 @@
+{
+  "slug": "honda-ta",
+  "kanji": "本多",
+  "readings": [
+    "ほんだ",
+    "ほんた"
+  ],
+  "rankNational": 284,
+  "populationEstimate": "約7万人",
+  "origin": "「本田」と同じ由来をもつ表記違いとされ、三河（現在の愛知県東部）から起こった。愛知県豊川市伊奈町では1497年の記録があり、同地ではもと本田姓だったと伝える。江戸時代には徳川譜代の大名家として知られ、石川県金沢市本多町の地名は加賀藩士だった本多氏の屋敷にちなむ。長崎県・群馬県に多い。",
+  "originRegion": "「本田」と同じ由来をもつ表記違いとされ、三河から起こった徳川譜代の大名家が知られる",
+  "regionDistribution": {
+    "多い": [
+      "長崎",
+      "群馬"
+    ],
+    "やや多い": [
+      "福島",
+      "愛知",
+      "石川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "本多光太郎",
+      "note": "物理学者・金属工学者。強力磁石鋼「KS鋼」を発明した。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9C%AC%E5%A4%9A",
+    "https://name-power.net/fn/%E6%9C%AC%E5%A4%9A.html",
+    "https://ja.wikipedia.org/wiki/%E6%9C%AC%E5%A4%9A%E5%85%89%E5%A4%AA%E9%83%8E"
+  ]
+}
