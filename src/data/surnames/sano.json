@@ -8,7 +8,7 @@
   "originRegion": "下野国安蘇郡佐野庄（現在の栃木県佐野市）に由来し、藤原秀郷の子孫・佐野氏が本拠としたとされる",
   "regionDistribution": { "多い": ["静岡"], "やや多い": ["東京", "神奈川"] },
   "kamon": [
-    { "name": "三つ巴", "description": "巴を三つ組み合わせた紋で、藤原秀郷流とされる佐野氏の家紋として伝わる。" }
+    { "name": "左三つ巴", "description": "三つの巴を組み合わせた紋で、藤原秀郷流とされる佐野氏の家紋として伝わる。巴紋の回転方向に関しては諸説があり、同じ意匠でも呼称が異なる場合がある。" }
   ],
   "famousPeople": [
     { "name": "佐野元春", "note": "シンガーソングライター。1980年『アンジェリーナ』でデビューし、日本語ロックにラップやヒップホップの要素を取り入れた先駆者とされる。" },
@@ -19,6 +19,7 @@
     "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%BD%90%E9%87%8E",
     "https://ja.wikipedia.org/wiki/佐野氏",
     "https://ja.wikipedia.org/wiki/佐野元春",
-    "https://ja.wikipedia.org/wiki/佐野史郎"
+    "https://ja.wikipedia.org/wiki/佐野史郎",
+    "http://www2.harimaya.com/sengoku/html/sano_k.html"
   ]
 }
