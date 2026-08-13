@@ -5,9 +5,12 @@ export default function SiteFooter() {
     <footer className="mt-20 border-t border-keisen">
       <div className="mx-auto max-w-3xl px-4 py-10 text-sm text-sumi-muted">
         <p>本サイトの解説は諸説あるうちの一説です。</p>
-        <p className="mt-3">
+        <p className="mt-3 space-x-4">
           <Link href="/ranking" className="underline">
             全国ランキング
+          </Link>
+          <Link href="/credits" className="underline">
+            クレジット
           </Link>
         </p>
       </div>

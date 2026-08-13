@@ -1,4 +1,5 @@
 import { JapanMap } from "@/components/JapanMap";
+import { Kamon } from "@/components/Kamon";
 import type { SurnameEntry } from "@/lib/schema";
 
 /**
@@ -40,13 +41,20 @@ function kanjiSizeClass(length: number): string {
 
 export function SurnameDetail({ entry }: { entry: SurnameEntry }) {
   const hasReadingVariations = entry.readings.length > 1;
+  // 見出し横に出す紋は、その苗字で最初にSVGを持つ家紋を使う。
+  // 紋を持たない苗字ではこの要素自体を出さないことで、漢字の左端の位置は
+  // 常にコンテナ左端（flexの先頭要素）に固定され、紋の有無で動かない。
+  const headingKamon = entry.kamon.find((k) => k.svg);
 
   return (
     <article>
       <header className="border-b border-keisen pb-8">
-        <h1 className={`${kanjiSizeClass(entry.kanji.length)} font-bold leading-[1.1]`}>
-          {entry.kanji}
-        </h1>
+        <div className="flex items-center gap-4">
+          <h1 className={`${kanjiSizeClass(entry.kanji.length)} font-bold leading-[1.1]`}>
+            {entry.kanji}
+          </h1>
+          {headingKamon?.svg && <Kamon file={headingKamon.svg.file} size={84} />}
+        </div>
         <p className="mt-6 text-sm tracking-[0.2em] text-sumi-muted">
           {entry.readings.join(" / ")}
         </p>
@@ -82,11 +90,22 @@ export function SurnameDetail({ entry }: { entry: SurnameEntry }) {
 
       {entry.kamon.length > 0 && (
         <Section title="家紋">
-          <ul className="space-y-3">
+          <ul className="divide-y divide-keisen">
             {entry.kamon.map((k) => (
-              <li key={k.name}>
-                <p className="font-bold">{k.name}</p>
-                <p className="text-sumi-muted">{k.description}</p>
+              <li key={k.name} className="flex items-center gap-4 py-4 first:pt-0 last:pb-0">
+                {k.svg ? (
+                  <Kamon file={k.svg.file} size={64} />
+                ) : (
+                  <span
+                    className="flex h-16 w-16 shrink-0 items-center justify-center rounded border border-dashed border-keisen p-1 text-center text-[11px] leading-tight text-sumi-muted"
+                  >
+                    画像なし
+                  </span>
+                )}
+                <div>
+                  <p className="font-bold">{k.name}</p>
+                  <p className="text-sumi-muted">{k.description}</p>
+                </div>
               </li>
             ))}
           </ul>
