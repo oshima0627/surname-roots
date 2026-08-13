@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <h1 className="text-2xl font-bold">苗字のルーツを調べる</h1>
-      <p className="mt-2 text-stone-600">
+      <p className="mt-2 text-sumi-muted">
         漢字でも、ひらがな・カタカナでも探せます。
       </p>
 
@@ -18,16 +18,16 @@ export default function Home() {
       </div>
 
       <section className="mt-12">
-        <h2 className="text-lg font-bold border-l-4 border-amber-700 pl-3">よく調べられる苗字</h2>
+        <h2 className="text-lg font-bold border-l-4 border-ai pl-3">よく調べられる苗字</h2>
         <ul className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {top20.map((entry) => (
             <li key={entry.slug}>
               <Link
                 href={`/myoji/${entry.slug}`}
-                className="block rounded-lg border border-stone-200 bg-white px-3 py-4 text-center hover:border-amber-700"
+                className="block rounded-lg border border-keisen bg-surface px-3 py-4 text-center hover:border-ai"
               >
                 <span className="block font-bold">{entry.kanji}</span>
-                <span className="block text-xs text-stone-500">{entry.readings[0]}</span>
+                <span className="block text-xs text-sumi-muted">{entry.readings[0]}</span>
               </Link>
             </li>
           ))}

@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body className="bg-stone-50 text-stone-900 antialiased">
-        <header className="border-b border-stone-200 bg-white">
+      <body className="bg-washi text-sumi antialiased">
+        <header className="border-b border-keisen bg-surface">
           <div className="mx-auto max-w-3xl px-4 py-4">
             <Link href="/" className="text-lg font-bold tracking-wide">
               苗字ルーツ辞典
