@@ -1,0 +1,36 @@
+{
+  "slug": "tada",
+  "kanji": "多田",
+  "readings": [
+    "ただ",
+    "たた",
+    "おおた"
+  ],
+  "rankNational": 234,
+  "populationEstimate": "約9万人",
+  "origin": "摂津国河辺郡の多田（現在の兵庫県川西市多田院多田所町の多田神社一帯）に由来する。平安時代に記録のある地名で、清和源氏頼光流のいわゆる多田源氏がこの地を本拠とした。千葉県香取市多田も平安時代の記録があり「田多」「太田」とも書いた。新潟県佐渡市多田は「おおた」と読む。香川県・徳島県に多い。",
+  "originRegion": "摂津国河辺郡の多田（兵庫県川西市）に由来し、多田源氏がこの地を本拠とした",
+  "regionDistribution": {
+    "多い": [
+      "香川",
+      "徳島"
+    ],
+    "やや多い": [
+      "岩手",
+      "山形",
+      "福井"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "多田富雄",
+      "note": "免疫学者・文筆家。サプレッサーT細胞の発見で知られる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%A4%9A%E7%94%B0",
+    "https://name-power.net/fn/%E5%A4%9A%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E5%A4%9A%E7%94%B0%E5%AF%8C%E9%9B%84"
+  ]
+}
