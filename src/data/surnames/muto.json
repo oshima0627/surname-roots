@@ -22,9 +22,15 @@
     ]
   },
   "kamon": [],
-  "famousPeople": [],
+  "famousPeople": [
+    {
+      "name": "武藤敬司",
+      "note": "プロレスラー・俳優。山梨県富士吉田市出身で、「グレート・ムタ」としても活躍した。"
+    }
+  ],
   "sources": [
     "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%AD%A6%E8%97%A4",
-    "https://name-power.net/fn/%E6%AD%A6%E8%97%A4.html"
+    "https://name-power.net/fn/%E6%AD%A6%E8%97%A4.html",
+    "https://ja.wikipedia.org/wiki/%E6%AD%A6%E8%97%A4%E6%95%AC%E5%8F%B8"
   ]
 }
