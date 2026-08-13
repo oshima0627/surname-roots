@@ -1,0 +1,35 @@
+{
+  "slug": "inagaki",
+  "kanji": "稲垣",
+  "readings": [
+    "いながき",
+    "いねがき"
+  ],
+  "rankNational": 263,
+  "populationEstimate": "約8万人",
+  "origin": "三重県津市白山町稲垣に由来する。戦国時代に記録のある地名で、伊勢と三河の一帯に稲垣氏がいた。江戸時代には伊勢崎藩・藤井藩・三条藩・烏山藩・大多喜藩・刈谷藩・鳥羽藩などの藩主を務めた家が知られ、清和源氏の流れを称した。分布は愛知県・三重県に集中している。",
+  "originRegion": "伊勢国の稲垣（三重県津市）に由来し、江戸時代には鳥羽藩主などを出した",
+  "regionDistribution": {
+    "多い": [
+      "愛知",
+      "三重"
+    ],
+    "やや多い": [
+      "富山",
+      "和歌山",
+      "岐阜"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "稲垣足穂",
+      "note": "小説家。『一千一秒物語』などで独自の幻想的な作品世界を築いた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%A8%B2%E5%9E%A3",
+    "https://name-power.net/fn/%E7%A8%B2%E5%9E%A3.html",
+    "https://ja.wikipedia.org/wiki/%E7%A8%B2%E5%9E%A3%E8%B6%B3%E7%A9%82"
+  ]
+}

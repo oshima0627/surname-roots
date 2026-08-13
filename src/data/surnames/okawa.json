@@ -1,0 +1,29 @@
+{
+  "slug": "okawa",
+  "kanji": "大川",
+  "readings": [
+    "おおかわ",
+    "おおがわ"
+  ],
+  "rankNational": 267,
+  "populationEstimate": "約8万人",
+  "origin": "大きな川のほとりに住んだことに由来し、各地の「大川」という地名からも発祥した。新潟県村上市を流れる大川の一帯は南北朝時代、岩手県下閉伊郡岩泉町大川は室町時代、青森県弘前市大川と熊本県水俣市大川は江戸時代に記録がある。岩手の大川から出た家は盛岡藩士となった。茨城県・三重県・静岡県に多い。",
+  "originRegion": "大きな川のほとりに住んだことに由来し、全国各地の同名の地から発祥した",
+  "regionDistribution": {
+    "多い": [
+      "茨城",
+      "三重"
+    ],
+    "やや多い": [
+      "静岡",
+      "青森",
+      "香川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%A4%A7%E5%B7%9D",
+    "https://name-power.net/fn/%E5%A4%A7%E5%B7%9D.html"
+  ]
+}
