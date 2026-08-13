@@ -1,0 +1,29 @@
+{
+  "slug": "chida",
+  "kanji": "千田",
+  "readings": [
+    "ちだ",
+    "せんだ"
+  ],
+  "rankNational": 487,
+  "populationEstimate": "約4万人",
+  "origin": "数多くの田を意味する地名に由来する。千葉県香取郡多古町千田と長野県長野市の稲葉上千田・稲葉中千田は平安時代に記録があり、長野のものは「芹田」の表記で「せんだ」と読む。岩手県奥州市江刺には、千葉県館山市西長田の長田（別名千田）城から室町時代に移り住んだと伝える家がある。岩手県に強く集中している。",
+  "originRegion": "数多くの田を意味する地名に由来し、岩手県に強く集中する",
+  "regionDistribution": {
+    "多い": [
+      "岩手",
+      "宮城"
+    ],
+    "やや多い": [
+      "秋田",
+      "石川",
+      "岡山"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%8D%83%E7%94%B0",
+    "https://name-power.net/fn/%E5%8D%83%E7%94%B0.html"
+  ]
+}
