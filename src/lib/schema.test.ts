@@ -32,6 +32,19 @@ describe("surnameEntrySchema", () => {
     expect(() => surnameEntrySchema.parse({ ...valid, origin: "短い" })).toThrow();
   });
 
+  // 下限を無自覚に上げ下げできないよう、境界の両側を固定する。
+  // 101位以降は解説資料が薄く100字を書けない苗字があるため60字に下げた（設計書 2026-08-14）。
+  // 緩和したのは文字数だけであって、「独立2ソースの一致のみ採用」は据え置きである
+  it("origin がちょうど60字なら受け入れる", () => {
+    const origin = "あ".repeat(60);
+    expect(() => surnameEntrySchema.parse({ ...valid, origin })).not.toThrow();
+  });
+
+  it("origin が59字だと弾く", () => {
+    const origin = "あ".repeat(59);
+    expect(() => surnameEntrySchema.parse({ ...valid, origin })).toThrow();
+  });
+
   it("存在しない県名を弾く", () => {
     const broken = { ...valid, regionDistribution: { 多い: ["東京都"], やや多い: [] } };
     expect(() => surnameEntrySchema.parse(broken)).toThrow();
