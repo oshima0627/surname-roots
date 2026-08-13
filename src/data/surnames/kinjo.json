@@ -1,0 +1,36 @@
+{
+  "slug": "kinjo",
+  "kanji": "金城",
+  "readings": [
+    "きんじょう",
+    "かねしろ",
+    "かなぐすく"
+  ],
+  "rankNational": 340,
+  "populationEstimate": "約6万人",
+  "origin": "城（グスク）の美称に由来する。沖縄県那覇市金城と首里金城町は琉球王国時代に記録のある地名で、琉球音は「カナグシク」という。大阪市生野区では「かねしろ」と読むのが主流である。分布は沖縄県に極端に偏り、県内では人口の3.4%を占める。",
+  "originRegion": "城（グスク）の美称に由来し、沖縄県に極端に偏る",
+  "regionDistribution": {
+    "多い": [
+      "沖縄",
+      "大阪"
+    ],
+    "やや多い": [
+      "兵庫",
+      "神奈川",
+      "東京"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "金城哲夫",
+      "note": "脚本家。『ウルトラマン』シリーズの脚本を手がけ、沖縄を題材にした作品も残した。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E9%87%91%E5%9F%8E",
+    "https://name-power.net/fn/%E9%87%91%E5%9F%8E.html",
+    "https://ja.wikipedia.org/wiki/%E9%87%91%E5%9F%8E%E5%93%B2%E5%A4%AB"
+  ]
+}

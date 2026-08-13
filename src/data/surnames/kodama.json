@@ -1,0 +1,35 @@
+{
+  "slug": "kodama",
+  "kanji": "児玉",
+  "readings": [
+    "こだま",
+    "こたま"
+  ],
+  "rankNational": 252,
+  "populationEstimate": "約9万人",
+  "origin": "武蔵国児玉郡の児玉庄（現在の埼玉県本庄市児玉町児玉）に由来する。古くは「古太万」「小玉」とも書き、同地では平安時代に児玉を名乗ったと伝える。武蔵七党の児玉党の流れをくむ一族が知られ、宮崎県日向市細島には鎌倉時代末から南北朝時代に武蔵から移り住んだと伝える家がある。現在は宮崎県に最も多い。",
+  "originRegion": "武蔵国児玉郡の児玉庄（埼玉県本庄市）に由来し、児玉党の流れをくむ一族が知られる",
+  "regionDistribution": {
+    "多い": [
+      "宮崎",
+      "秋田"
+    ],
+    "やや多い": [
+      "大分",
+      "広島",
+      "鹿児島"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "児玉源太郎",
+      "note": "陸軍軍人。台湾総督を経て、日露戦争では満州軍総参謀長を務めた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%85%90%E7%8E%89",
+    "https://name-power.net/fn/%E5%85%90%E7%8E%89.html",
+    "https://ja.wikipedia.org/wiki/%E5%85%90%E7%8E%89%E6%BA%90%E5%A4%AA%E9%83%8E"
+  ]
+}

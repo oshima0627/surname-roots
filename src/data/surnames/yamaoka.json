@@ -1,0 +1,34 @@
+{
+  "slug": "yamaoka",
+  "kanji": "山岡",
+  "readings": [
+    "やまおか"
+  ],
+  "rankNational": 447,
+  "populationEstimate": "約4万人",
+  "origin": "山と岡を組み合わせた地形に由来する。近江国甲賀郡の山岡村から起こり伴氏を称する家が知られる。鳥取県西伯郡大山町松河原には、天文年間（1532〜1555年）の山と岡での戦功により尼子氏の家臣が名乗ったと伝える家がある。高知県・愛媛県に多い。",
+  "originRegion": "山と岡を組み合わせた地形に由来する",
+  "regionDistribution": {
+    "多い": [
+      "高知",
+      "愛媛"
+    ],
+    "やや多い": [
+      "広島",
+      "滋賀",
+      "奈良"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "山岡鉄舟",
+      "note": "幕末から明治の幕臣・剣術家。江戸城無血開城の交渉にあたった。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B1%B1%E5%B2%A1",
+    "https://name-power.net/fn/%E5%B1%B1%E5%B2%A1.html",
+    "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%B2%A1%E9%89%84%E8%88%9F"
+  ]
+}

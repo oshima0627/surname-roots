@@ -1,0 +1,35 @@
+{
+  "slug": "narita",
+  "kanji": "成田",
+  "readings": [
+    "なりた",
+    "なるた"
+  ],
+  "rankNational": 202,
+  "populationEstimate": "約10万人",
+  "origin": "各地の「成田」という地名に由来する。千葉県成田市は下総国埴生郡の成田村にあたり室町時代に、埼玉県熊谷市上之の成田は鎌倉時代に記録がある。埼玉の成田から出た一族は烏山藩主となり、福島県伊達郡桑折町成田から出た家は仙台藩士となった。分布は青森県に際立って多く、県内では人口の1.4%を占める。",
+  "originRegion": "全国各地の「成田」という地名に由来し、分布は青森県に際立って偏る",
+  "regionDistribution": {
+    "多い": [
+      "青森",
+      "秋田"
+    ],
+    "やや多い": [
+      "北海道",
+      "愛知",
+      "神奈川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "成田三樹夫",
+      "note": "俳優。悪役・敵役の名手として知られた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%88%90%E7%94%B0",
+    "https://name-power.net/fn/%E6%88%90%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E6%88%90%E7%94%B0%E4%B8%89%E6%A8%B9%E5%A4%AB"
+  ]
+}

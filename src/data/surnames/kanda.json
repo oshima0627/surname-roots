@@ -1,0 +1,31 @@
+{
+  "slug": "kanda",
+  "kanji": "神田",
+  "readings": [
+    "かんだ",
+    "こうだ",
+    "かみだ",
+    "じんでん"
+  ],
+  "rankNational": 258,
+  "populationEstimate": "約8万人",
+  "origin": "神社の維持にあてられた田を意味する地名に由来する。東京都千代田区の神田は戦国時代、福岡県京都郡苅田町の一帯は平安時代に記録があり、後者は「刈田」「賀田」とも書かれた。佐賀県唐津市神田は「こうだ」と読み、大阪府には「じんでん」と読む家がある。新潟県・大分県に多い。",
+  "originRegion": "神社の維持にあてられた田を意味する地名に由来する",
+  "regionDistribution": {
+    "多い": [
+      "新潟",
+      "大分"
+    ],
+    "やや多い": [
+      "島根",
+      "埼玉",
+      "山口"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%A5%9E%E7%94%B0",
+    "https://name-power.net/fn/%E7%A5%9E%E7%94%B0.html"
+  ]
+}

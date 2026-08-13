@@ -1,0 +1,35 @@
+{
+  "slug": "ogasawara",
+  "kanji": "小笠原",
+  "readings": [
+    "おがさわら",
+    "おがさはら"
+  ],
+  "rankNational": 262,
+  "populationEstimate": "約8万人",
+  "origin": "甲斐国中巨摩郡の小笠原（現在の山梨県南アルプス市小笠原）に由来する。同地では平安時代末期に小笠原を名乗ったと伝え、甲斐源氏の小笠原長清の子孫が全国へ分かれた。鎌倉幕府・室町幕府の御家人となり、江戸時代には古河藩・信濃飯田藩・犬山藩・棚倉藩などの藩主を務めた。分布は青森県・岩手県に強く偏る。",
+  "originRegion": "甲斐国中巨摩郡の小笠原（山梨県南アルプス市）に由来し、小笠原長清の子孫が全国へ分かれた",
+  "regionDistribution": {
+    "多い": [
+      "青森",
+      "岩手"
+    ],
+    "やや多い": [
+      "高知",
+      "秋田",
+      "北海道"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "小笠原長清",
+      "note": "平安時代末期から鎌倉時代前期の甲斐国の武将。甲斐源氏の一族で、小笠原氏の祖。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B0%8F%E7%AC%A0%E5%8E%9F",
+    "https://name-power.net/fn/%E5%B0%8F%E7%AC%A0%E5%8E%9F.html",
+    "https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%AC%A0%E5%8E%9F%E9%95%B7%E6%B8%85"
+  ]
+}

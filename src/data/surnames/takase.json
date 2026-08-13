@@ -1,0 +1,35 @@
+{
+  "slug": "takase",
+  "kanji": "高瀬",
+  "readings": [
+    "たかせ",
+    "こうせ"
+  ],
+  "rankNational": 400,
+  "populationEstimate": "約5万人",
+  "origin": "川の浅く流れる場所「瀬」のうち、高いところにあるものを意味する地形に由来する。兵庫県西脇市一帯の旧高瀬は奈良時代、熊本県玉名市高瀬は鎌倉時代、大分県中津市高瀬は南北朝時代、群馬県富岡市の上高瀬・中高瀬・下高瀬は戦国時代に記録がある。富山県・栃木県に多い。",
+  "originRegion": "高いところにある瀬（川の浅い流れ）を意味する地形に由来する",
+  "regionDistribution": {
+    "多い": [
+      "富山",
+      "栃木"
+    ],
+    "やや多い": [
+      "大分",
+      "群馬",
+      "兵庫"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "高瀬正仁",
+      "note": "数学者・数学史家。多変数関数論と日本の数学史を専門とする。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E9%AB%98%E7%80%AC",
+    "https://name-power.net/fn/%E9%AB%98%E7%80%AC.html",
+    "https://ja.wikipedia.org/wiki/%E9%AB%98%E7%80%AC%E6%AD%A3%E4%BB%81"
+  ]
+}

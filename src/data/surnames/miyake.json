@@ -1,0 +1,35 @@
+{
+  "slug": "miyake",
+  "kanji": "三宅",
+  "readings": [
+    "みやけ",
+    "みあけ"
+  ],
+  "rankNational": 208,
+  "populationEstimate": "約10万人",
+  "origin": "古くは「三家」とも書かれた地名に由来する。岡山県玉野市西田井地付近の旧三宅は奈良時代に「三家」の表記で記録がある。江戸時代には挙母藩・田原藩・伊勢亀山藩の藩主や岡山藩士を務めた家が知られる。大阪府茨木市蔵垣内付近の旧三宅は戦国時代、滋賀県守山市三宅町は鎌倉時代の記録がある。分布は岡山県に強く集中し、県内では人口の1.1%を占める。",
+  "originRegion": "古くは「三家」とも書かれた地名に由来し、岡山県に強く集中する",
+  "regionDistribution": {
+    "多い": [
+      "岡山",
+      "香川"
+    ],
+    "やや多い": [
+      "岐阜",
+      "広島",
+      "徳島"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "三宅一生",
+      "note": "ファッションデザイナー。イッセイミヤケの創業者で、一枚の布による造形を追求した。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%B8%89%E5%AE%85",
+    "https://name-power.net/fn/%E4%B8%89%E5%AE%85.html",
+    "https://ja.wikipedia.org/wiki/%E4%B8%89%E5%AE%85%E4%B8%80%E7%94%9F"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "utsumi",
+  "kanji": "内海",
+  "readings": [
+    "うつみ",
+    "うちうみ",
+    "うちみ"
+  ],
+  "rankNational": 467,
+  "populationEstimate": "約4万人",
+  "origin": "陸地に囲まれた海、入り海を意味する地形に由来する。愛知県知多郡南知多町内海は平安時代に記録のある地名で、尾張国知多郡の内海村にあたる。ここから起こり清和源氏土岐氏流を称する家が知られ、江戸時代には仙台藩士にみられた。宮城県では「うちうみ」「うちみ」と読む家もある。宮城県・香川県に多い。",
+  "originRegion": "陸地に囲まれた海、入り海を意味する地形に由来する",
+  "regionDistribution": {
+    "多い": [
+      "宮城",
+      "香川"
+    ],
+    "やや多い": [
+      "広島",
+      "兵庫",
+      "神奈川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%86%85%E6%B5%B7",
+    "https://name-power.net/fn/%E5%86%85%E6%B5%B7.html"
+  ]
+}

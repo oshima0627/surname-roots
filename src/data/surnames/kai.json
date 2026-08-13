@@ -1,0 +1,29 @@
+{
+  "slug": "kai",
+  "kanji": "甲斐",
+  "readings": [
+    "かい",
+    "かひ"
+  ],
+  "rankNational": 324,
+  "populationEstimate": "約6万人",
+  "origin": "甲斐国（現在の山梨県）に由来する。飛鳥時代に記録のある古い国名で、この国名を名字とした一族が南北朝時代には熊本県に、室町時代には宮崎県西臼杵郡高千穂町にいた。大阪府河内長野市一帯の旧甲斐荘から起こった家もある。分布は九州南部に際立って偏り、宮崎県では人口の約2%を占める。",
+  "originRegion": "甲斐国（山梨県）の国名に由来し、分布は宮崎県に際立って偏る",
+  "regionDistribution": {
+    "多い": [
+      "宮崎",
+      "大分"
+    ],
+    "やや多い": [
+      "熊本",
+      "福岡",
+      "広島"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%94%B2%E6%96%90",
+    "https://name-power.net/fn/%E7%94%B2%E6%96%90.html"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "soma",
+  "kanji": "相馬",
+  "readings": [
+    "そうま",
+    "あいば"
+  ],
+  "rankNational": 460,
+  "populationEstimate": "約4万人",
+  "origin": "下総国相馬郡（現在の千葉県我孫子市・茨城県取手市の一帯）に由来する。奈良時代に「倉麻」の表記で記録のある古い地名で、馬の牧場があったことにちなむとされる。桓武平氏の相馬氏はここから起こり、福島県相馬市へ移って中村藩主となった。新潟県新発田市相馬の地名は開発者の相馬氏によると伝える。青森県・栃木県に多い。",
+  "originRegion": "下総国相馬郡に由来し、馬の牧場があったことにちなむとされる",
+  "regionDistribution": {
+    "多い": [
+      "青森",
+      "栃木"
+    ],
+    "やや多い": [
+      "新潟",
+      "秋田",
+      "山形"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "相馬御風",
+      "note": "詩人・歌人・評論家。早稲田大学校歌「都の西北」を作詞した。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%9B%B8%E9%A6%AC",
+    "https://name-power.net/fn/%E7%9B%B8%E9%A6%AC.html",
+    "https://ja.wikipedia.org/wiki/%E7%9B%B8%E9%A6%AC%E5%BE%A1%E9%A2%A8"
+  ]
+}

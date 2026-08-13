@@ -1,0 +1,35 @@
+{
+  "slug": "nakahara",
+  "kanji": "中原",
+  "readings": [
+    "なかはら",
+    "なかばる"
+  ],
+  "rankNational": 307,
+  "populationEstimate": "約7万人",
+  "origin": "広い原の中央にあたる土地を意味する地形に由来する。851年には中原真人という氏姓を賜った例があり、平安時代には奈良や京都に中原氏がいて鎌倉幕府の御家人にもなった。薩摩には門割制度の中原門が各地にあり、明治期にそこから名乗った家も多い。九州では「なかばる」と読む土地もある。鳥取県・佐賀県に多い。",
+  "originRegion": "広い原の中央にあたる土地を意味する地形に由来する",
+  "regionDistribution": {
+    "多い": [
+      "鳥取",
+      "佐賀"
+    ],
+    "やや多い": [
+      "山口",
+      "宮崎",
+      "鹿児島"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "中原中也",
+      "note": "詩人・歌人・翻訳家。『山羊の歌』『在りし日の歌』を残した。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%B8%AD%E5%8E%9F",
+    "https://name-power.net/fn/%E4%B8%AD%E5%8E%9F.html",
+    "https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%8E%9F%E4%B8%AD%E4%B9%9F"
+  ]
+}

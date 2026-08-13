@@ -1,0 +1,37 @@
+{
+  "slug": "tomita",
+  "kanji": "富田",
+  "readings": [
+    "とみた",
+    "とみだ",
+    "とんだ",
+    "とだ"
+  ],
+  "rankNational": 209,
+  "populationEstimate": "約10万人",
+  "origin": "実りの豊かな田を意味する地名に由来し、読みは土地によって「とみた」「とんだ」「とだ」と分かれる。山口県周南市富田と大阪府高槻市富田町は平安時代に記録があり、どちらも「とんだ」と読む。島根県安来市広瀬町富田は鎌倉時代の記録があり「とだ」と読む。伊勢国朝明郡の富田荘から起こった家もある。茨城県・愛知県に多い。",
+  "originRegion": "実りの豊かな田を意味する地名に由来し、読みが土地によって大きく分かれる",
+  "regionDistribution": {
+    "多い": [
+      "茨城",
+      "愛知"
+    ],
+    "やや多い": [
+      "香川",
+      "岐阜",
+      "埼玉"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "富田常雄",
+      "note": "小説家。柔道五段で、『姿三四郎』の作者として知られる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%AF%8C%E7%94%B0",
+    "https://name-power.net/fn/%E5%AF%8C%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E5%AF%8C%E7%94%B0%E5%B8%B8%E9%9B%84"
+  ]
+}

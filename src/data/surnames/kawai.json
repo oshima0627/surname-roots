@@ -1,0 +1,36 @@
+{
+  "slug": "kawai",
+  "kanji": "河合",
+  "readings": [
+    "かわい",
+    "かわあい",
+    "かあい"
+  ],
+  "rankNational": 217,
+  "populationEstimate": "約10万人",
+  "origin": "川と川が合流する地点を意味する地形に由来し、古くは「川合」とも書いた。福井県福井市河合勝見町付近の旧河合と兵庫県小野市河合西町は、どちらも奈良時代に「川合」の表記で記録がある。石川県白山市河合町は南北朝時代、大阪府岸和田市河合町は戦国時代の記録があり、後者は「かあい」と読み「河井」「川井」とも書いた。岐阜県・愛知県に多い。",
+  "originRegion": "川と川が合流する地点を意味する地形に由来し、古くは「川合」とも書いた",
+  "regionDistribution": {
+    "多い": [
+      "岐阜",
+      "愛知"
+    ],
+    "やや多い": [
+      "静岡",
+      "福井",
+      "奈良"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "河合隼雄",
+      "note": "心理学者。日本にユング心理学を紹介し、文化庁長官も務めた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%B2%B3%E5%90%88",
+    "https://name-power.net/fn/%E6%B2%B3%E5%90%88.html",
+    "https://ja.wikipedia.org/wiki/%E6%B2%B3%E5%90%88%E9%9A%BC%E9%9B%84"
+  ]
+}

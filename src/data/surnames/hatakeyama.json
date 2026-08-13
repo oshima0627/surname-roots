@@ -1,0 +1,35 @@
+{
+  "slug": "hatakeyama",
+  "kanji": "畠山",
+  "readings": [
+    "はたけやま",
+    "はたやま"
+  ],
+  "rankNational": 304,
+  "populationEstimate": "約7万人",
+  "origin": "武蔵国男衾郡の畠山庄（現在の埼玉県深谷市畠山）に由来する。鎌倉時代に記録のある地名で、同地には平安時代末期から畠山氏がおり、桓武平氏秩父氏の流れをくんで鎌倉幕府の有力御家人となった。のちに足利氏流の畠山氏が室町幕府の管領を務めた。分布は東北に大きく偏り、秋田県では人口の1%を超える。",
+  "originRegion": "武蔵国男衾郡の畠山庄（埼玉県深谷市）に由来し、現在は東北に大きく偏る",
+  "regionDistribution": {
+    "多い": [
+      "秋田",
+      "岩手"
+    ],
+    "やや多い": [
+      "宮城",
+      "北海道",
+      "青森"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "畠山重忠",
+      "note": "平安時代末期から鎌倉時代初期の武将。鎌倉幕府の有力御家人で、「坂東武士の鑑」と称された。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%95%A0%E5%B1%B1",
+    "https://name-power.net/fn/%E7%95%A0%E5%B1%B1.html",
+    "https://ja.wikipedia.org/wiki/%E7%95%A0%E5%B1%B1%E9%87%8D%E5%BF%A0"
+  ]
+}

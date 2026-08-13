@@ -1,0 +1,35 @@
+{
+  "slug": "terada",
+  "kanji": "寺田",
+  "readings": [
+    "てらだ",
+    "てらた"
+  ],
+  "rankNational": 222,
+  "populationEstimate": "約9万人",
+  "origin": "寺の所有する田、寺に付属する田を意味する地名に由来し、全国各地の同名の地から発祥した。兵庫県相生市若狭野町寺田は鎌倉時代、京都府城陽市寺田・岐阜県岐阜市寺田・富山県中新川郡立山町寺田は南北朝時代、滋賀県長浜市寺田町は室町時代に記録がある。静岡県掛川市の寺田から出た家は掛川藩士となった。滋賀県・静岡県に多い。",
+  "originRegion": "寺に付属する田を意味する地名に由来し、全国各地の同名の地から発祥した",
+  "regionDistribution": {
+    "多い": [
+      "滋賀",
+      "静岡"
+    ],
+    "やや多い": [
+      "石川",
+      "長崎",
+      "茨城"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "寺田寅彦",
+      "note": "物理学者・随筆家。夏目漱石に師事し、科学随筆の分野を切り開いた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%AF%BA%E7%94%B0",
+    "https://name-power.net/fn/%E5%AF%BA%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E5%AF%BA%E7%94%B0%E5%AF%85%E5%BD%A6"
+  ]
+}

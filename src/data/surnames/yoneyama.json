@@ -1,0 +1,29 @@
+{
+  "slug": "yoneyama",
+  "kanji": "米山",
+  "readings": [
+    "よねやま",
+    "こめやま"
+  ],
+  "rankNational": 493,
+  "populationEstimate": "約4万人",
+  "origin": "米と山を組み合わせた地形に由来する。甲斐の米山から起こり宇多源氏佐々木氏流を称する家が知られる。神奈川県秦野市堀西・長野県飯田市上久堅・新潟県柏崎市高柳町漆島などでは、江戸時代に農業に従事していた家と伝える。江戸時代には岩槻藩士・陸奥福島藩士にみられた。山梨県・長野県に多い。",
+  "originRegion": "米と山を組み合わせた地形に由来する",
+  "regionDistribution": {
+    "多い": [
+      "山梨",
+      "長野"
+    ],
+    "やや多い": [
+      "新潟",
+      "静岡",
+      "神奈川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%B1%B3%E5%B1%B1",
+    "https://name-power.net/fn/%E7%B1%B3%E5%B1%B1.html"
+  ]
+}

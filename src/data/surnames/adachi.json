@@ -1,0 +1,36 @@
+{
+  "slug": "adachi",
+  "kanji": "足立",
+  "readings": [
+    "あだち",
+    "あたち",
+    "あしだち"
+  ],
+  "rankNational": 230,
+  "populationEstimate": "約9万人",
+  "origin": "武蔵国足立郡（現在の東京都足立区から埼玉県にかけての一帯）に由来する。平安時代に記録のある地名で、この地の郡司の子孫を称する一族が鎌倉幕府の御家人となった。兵庫県丹波市青垣町佐治には鎌倉時代に移り住んだと伝える。「安達」と同系統とする説もある。分布は発祥地の関東よりも、鳥取県・大分県・兵庫県のほうが濃い。",
+  "originRegion": "武蔵国足立郡（東京都足立区の一帯）に由来し、現在は関東より西日本に濃く分布する",
+  "regionDistribution": {
+    "多い": [
+      "鳥取",
+      "大分"
+    ],
+    "やや多い": [
+      "兵庫",
+      "島根",
+      "岐阜"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "足立正",
+      "note": "実業家・財界人。王子製紙の経営に携わり、日本商工会議所会頭を務めた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E8%B6%B3%E7%AB%8B",
+    "https://name-power.net/fn/%E8%B6%B3%E7%AB%8B.html",
+    "https://ja.wikipedia.org/wiki/%E8%B6%B3%E7%AB%8B%E6%AD%A3"
+  ]
+}

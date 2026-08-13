@@ -1,0 +1,34 @@
+{
+  "slug": "fukuoka",
+  "kanji": "福岡",
+  "readings": [
+    "ふくおか"
+  ],
+  "rankNational": 418,
+  "populationEstimate": "約5万人",
+  "origin": "縁起のよい「福」の字と岡（丘）を組み合わせた地名に由来する。三河国額田郡の福岡から起こったと伝える家がある。薩摩には門割制度の福岡門が各地にあり、明治期にそこから名乗った家も多い。福井県・愛媛県に多い。",
+  "originRegion": "佳字の「福」と岡（丘）を組み合わせた地名に由来する",
+  "regionDistribution": {
+    "多い": [
+      "福井",
+      "愛媛"
+    ],
+    "やや多い": [
+      "奈良",
+      "鹿児島",
+      "香川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "福岡孝弟",
+      "note": "土佐藩士・政治家。五箇条の御誓文の起草に関わった。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%A6%8F%E5%B2%A1",
+    "https://name-power.net/fn/%E7%A6%8F%E5%B2%A1.html",
+    "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E5%AD%9D%E5%BC%9F"
+  ]
+}
