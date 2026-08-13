@@ -1,20 +1,23 @@
 # 家紋SVGクレジット一覧
 
-`public/kamon/*.svg` に置かれている22件の家紋SVGについて、出典・作者・ライセンスを記録する。
-このファイルはリポジトリ内の一次記録であり、サイト上の公開クレジットページ（Task 8）はこれを
-元に作成される。そのため文面は装飾せず、事実のみを記載する。
+`public/kamon/` に置かれている23件の家紋画像（SVG22件・PNG1件）について、出典・作者・ライセンスを
+記録する。このファイルはリポジトリ内の一次記録であり、サイト上の公開クレジットページ（Task 8）は
+これを元に作成される。そのため文面は装飾せず、事実のみを記載する。
 
 ## 著作権について
 
 家紋という**意匠（デザイン）そのものは、多くが数百年前に成立したものであり著作権は存続していない**。
-一方、ここで使っている**SVGファイル（意匠を実際に描画したデータ）には、それを作成した作者の著作権が
+一方、ここで使っている**画像ファイル（意匠を実際に描画したデータ）には、それを作成した作者の著作権が
 存在する**。このリポジトリでは意匠の自由さとファイルの著作権を区別し、後者の出典を必ず記録している。
 
-このリポジトリで配布している22件のSVGは、いずれも元のファイルに対して**改変**を加えている
+このリポジトリで配布しているSVG22件は、いずれも元のファイルに対して**改変**を加えている
 （エディタのメタデータ除去、`width`/`height`の削除、塗り色を`currentColor`に変更、
 一部はSVG `<mask>`を用いた構造の再構成）。**CC BY-SA でライセンスされたファイルの改変版は、
 同一または互換のライセンス（CC BY-SA）の下で提供する。** 元がパブリックドメインのファイルは、
 改変版についても著作権上の制限を課さない。
+
+PNG1件（`nadeshiko.png`）は元ファイルをそのまま配布しており、改変は加えていない
+（下記「PNGについて」を参照）。
 
 ## 一覧
 
@@ -42,6 +45,7 @@
 | `futatsu-karigane.svg` | 二つ雁金 | 柴田 | User:Mukai | CC BY-SA 3.0 | [Japanese_Crest_futatu_Karigane.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_futatu_Karigane.svg) | あり |
 | `umebachi.svg` | 梅鉢 | 菅原 | User:Mukai | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_crest_Umebachi.svg](https://commons.wikimedia.org/wiki/File:Japanese_crest_Umebachi.svg) | あり |
 | `watanabe-boshi.svg` | 渡辺星 | 渡辺 | User:Mukai | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_Crest_Watanabe_Hosi.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Watanabe_Hosi.svg) | あり |
+| `nadeshiko.png` | 撫子 | 斎藤 | 白拍子花子 | Public domain | [Nadeshiko_inverted.png](https://commons.wikimedia.org/wiki/File:Nadeshiko_inverted.png) | なし |
 
 「ライセンス」列は `src/data/surnames/*.json` の該当する `kamon[].svg.license` の値と
 一字一句一致させている（機械的に突き合わせられるように、日本語に言い換えていない）。
@@ -57,7 +61,10 @@ sagari-fuji, kaga-umebachi, katabami, genji-guruma, umebachi, watanabe-boshi）�
 （Wikimedia Commonsの「複数ライセンスから選択可」テンプレート）。[注1]の3ファイルとは提供
 条件が異なるため、別の表記にしている。
 
-## 改変の内容
+## 改変の内容（SVG）
+
+この節は22件のSVGについてのみ記す。PNG（`nadeshiko.png`）は改変していないため対象外
+（下記「PNGについて」を参照）。
 
 全22ファイルに共通して行った作業:
 
@@ -89,3 +96,16 @@ SVGの`<mask>`要素を使って元の重なり順を保持したまま再構成
 ストローク（線）の色は変更していない。`chigai-takanoha.svg`や`gosan-no-kiri.svg`など、
 細部を白抜きではなく黒い輪郭線で描いている一部のファイルには、`currentColor`の塗りの上に
 元の色のままの輪郭線が残っている。
+
+## PNGについて
+
+`nadeshiko.png`（撫子、斎藤氏）はCommonsからそのまま取得したPNGで、加工していない
+（`modified: false`）。ほかの22件と異なりベクター画像ではないため、サイトの地色（藍・
+`currentColor`）に追従させることができない。表示上は元の色（黒）のまま出る。これは
+装飾を統一できないという見た目上のトレードオフだが、意図的な判断であり、9件残っている
+未収録の家紋のうち唯一入手できた図案を欠番のままにしないことを優先した。
+
+データ側（`src/data/surnames/saito.json` の `kamon[].svg`）はSVG専用に作った構造を
+そのまま流用しており、ライセンス情報（`license`/`author`/`sourceUrl`/`modified`）は
+SVGと同じスキーマ・同じ必須項目で管理する。SVGかPNGかは `file` の拡張子（`.png`）で
+判別しており、表示側（`src/components/Kamon.tsx`）がそこで振り分ける。

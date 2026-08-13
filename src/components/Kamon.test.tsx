@@ -31,4 +31,34 @@ describe("Kamon", () => {
   it("存在しないファイルを指定すると例外を投げる（壊れたデータを黙って表示しない）", () => {
     expect(() => render(<Kamon file="nonexistent.svg" size={64} />)).toThrow();
   });
+
+  describe("PNG（ラスター）の家紋", () => {
+    it("拡張子が.pngなら<img>タグとして表示する（インラインSVGにはしない）", () => {
+      const { container } = render(<Kamon file="nadeshiko.png" size={64} />);
+      expect(container.querySelector("svg")).toBeNull();
+      const img = container.querySelector("img");
+      expect(img).not.toBeNull();
+      expect(img?.getAttribute("src")).toBe("/kamon/nadeshiko.png");
+    });
+
+    it("指定したサイズを<img>に反映する", () => {
+      const { container } = render(<Kamon file="nadeshiko.png" size={84} />);
+      const img = container.querySelector("img");
+      expect(img?.style.width).toBe("84px");
+      expect(img?.style.height).toBe("84px");
+    });
+
+    it("装飾要素としてaria-hiddenにし、代替テキストは空にする", () => {
+      const { container } = render(<Kamon file="nadeshiko.png" size={64} />);
+      const img = container.querySelector("img");
+      expect(img?.getAttribute("aria-hidden")).toBe("true");
+      expect(img?.getAttribute("alt")).toBe("");
+    });
+
+    it("大文字の拡張子（.PNG）でも<img>として扱う", () => {
+      const { container } = render(<Kamon file="nadeshiko.PNG" size={64} />);
+      expect(container.querySelector("img")).not.toBeNull();
+      expect(container.querySelector("svg")).toBeNull();
+    });
+  });
 });
