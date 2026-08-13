@@ -1,0 +1,36 @@
+{
+  "slug": "miyagi",
+  "kanji": "宮城",
+  "readings": [
+    "みやぎ",
+    "みやぐすく",
+    "みやしろ"
+  ],
+  "rankNational": 349,
+  "populationEstimate": "約6万人",
+  "origin": "沖縄では城（グスク）にちなむ地名に由来し、沖縄県浦添市宮城と島尻郡南風原町宮城は琉球王国時代に記録がある。琉球音は「ナーグスク」という。東京都足立区宮城は戦国時代に記録があり「宮木」とも書いた。分布は沖縄県に極端に偏り、県内では人口の2.5%を占める。",
+  "originRegion": "沖縄では城（グスク）にちなむ地名に由来し、分布は沖縄県に極端に偏る",
+  "regionDistribution": {
+    "多い": [
+      "沖縄",
+      "徳島"
+    ],
+    "やや多い": [
+      "宮城",
+      "静岡",
+      "大阪"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "宮城道雄",
+      "note": "作曲家・箏曲家。「春の海」などを作曲し、近代邦楽の道を開いた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%AE%AE%E5%9F%8E",
+    "https://name-power.net/fn/%E5%AE%AE%E5%9F%8E.html",
+    "https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%9F%8E%E9%81%93%E9%9B%84"
+  ]
+}

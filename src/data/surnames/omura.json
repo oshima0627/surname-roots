@@ -1,0 +1,35 @@
+{
+  "slug": "omura",
+  "kanji": "大村",
+  "readings": [
+    "おおむら",
+    "おむら"
+  ],
+  "rankNational": 345,
+  "populationEstimate": "約6万人",
+  "origin": "大きな村を意味する地名に由来する。長崎県大村市は平安時代に記録のある地名で、ここを本拠とした大村氏は安土桃山から江戸時代にかけて大村藩主を務めた。静岡県島田市船木付近には1399年の応永の乱後に移り住んだと伝える家があり、宮崎県延岡市北方町には1614年に島原藩から来た武士の後裔と伝える家がある。静岡県・山梨県に多い。",
+  "originRegion": "大きな村を意味する地名に由来し、肥前の大村（長崎県大村市）が知られる",
+  "regionDistribution": {
+    "多い": [
+      "静岡",
+      "山梨"
+    ],
+    "やや多い": [
+      "山口",
+      "熊本",
+      "宮崎"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "大村益次郎",
+      "note": "幕末から明治期の兵学者・軍政家。日本の近代陸軍の創設者とされる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%A4%A7%E6%9D%91",
+    "https://name-power.net/fn/%E5%A4%A7%E6%9D%91.html",
+    "https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9D%91%E7%9B%8A%E6%AC%A1%E9%83%8E"
+  ]
+}
