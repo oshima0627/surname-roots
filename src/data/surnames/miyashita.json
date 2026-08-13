@@ -1,0 +1,36 @@
+{
+  "slug": "miyashita",
+  "kanji": "宮下",
+  "readings": [
+    "みやした",
+    "みやのした",
+    "みやしも"
+  ],
+  "rankNational": 247,
+  "populationEstimate": "約9万人",
+  "origin": "神社の下手に住んだことに由来する。長野県飯田市北方付近には天正年間（1573〜1592年）に産神宮の下で帰農して名乗ったと伝える家があり、長野県上田市常田の科野大宮社、下伊那郡阿南町和合の伊羅胡大明神、山梨県南都留郡富士河口湖町長浜の貴舩神社の下からと伝える家もある。長野県・山梨県に強く集中している。",
+  "originRegion": "神社の下手に住んだことに由来し、信濃・甲斐に強く集中する",
+  "regionDistribution": {
+    "多い": [
+      "長野",
+      "山梨"
+    ],
+    "やや多い": [
+      "石川",
+      "福井",
+      "群馬"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "宮下奈都",
+      "note": "小説家。福井県福井市生まれ。『羊と鋼の森』で本屋大賞を受賞した。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%AE%AE%E4%B8%8B",
+    "https://name-power.net/fn/%E5%AE%AE%E4%B8%8B.html",
+    "https://ja.wikipedia.org/wiki/%E5%AE%AE%E4%B8%8B%E5%A5%88%E9%83%BD"
+  ]
+}

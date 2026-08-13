@@ -1,0 +1,36 @@
+{
+  "slug": "enomoto",
+  "kanji": "榎本",
+  "readings": [
+    "えのもと",
+    "えもと",
+    "えのきもと"
+  ],
+  "rankNational": 244,
+  "populationEstimate": "約9万人",
+  "origin": "榎の木のそばに住んだことに由来する。熊野（和歌山県南部から三重県南部）では平安時代に榎のそばから名乗ったと伝え、埼玉県川越市には天文年間（1532〜1555年）に紀伊国から移り住んだと伝える家がある。栃木県栃木市大平町榎本は戦国時代の記録がある。古代の榎本連・榎本宿禰の子孫を称する家もある。和歌山県・埼玉県に多い。",
+  "originRegion": "榎の木のそばに住んだことに由来し、紀伊・熊野に色濃く分布する",
+  "regionDistribution": {
+    "多い": [
+      "和歌山",
+      "埼玉"
+    ],
+    "やや多い": [
+      "東京",
+      "神奈川",
+      "千葉"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "榎本武揚",
+      "note": "幕臣・政治家。箱館戦争で旧幕府軍を率い、明治政府では逓信大臣などを務めた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%A6%8E%E6%9C%AC",
+    "https://name-power.net/fn/%E6%A6%8E%E6%9C%AC.html",
+    "https://ja.wikipedia.org/wiki/%E6%A6%8E%E6%9C%AC%E6%AD%A6%E6%8F%9A"
+  ]
+}

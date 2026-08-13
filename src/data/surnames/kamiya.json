@@ -1,0 +1,36 @@
+{
+  "slug": "kamiya",
+  "kanji": "神谷",
+  "readings": [
+    "かみや",
+    "かみたに",
+    "こうや"
+  ],
+  "rankNational": 249,
+  "populationEstimate": "約9万人",
+  "origin": "神を祀る谷を意味する地名に由来する。江戸幕府の幕臣には、三河国額田郡の神谷から出たと伝える家と、若狭国（福井県西部）の神谷から出たと伝える家がある。読みは「かみや」のほか「かみたに」「こうや」など地域によって非常に多く分かれる。三河・遠江にあたる愛知県・静岡県と、沖縄県に多い。",
+  "originRegion": "神を祀る谷を意味する地名に由来し、読み方が地域によって多く分かれる",
+  "regionDistribution": {
+    "多い": [
+      "愛知",
+      "沖縄"
+    ],
+    "やや多い": [
+      "静岡",
+      "岐阜",
+      "東京"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "神谷美恵子",
+      "note": "精神科医。ハンセン病療養所で診療にあたり、『生きがいについて』を著した。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%A5%9E%E8%B0%B7",
+    "https://name-power.net/fn/%E7%A5%9E%E8%B0%B7.html",
+    "https://ja.wikipedia.org/wiki/%E7%A5%9E%E8%B0%B7%E7%BE%8E%E6%81%B5%E5%AD%90"
+  ]
+}
