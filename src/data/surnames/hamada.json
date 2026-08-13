@@ -1,0 +1,40 @@
+{
+  "slug": "hamada",
+  "kanji": "浜田",
+  "readings": [
+    "はまだ",
+    "はまた"
+  ],
+  "rankNational": 144,
+  "populationEstimate": "約14万人",
+  "origin": "浜、すなわち水辺にひらけた田を意味する地形に由来する。三重県四日市市浜田町と兵庫県尼崎市浜田町はそれぞれ伊勢国三重郡の浜田村、摂津国武庫郡の浜田庄にあたり、鎌倉時代から室町時代の記録がある。鹿児島県鹿屋市浜田町は平安時代、島根県浜田市は室町時代の記録がある。堤や斜面のふちにできた田も指すため、内陸にも分布する。高知県・鹿児島県に多い。",
+  "originRegion": "水辺にひらけた田を意味する地形に由来し、堤や斜面のふちの田も指すため内陸にも分布する",
+  "regionDistribution": {
+    "多い": [
+      "高知",
+      "鹿児島"
+    ],
+    "やや多い": [
+      "鳥取",
+      "愛媛",
+      "熊本"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "浜田省吾",
+      "note": "シンガーソングライター。広島県竹原市生まれ。"
+    },
+    {
+      "name": "浜田雅功",
+      "note": "お笑いタレント・司会者。ダウンタウンのメンバー。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%B5%9C%E7%94%B0",
+    "https://name-power.net/fn/%E6%B5%9C%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E6%B5%9C%E7%94%B0%E7%9C%81%E5%90%BE",
+    "https://ja.wikipedia.org/wiki/%E6%B5%9C%E7%94%B0%E9%9B%85%E5%8A%9F"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "baba",
+  "kanji": "馬場",
+  "readings": [
+    "ばば",
+    "ばんば",
+    "うまば",
+    "まば"
+  ],
+  "rankNational": 142,
+  "populationEstimate": "約14万人",
+  "origin": "馬を走らせる場所を指す「馬場」という地名に由来し、全国各地の同名の地から発祥した。茨城県常陸太田市馬場町の一帯は常陸国久慈郡の馬場村にあたり、佐竹氏の流れをくむ一族が伝わる。ほかに福岡県八女市馬場、和歌山県和歌山市馬場、大分県竹田市荻町馬場など各地に同名の地名がある。滋賀県・京都府や埼玉県には「ばんば」と読む土地もある。長崎県・佐賀県に多い。",
+  "originRegion": "馬を走らせる場所を指す「馬場」という地名に由来し、全国各地の同名の地から発祥した",
+  "regionDistribution": {
+    "多い": [
+      "長崎",
+      "佐賀"
+    ],
+    "やや多い": [
+      "滋賀",
+      "福岡",
+      "福島"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "馬場辰猪",
+      "note": "土佐藩出身の思想家・政治運動家。自由民権運動の理論的指導者の一人とされる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E9%A6%AC%E5%A0%B4",
+    "https://name-power.net/fn/%E9%A6%AC%E5%A0%B4.html",
+    "https://ja.wikipedia.org/wiki/%E9%A6%AC%E5%A0%B4%E8%BE%B0%E7%8C%AA"
+  ]
+}
