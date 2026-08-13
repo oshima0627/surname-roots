@@ -24,9 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="bg-washi text-sumi antialiased">
-        <header className="border-b border-keisen bg-surface">
-          <div className="mx-auto max-w-3xl px-4 py-4">
-            <Link href="/" className="text-lg font-bold tracking-wide">
+        <header className="border-b border-keisen">
+          <div className="mx-auto max-w-3xl px-4 py-6">
+            <Link href="/" className="text-base tracking-[0.2em] text-sumi">
               苗字ルーツ辞典
             </Link>
           </div>
