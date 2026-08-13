@@ -1,0 +1,36 @@
+{
+  "slug": "mikami",
+  "kanji": "三上",
+  "readings": [
+    "みかみ",
+    "さんじょう",
+    "みなかみ"
+  ],
+  "rankNational": 302,
+  "populationEstimate": "約7万人",
+  "origin": "近江国野洲郡の三上（現在の滋賀県野洲市三上）に由来する。平安時代に記録のある地名で、宇多源氏や御上祝の流れを称する家が伝わる。江戸時代には弘前藩士・七戸藩士・岡山藩士にみられた。分布は発祥地の近江よりも青森県が際立って濃く、県内では人口の1%を超える。",
+  "originRegion": "近江国野洲郡の三上（滋賀県野洲市）に由来し、現在は青森県に際立って多い",
+  "regionDistribution": {
+    "多い": [
+      "青森",
+      "北海道"
+    ],
+    "やや多い": [
+      "岩手",
+      "福井",
+      "島根"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "三上章",
+      "note": "言語学者。日本語に主語は不要とする「象は鼻が長い」の分析で知られる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%B8%89%E4%B8%8A",
+    "https://name-power.net/fn/%E4%B8%89%E4%B8%8A.html",
+    "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%B8%8A%E7%AB%A0"
+  ]
+}
