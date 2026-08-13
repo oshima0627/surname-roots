@@ -11,7 +11,7 @@ import type { SurnameEntry } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "クレジット",
-  description: "掲載している家紋SVGの出典・作者・ライセンスと、改変内容の一覧です。",
+  description: "掲載している家紋画像の出典・作者・ライセンスと、改変内容の一覧です。",
 };
 
 type KamonSvg = NonNullable<SurnameEntry["kamon"][number]["svg"]>;
@@ -86,13 +86,14 @@ export default function CreditsPage() {
       <div className="mt-4 space-y-3 text-sumi-muted">
         <p>
           家紋の意匠そのものは多くが数百年前に成立したもので、著作権は存続していません。
-          一方、ここに掲げるSVGファイル（意匠を実際に描画したデータ）には、
+          一方、ここに掲げる画像ファイル（意匠を実際に描画したデータ）には、
           それを作成した作者の著作権があります。意匠の自由さとファイルの著作権は別のものとして、
           出典を記録しています。
         </p>
         <p>
-          このサイトで配布しているSVGは、すべて元のファイルに改変（塗り色を currentColor
-          へ変更するなど）を加えたものです。CC BY-SA
+          このサイトで配布している家紋画像はほとんどがSVGで、元のファイルに改変（塗り色を
+          currentColor へ変更するなど）を加えています。PNGは1件のみで、こちらは元のファイルを
+          改変せずそのまま配布しています。CC BY-SA
           でライセンスされたファイルの改変版は、同一のライセンス（CC BY-SA）の下で提供します。
         </p>
       </div>

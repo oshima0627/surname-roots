@@ -37,13 +37,27 @@ export const surnameEntrySchema = z.object({
       name: z.string().min(1),
       description: z.string().min(1),
       /**
-       * 家紋のSVG。持つなら出典情報を必須にする。
-       * 意匠自体の著作権は切れているが、SVG表現には作者の著作権がある。
-       * ここを任意項目にすると出典不明のSVGが混入するので、必ず必須のままにすること。
+       * 家紋の画像。持つなら出典情報を必須にする。
+       * 意匠自体の著作権は切れているが、画像表現には作者の著作権がある。
+       * ここを任意項目にすると出典不明の画像が混入するので、必ず必須のままにすること。
+       *
+       * フィールド名・構造は元々SVG専用に作ったものだが、PNG（ラスター）1件のためだけに
+       * 別フィールドを増設せず、`file` の拡張子で形式を判別する方式に倒している
+       * （表示側は src/components/Kamon.tsx 参照）。出典情報の必須性はSVG/PNGどちらでも
+       * 変わらず、この判定は見た目の描画方法だけに関わる。
        */
       svg: z
         .object({
-          file: z.string().min(1),
+          /**
+           * 表示側（Kamon.tsx）は拡張子でSVG/PNGの描画方式を振り分けるため、
+           * 対応していない拡張子（typoや将来のwebp/jpgなど）がデータに混入すると
+           * 意図しない描画（バイナリをSVGとして読んでUTF-8展開する等）につながる。
+           * データ読み込み時点（ビルド・テストの両方）で弾けるよう、ここで拡張子を
+           * svg/pngのみに制限する。
+           */
+          file: z.string().min(1).regex(/\.(svg|png)$/i, {
+            message: "対応していない拡張子（svg/pngのみ許可）",
+          }),
           license: z.string().min(1),
           author: z.string().min(1),
           sourceUrl: z.string().regex(/^https?:\/\//),

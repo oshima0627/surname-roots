@@ -117,4 +117,37 @@ describe("家紋のライセンス情報", () => {
     };
     expect(() => surnameEntrySchema.parse(broken)).toThrow();
   });
+
+  it("file がPNG（ラスター）でも、出典情報が揃っていれば通る（形式は拡張子で判別し、必須項目は変わらない）", () => {
+    const kamonWithPng = {
+      ...kamonWithSvg,
+      svg: { ...kamonWithSvg.svg, file: "nadeshiko.png" },
+    };
+    expect(() => surnameEntrySchema.parse({ ...valid, kamon: [kamonWithPng] })).not.toThrow();
+  });
+
+  it("file がPNGでもauthorが欠けていると弾く（形式に関わらず出典必須は変わらない）", () => {
+    const { author: _omitted, ...rest } = kamonWithSvg.svg;
+    const broken = {
+      ...valid,
+      kamon: [{ ...kamonWithSvg, svg: { ...rest, file: "nadeshiko.png" } }],
+    };
+    expect(() => surnameEntrySchema.parse(broken)).toThrow();
+  });
+
+  it("file の拡張子がsvg/png以外だと弾く（表示側はこの2形式しか振り分けられないため）", () => {
+    const broken = {
+      ...valid,
+      kamon: [{ ...kamonWithSvg, svg: { ...kamonWithSvg.svg, file: "kaga-umebachi.jpg" } }],
+    };
+    expect(() => surnameEntrySchema.parse(broken)).toThrow();
+  });
+
+  it("file に拡張子が無いと弾く", () => {
+    const broken = {
+      ...valid,
+      kamon: [{ ...kamonWithSvg, svg: { ...kamonWithSvg.svg, file: "kaga-umebachi" } }],
+    };
+    expect(() => surnameEntrySchema.parse(broken)).toThrow();
+  });
 });
