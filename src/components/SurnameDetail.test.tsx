@@ -25,9 +25,23 @@ describe("SurnameDetail", () => {
   });
 
   it("全国順位と推定人口を出す", () => {
-    render(<SurnameDetail entry={entry} />);
-    expect(screen.getByText(/全国1位/)).toBeTruthy();
-    expect(screen.getByText(/約190万人/)).toBeTruthy();
+    // 数字だけ font-tabular の子 span に分かれているため、getByText の既定の
+    // getNodeText（要素直下のテキストノードのみを見る）ではラベルと数字を
+    // つなげた文字列にマッチできない。container.textContent で通しの表示文字列を検証する。
+    const { container } = render(<SurnameDetail entry={entry} />);
+    const summary = container.querySelector("p.mt-3");
+    expect(summary?.textContent).toContain("全国1位");
+    expect(summary?.textContent).toContain("約190万人");
+  });
+
+  it("順位・人口の数字だけを等幅フォントにし、ラベルの漢字は明朝のまま残す", () => {
+    const { container } = render(<SurnameDetail entry={entry} />);
+    const summary = container.querySelector("p.mt-3") as HTMLElement;
+    const tabularSpans = Array.from(summary.querySelectorAll(".font-tabular"));
+    // 数字（1, 190）だけが font-tabular 側に入っている
+    expect(tabularSpans.map((el) => el.textContent).join("")).toBe("1190");
+    // 表示テキスト全体としては変わらない（ラベルの漢字は明朝のまま外側に残る）
+    expect(summary.textContent).toBe("全国1位約190万人");
   });
 
   it("由来の本文を出す", () => {

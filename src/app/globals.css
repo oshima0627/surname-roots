@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Noto Serif JP Subset";
   src: url("/fonts/noto-serif-jp-subset.woff2") format("woff2");
-  font-weight: 400 700;
+  font-weight: 400;
   font-display: swap;
 }
 

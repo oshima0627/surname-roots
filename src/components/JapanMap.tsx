@@ -58,6 +58,7 @@ export function JapanMap({ distribution }: { distribution: Distribution }) {
                   dominantBaseline="central"
                   fontSize={11}
                   fill={TEXT[level]}
+                  className="font-tabular"
                 >
                   {pref.name}
                 </text>
@@ -70,12 +71,12 @@ export function JapanMap({ distribution }: { distribution: Distribution }) {
             <rect x="10" y="10" width="130" height="70" fill={COLORS.surface} rx="4" opacity="0.95" />
             {/* High level swatch and label */}
             <rect x="20" y="20" width="12" height="12" fill={FILL.high} rx="2" />
-            <text x="38" y="28" fontSize="11" fill={COLORS.sumi} fontWeight="500">
+            <text x="38" y="28" fontSize="11" fill={COLORS.sumi} fontWeight="500" className="font-tabular">
               多い
             </text>
             {/* Mid level swatch and label */}
             <rect x="20" y="40" width="12" height="12" fill={FILL.mid} rx="2" />
-            <text x="38" y="48" fontSize="11" fill={COLORS.sumi} fontWeight="500">
+            <text x="38" y="48" fontSize="11" fill={COLORS.sumi} fontWeight="500" className="font-tabular">
               やや多い
             </text>
           </g>

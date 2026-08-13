@@ -1,6 +1,22 @@
 import { JapanMap } from "@/components/JapanMap";
 import type { SurnameEntry } from "@/lib/schema";
 
+/**
+ * 文字列中の数字だけを font-tabular（等幅の非明朝）で包む。
+ * ラベルの漢字（全国・位・約・万人など）は明朝のまま残す。
+ */
+function withTabularDigits(text: string): React.ReactNode[] {
+  return text.split(/(\d+)/).map((part, i) =>
+    /^\d+$/.test(part) ? (
+      <span key={i} className="font-tabular tabular-nums">
+        {part}
+      </span>
+    ) : (
+      part
+    ),
+  );
+}
+
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mt-10">
@@ -21,10 +37,12 @@ export function SurnameDetail({ entry }: { entry: SurnameEntry }) {
         {(entry.rankNational !== null || entry.populationEstimate !== "") && (
           <p className="mt-3 text-sm text-sumi-muted">
             {entry.rankNational !== null && (
-              <span className="mr-3 font-tabular tabular-nums">全国{entry.rankNational}位</span>
+              <span className="mr-3">
+                全国{withTabularDigits(String(entry.rankNational))}位
+              </span>
             )}
             {entry.populationEstimate !== "" && (
-              <span className="font-tabular tabular-nums">{entry.populationEstimate}</span>
+              <span>{withTabularDigits(entry.populationEstimate)}</span>
             )}
           </p>
         )}
