@@ -1,0 +1,41 @@
+{
+  "slug": "ishihara",
+  "kanji": "石原",
+  "readings": [
+    "いしはら",
+    "いしわら",
+    "いはら"
+  ],
+  "rankNational": 140,
+  "populationEstimate": "約14万人",
+  "origin": "石の多い原、地盤の堅い原を意味する地形に由来し、各地の「石原」という地名からも発祥した。京都市南区吉祥院石原町は平安時代に記録があり、埼玉県熊谷市石原は武蔵国大里郡の石原にあたる。愛知県豊川市三谷原町の旧石原は三河国宝飯郡の石原で、ここから起こった一族も伝わる。「いしわら」と読む家もある。山梨県・島根県・岡山県に多い。",
+  "originRegion": "石の多い原・地盤の堅い原を意味する地形に由来し、各地の「石原」という地名から発祥した",
+  "regionDistribution": {
+    "多い": [
+      "山梨",
+      "島根"
+    ],
+    "やや多い": [
+      "岡山",
+      "群馬",
+      "岐阜"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "石原慎太郎",
+      "note": "作家・政治家。『太陽の季節』で芥川賞を受け、のちに東京都知事を務めた。"
+    },
+    {
+      "name": "石原裕次郎",
+      "note": "俳優・歌手・実業家。兄は石原慎太郎。昭和を代表するスターの一人。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%9F%B3%E5%8E%9F",
+    "https://name-power.net/fn/%E7%9F%B3%E5%8E%9F.html",
+    "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%8E%9F%E6%85%8E%E5%A4%AA%E9%83%8E",
+    "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%8E%9F%E8%A3%95%E6%AC%A1%E9%83%8E"
+  ]
+}

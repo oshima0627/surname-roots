@@ -1,0 +1,35 @@
+{
+  "slug": "nagai",
+  "kanji": "永井",
+  "readings": [
+    "ながい",
+    "なかい"
+  ],
+  "rankNational": 134,
+  "populationEstimate": "約14万人",
+  "origin": "長く続く井（水を汲む場所）を意味する地形に由来するとされ、各地の同名の地名からも発祥した。江戸時代には笠間藩・古河藩・烏山藩・岩槻藩・加納藩・宮津藩・淀藩・高槻藩・赤穂藩など多くの藩の藩主を務めた大名家として知られる。愛知県知多市新知永井や千葉県旭市下永井など各地に同名の地名がある。群馬県・愛媛県・新潟県に多い。",
+  "originRegion": "長く続く井（水を汲む場所）を意味する地形に由来し、江戸時代には多くの藩主を出した",
+  "regionDistribution": {
+    "多い": [
+      "群馬",
+      "愛媛"
+    ],
+    "やや多い": [
+      "新潟",
+      "愛知",
+      "長野"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "永井荷風",
+      "note": "小説家。本名は永井壯吉。『濹東綺譚』『断腸亭日乗』などを残した。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%B0%B8%E4%BA%95",
+    "https://name-power.net/fn/%E6%B0%B8%E4%BA%95.html",
+    "https://ja.wikipedia.org/wiki/%E6%B0%B8%E4%BA%95%E8%8D%B7%E9%A2%A8"
+  ]
+}
