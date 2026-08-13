@@ -1,0 +1,35 @@
+{
+  "slug": "yanagisawa",
+  "kanji": "柳沢",
+  "readings": [
+    "やなぎさわ",
+    "やなぎざわ"
+  ],
+  "rankNational": 405,
+  "populationEstimate": "約5万人",
+  "origin": "柳の生える沢を意味する地形に由来する。山梨県北杜市武川町柳澤は戦国時代に記録のある地名で、甲斐国巨摩郡の柳沢にあたる。ここから起こった柳沢氏は清和源氏を称し、江戸時代には甲府藩・黒川藩などの藩主を務めた。長野県松本市三才山には川中島の戦いの際に甲斐から移り住んだと伝える家がある。長野県に強く集中している。",
+  "originRegion": "柳の生える沢を意味する地形に由来し、甲斐国巨摩郡の柳沢から柳沢氏が起こった",
+  "regionDistribution": {
+    "多い": [
+      "長野",
+      "群馬"
+    ],
+    "やや多い": [
+      "秋田",
+      "埼玉",
+      "新潟"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "柳沢吉保",
+      "note": "江戸時代前期の大名。徳川綱吉の側用人として幕政を主導した。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9F%B3%E6%B2%A2",
+    "https://name-power.net/fn/%E6%9F%B3%E6%B2%A2.html",
+    "https://ja.wikipedia.org/wiki/%E6%9F%B3%E6%B2%A2%E5%90%89%E4%BF%9D"
+  ]
+}
