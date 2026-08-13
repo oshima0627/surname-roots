@@ -65,3 +65,56 @@ describe("surnameEntrySchema", () => {
     expect(() => surnameEntrySchema.parse({ ...valid, origin: " ".repeat(100) })).toThrow();
   });
 });
+
+const kamonWithSvg = {
+  name: "剣梅鉢",
+  description: "梅鉢に五本の剣を配した紋。",
+  svg: {
+    file: "kaga-umebachi.svg",
+    license: "CC BY-SA 3.0",
+    author: "User:Mukai",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Example.svg",
+    modified: true,
+  },
+};
+
+describe("家紋のライセンス情報", () => {
+  it("svg を持たない家紋は従来どおり通る", () => {
+    const e = { ...valid, kamon: [{ name: "撫子", description: "撫子の花の紋。" }] };
+    expect(() => surnameEntrySchema.parse(e)).not.toThrow();
+  });
+
+  it("svg を持つ家紋は全項目が揃っていれば通る", () => {
+    expect(() => surnameEntrySchema.parse({ ...valid, kamon: [kamonWithSvg] })).not.toThrow();
+  });
+
+  it("author が欠けていると弾く", () => {
+    const { author: _omitted, ...rest } = kamonWithSvg.svg;
+    const broken = { ...valid, kamon: [{ ...kamonWithSvg, svg: rest }] };
+    expect(() => surnameEntrySchema.parse(broken)).toThrow();
+  });
+
+  it("license が空文字だと弾く", () => {
+    const broken = {
+      ...valid,
+      kamon: [{ ...kamonWithSvg, svg: { ...kamonWithSvg.svg, license: "" } }],
+    };
+    expect(() => surnameEntrySchema.parse(broken)).toThrow();
+  });
+
+  it("sourceUrl が http で始まらないと弾く", () => {
+    const broken = {
+      ...valid,
+      kamon: [{ ...kamonWithSvg, svg: { ...kamonWithSvg.svg, sourceUrl: "commons.wikimedia.org" } }],
+    };
+    expect(() => surnameEntrySchema.parse(broken)).toThrow();
+  });
+
+  it("modified が真偽値でないと弾く", () => {
+    const broken = {
+      ...valid,
+      kamon: [{ ...kamonWithSvg, svg: { ...kamonWithSvg.svg, modified: "yes" } }],
+    };
+    expect(() => surnameEntrySchema.parse(broken)).toThrow();
+  });
+});
