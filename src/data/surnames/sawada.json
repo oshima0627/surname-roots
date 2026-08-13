@@ -1,0 +1,29 @@
+{
+  "slug": "sawada",
+  "kanji": "沢田",
+  "readings": [
+    "さわだ",
+    "さわた"
+  ],
+  "rankNational": 206,
+  "populationEstimate": "約10万人",
+  "origin": "沢、すなわち山あいの湿地にひらけた田を意味する地形に由来する。山間部には沢のつく地名が極めて多く、各地の「沢田」から独立に発祥した。新潟県佐渡市竹田中沢田付近の旧雑田郷は平安時代に記録があり、地名は「さわた」と読む。青森県十和田市沢田は戦国時代の記録があり、青森市油川には1521年に南部地方の沢田村から移ったと伝える家がある。富山県・青森県に多い。",
+  "originRegion": "山あいの沢にひらけた田を意味する地形に由来し、全国各地から独立に発祥した",
+  "regionDistribution": {
+    "多い": [
+      "富山",
+      "青森"
+    ],
+    "やや多い": [
+      "鳥取",
+      "北海道",
+      "石川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%B2%A2%E7%94%B0",
+    "https://name-power.net/fn/%E6%B2%A2%E7%94%B0.html"
+  ]
+}
