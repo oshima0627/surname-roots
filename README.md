@@ -10,13 +10,19 @@
 
 ```bash
 npm install
-npm run dev        # 開発サーバー
-npm test           # テスト
-npm run typecheck  # 型チェック
-npm run lint       # lint
-npm run build      # 静的エクスポート（out/ を生成）
-npm run deploy     # ビルドして Cloudflare Workers へデプロイ
+npm run dev          # 開発サーバー
+npm test             # テスト
+npm run typecheck    # 型チェック
+npm run lint         # lint
+npm run build        # 静的エクスポート（out/ を生成）
+npm run deploy       # ビルドして Cloudflare Workers へデプロイ
+npm run check:links  # sources のURLがすべて生きているか確認（公開前に手動で実行）
 ```
+
+`check:links` は全苗字の `sources` に載っているURLへ実際にリクエストを送り、
+到達できないものを報告する。**ネットワークに数百件のリクエストを投げるため、
+`npm test` や `npm run build` には含めていない。** リリース前に手動で実行すること。
+失敗があれば非0で終了するので、リリース判定のゲートにも使える。
 
 ## 構成
 
