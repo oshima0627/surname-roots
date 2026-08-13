@@ -1,0 +1,30 @@
+{
+  "slug": "shimada",
+  "kanji": "島田",
+  "readings": ["しまだ", "しまた"],
+  "rankNational": 102,
+  "populationEstimate": "約17万人",
+  "origin": "各地の「島田」という地名に由来する。静岡県島田市、茨城県水戸市島田町、三重県桑名市島田、石川県白山市上島田町など全国に同名の地名があり、それぞれから発祥したと伝えられる。地形としては、島のように高くなった土地とその田を指すとされる。愛知県あま市の七宝町付近は平安時代に「島田郷」と記録があり、同じころ島田臣という古代の氏姓があったことが知られる。",
+  "originRegion": "島状に高くなった土地とその田を指す地名に由来し、全国各地の同名の地から独立に発祥したとされる",
+  "regionDistribution": {
+    "多い": ["富山", "埼玉"],
+    "やや多い": ["福井", "栃木", "群馬"]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "島田荘司",
+      "note": "小説家・推理作家。『占星術殺人事件』などで知られ、新本格ミステリの牽引役となった。"
+    },
+    {
+      "name": "島田叡",
+      "note": "内務官僚。沖縄戦時の官選第23代沖縄県知事を務め、「島守」として知られる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B3%B6%E7%94%B0",
+    "https://name-power.net/fn/%E5%B3%B6%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E5%B3%B6%E7%94%B0%E8%8D%98%E5%8F%B8",
+    "https://ja.wikipedia.org/wiki/%E5%B3%B6%E7%94%B0%E5%8F%A1"
+  ]
+}

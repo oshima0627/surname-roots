@@ -1,0 +1,35 @@
+{
+  "slug": "fukushima",
+  "kanji": "福島",
+  "readings": [
+    "ふくしま",
+    "ふくじま"
+  ],
+  "rankNational": 128,
+  "populationEstimate": "約14万人",
+  "origin": "縁起のよい「福」の字と、島状に高くなった土地を組み合わせた地名に由来する。摂津国西成郡の福島（現在の大阪市福島区周辺）のほか、愛知県名古屋市中川区福島・稲沢市福島町など各地に同名の地名があり、それぞれから発祥した。安土桃山から江戸時代にかけては広島藩主や宇陀松山藩主を務めた家が知られる。分布は埼玉県・熊本県に多い。",
+  "originRegion": "好字の「福」と島状の土地を組み合わせた地名に由来し、摂津国の福島などから発祥した",
+  "regionDistribution": {
+    "多い": [
+      "埼玉",
+      "熊本"
+    ],
+    "やや多い": [
+      "島根",
+      "群馬",
+      "佐賀"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "福島正則",
+      "note": "安土桃山時代から江戸時代前期の武将・大名。賤ヶ岳の七本槍の一人として知られる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%A6%8F%E5%B3%B6",
+    "https://name-power.net/fn/%E7%A6%8F%E5%B3%B6.html",
+    "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B3%B6%E6%AD%A3%E5%89%87"
+  ]
+}

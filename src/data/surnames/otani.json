@@ -1,0 +1,42 @@
+{
+  "slug": "otani",
+  "kanji": "大谷",
+  "readings": [
+    "おおたに",
+    "おおや",
+    "おおがい",
+    "だいたに"
+  ],
+  "rankNational": 156,
+  "populationEstimate": "約13万人",
+  "origin": "大きな谷を意味する地形に由来し、各地の「大谷」という地名からも発祥した。石川県珠洲市大谷町は鎌倉時代、東京都八王子市大谷町は南北朝時代、兵庫県養父市大谷は室町時代、島根県益田市大谷町は戦国時代に記録がある。読みは「おおたに」「おおや」のほか、福島県南相馬市には「おおがい」と読む家があり、富山県には「だいたに」がある。島根県・和歌山県に多い。",
+  "originRegion": "大きな谷を意味する地形に由来し、地域によって読み方が大きく分かれる",
+  "regionDistribution": {
+    "多い": [
+      "島根",
+      "和歌山"
+    ],
+    "やや多い": [
+      "鳥取",
+      "奈良",
+      "群馬"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "大谷吉継",
+      "note": "戦国時代から安土桃山時代の武将。関ヶ原の戦いで西軍として奮戦し、自害した。"
+    },
+    {
+      "name": "大谷翔平",
+      "note": "プロ野球選手。岩手県奥州市出身。投手と打者を兼ねる二刀流で活躍する。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%A4%A7%E8%B0%B7",
+    "https://name-power.net/fn/%E5%A4%A7%E8%B0%B7.html",
+    "https://ja.wikipedia.org/wiki/%E5%A4%A7%E8%B0%B7%E5%90%89%E7%B6%99",
+    "https://ja.wikipedia.org/wiki/%E5%A4%A7%E8%B0%B7%E7%BF%94%E5%B9%B3"
+  ]
+}

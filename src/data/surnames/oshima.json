@@ -1,0 +1,36 @@
+{
+  "slug": "oshima",
+  "kanji": "大島",
+  "readings": [
+    "おおしま",
+    "おしま",
+    "おおじま"
+  ],
+  "rankNational": 170,
+  "populationEstimate": "約12万人",
+  "origin": "大きな島、あるいは周囲から区切られた島状の土地を意味する地名に由来する。「島」は海の島だけでなく陸地の一区画も指すため、内陸にも同名の地が多い。山口県大島郡周防大島町は奈良時代、東京都大島町・岐阜県大垣市大島町・岡山県笠岡市大島中は平安時代、群馬県太田市大島町と長野県下伊那郡松川町大島は鎌倉時代に記録がある。栃木県・新潟県・愛知県に多い。",
+  "originRegion": "大きな島や島状に区切られた土地を意味する地名に由来し、内陸にも同名の地が多い",
+  "regionDistribution": {
+    "多い": [
+      "栃木",
+      "新潟"
+    ],
+    "やや多い": [
+      "愛知",
+      "群馬",
+      "佐賀"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "大島渚",
+      "note": "映画監督・脚本家。『愛のコリーダ』『戦場のメリークリスマス』などを手がけた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%A4%A7%E5%B3%B6",
+    "https://name-power.net/fn/%E5%A4%A7%E5%B3%B6.html",
+    "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B3%B6%E6%B8%9A"
+  ]
+}

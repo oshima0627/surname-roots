@@ -1,0 +1,37 @@
+{
+  "slug": "kumagai",
+  "kanji": "熊谷",
+  "readings": [
+    "くまがい",
+    "くまがや",
+    "くまがえ",
+    "くまたに"
+  ],
+  "rankNational": 158,
+  "populationEstimate": "約13万人",
+  "origin": "武蔵国大里郡の熊谷（現在の埼玉県熊谷市）に由来する。鎌倉時代に記録のある地名で、地名は「くまがや」、名字は「くまがい」と読み分けるのが一般的である。同地には平安時代末期から熊谷氏がおり、鎌倉幕府の御家人となった。一族は宮城県気仙沼市や広島県広島市安佐北区可部町にも移り、現在は岩手県・宮城県への集中が際立つ。",
+  "originRegion": "武蔵国大里郡の熊谷（埼玉県熊谷市）に由来し、一族は東北や安芸へ移った",
+  "regionDistribution": {
+    "多い": [
+      "岩手",
+      "宮城"
+    ],
+    "やや多い": [
+      "秋田",
+      "長野",
+      "青森"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "熊谷直実",
+      "note": "平安時代末期から鎌倉時代初期の武将。武蔵国熊谷郷を本拠とし、のちに出家した。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%86%8A%E8%B0%B7",
+    "https://name-power.net/fn/%E7%86%8A%E8%B0%B7.html",
+    "https://ja.wikipedia.org/wiki/%E7%86%8A%E8%B0%B7%E7%9B%B4%E5%AE%9F"
+  ]
+}

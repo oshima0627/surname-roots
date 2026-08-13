@@ -1,0 +1,35 @@
+{
+  "slug": "koike",
+  "kanji": "小池",
+  "readings": [
+    "こいけ",
+    "おいけ"
+  ],
+  "rankNational": 151,
+  "populationEstimate": "約13万人",
+  "origin": "小さな池のほとりに住んだことを示す地名に由来する。長野県松本市寿小赤の小池は信濃国筑摩郡の小池村にあたり鎌倉時代に記録があり、山梨県北杜市高根町小池は甲斐国巨摩郡の小池村にあたる。和歌山県日高郡日高町小池は南北朝時代の記録があり、地名も名字も「おいけ」と読む。長野県・山梨県・群馬県など中部から関東北部に多い。",
+  "originRegion": "小さな池のほとりを示す地名に由来し、信濃・甲斐・紀伊の小池がよく知られる",
+  "regionDistribution": {
+    "多い": [
+      "長野",
+      "山梨"
+    ],
+    "やや多い": [
+      "群馬",
+      "新潟",
+      "栃木"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "小池百合子",
+      "note": "政治家。衆議院議員・防衛大臣などを経て、2016年から東京都知事を務める。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B0%8F%E6%B1%A0",
+    "https://name-power.net/fn/%E5%B0%8F%E6%B1%A0.html",
+    "https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%B1%A0%E7%99%BE%E5%90%88%E5%AD%90"
+  ]
+}

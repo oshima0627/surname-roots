@@ -1,0 +1,25 @@
+{
+  "slug": "sakurai",
+  "kanji": "桜井",
+  "readings": ["さくらい", "さくい"],
+  "rankNational": 106,
+  "populationEstimate": "約17万人",
+  "origin": "各地の「桜井」という地名に由来する。大阪府東大阪市六万寺町付近の旧桜井は奈良時代に記録があり、飛鳥時代には桜井臣という古代の氏姓があったことが知られる。ほかに奈良県桜井市、愛媛県今治市桜井、愛知県安城市桜井町、長野県佐久市桜井、福岡県糸島市志摩桜井など全国に同名の地名があり、それぞれから発祥したとされる。関東から東北南部にかけて多い。",
+  "originRegion": "大阪府東大阪市の旧桜井をはじめ、全国各地の「桜井」という地名に由来する",
+  "regionDistribution": {
+    "多い": ["群馬", "宮城"],
+    "やや多い": ["茨城", "長野", "新潟"]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "桜井政博",
+      "note": "ゲームクリエイター。『星のカービィ』『大乱闘スマッシュブラザーズ』両シリーズのディレクターを務める。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%A1%9C%E4%BA%95",
+    "https://name-power.net/fn/%E6%A1%9C%E4%BA%95.html",
+    "https://ja.wikipedia.org/wiki/%E6%A1%9C%E4%BA%95%E6%94%BF%E5%8D%9A"
+  ]
+}

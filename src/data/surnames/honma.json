@@ -1,0 +1,39 @@
+{
+  "slug": "honma",
+  "kanji": "本間",
+  "readings": [
+    "ほんま"
+  ],
+  "rankNational": 186,
+  "populationEstimate": "約11万人",
+  "origin": "相模国愛甲郡の本間（現在の神奈川県厚木市金田の一帯）に由来する。同地では鎌倉時代に本間を名乗ったと伝える。一族は鎌倉時代に佐渡へ移り、さらに越後・出羽へ広がった。江戸時代には三条藩士・村上藩士・米沢藩士にみられる。現在は新潟県で人口の約1%、山形県で0.75%を占めるほど集中している。",
+  "originRegion": "相模国愛甲郡の本間（神奈川県厚木市）に由来し、一族は佐渡から越後・出羽へ広がった",
+  "regionDistribution": {
+    "多い": [
+      "新潟",
+      "山形"
+    ],
+    "やや多い": [
+      "北海道",
+      "秋田",
+      "神奈川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "本間光丘",
+      "note": "江戸時代の出羽庄内の豪商。植林や飢饉対策など公共事業に私財を投じた。"
+    },
+    {
+      "name": "本間雅晴",
+      "note": "陸軍軍人。最終階級は陸軍中将。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9C%AC%E9%96%93",
+    "https://name-power.net/fn/%E6%9C%AC%E9%96%93.html",
+    "https://ja.wikipedia.org/wiki/%E6%9C%AC%E9%96%93%E5%85%89%E4%B8%98",
+    "https://ja.wikipedia.org/wiki/%E6%9C%AC%E9%96%93%E9%9B%85%E6%99%B4"
+  ]
+}

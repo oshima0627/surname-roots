@@ -1,0 +1,38 @@
+{
+  "slug": "oda",
+  "kanji": "小田",
+  "readings": [
+    "おだ",
+    "こだ",
+    "おた",
+    "こた",
+    "しょうだ"
+  ],
+  "rankNational": 189,
+  "populationEstimate": "約11万人",
+  "origin": "小さな田、あるいは低湿地の田を意味する地形に由来し、各地の「小田」という地名からも発祥した。茨城県つくば市小田は常陸国筑波郡の小田村にあたり鎌倉時代に記録がある。岡山県小田郡矢掛町小田は平安時代、広島県東広島市河内町小田は鎌倉時代の記録がある。「こだ」「しょうだ」と読む家もある。広島県・山口県に多い。",
+  "originRegion": "小さな田・低湿地の田を意味する地形に由来し、常陸国筑波郡の小田村などから発祥した",
+  "regionDistribution": {
+    "多い": [
+      "広島",
+      "山口"
+    ],
+    "やや多い": [
+      "長崎",
+      "新潟",
+      "福岡"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "小田実",
+      "note": "作家・政治運動家。『何でも見てやろう』を著し、ベ平連の中心人物となった。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B0%8F%E7%94%B0",
+    "https://name-power.net/fn/%E5%B0%8F%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%94%B0%E5%AE%9F"
+  ]
+}

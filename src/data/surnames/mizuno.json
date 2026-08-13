@@ -1,0 +1,30 @@
+{
+  "slug": "mizuno",
+  "kanji": "水野",
+  "readings": ["みずの"],
+  "rankNational": 105,
+  "populationEstimate": "約17万人",
+  "origin": "尾張国春日井郡の水野（現在の愛知県瀬戸市上水野町・中水野町周辺）に由来する。鎌倉時代に記録のある地名で、ここから起こった水野氏は江戸時代に刈谷藩・岡崎藩・浜松藩・沼津藩・山形藩・唐津藩・備後福山藩など各地の藩主を務めた大名家として知られる。ほかに青森県八戸市の水野・水野長根から起こった家もある。分布は現在も愛知県・岐阜県に強く集中している。",
+  "originRegion": "尾張国春日井郡の水野（現在の愛知県瀬戸市周辺）の地名に由来し、江戸時代の大名家として知られる",
+  "regionDistribution": {
+    "多い": ["岐阜", "愛知"],
+    "やや多い": ["静岡", "富山", "福井"]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "水野忠邦",
+      "note": "江戸時代後期の大名・老中。肥前国唐津藩主から遠江国浜松藩主となり、天保の改革を指導した。"
+    },
+    {
+      "name": "水野良樹",
+      "note": "ミュージシャン・作詞作曲家。いきものがかりのリーダーでギターを担当する。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%B0%B4%E9%87%8E",
+    "https://name-power.net/fn/%E6%B0%B4%E9%87%8E.html",
+    "https://ja.wikipedia.org/wiki/%E6%B0%B4%E9%87%8E%E5%BF%A0%E9%82%A6",
+    "https://ja.wikipedia.org/wiki/%E6%B0%B4%E9%87%8E%E8%89%AF%E6%A8%B9"
+  ]
+}

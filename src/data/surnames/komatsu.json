@@ -1,0 +1,34 @@
+{
+  "slug": "komatsu",
+  "kanji": "小松",
+  "readings": [
+    "こまつ"
+  ],
+  "rankNational": 115,
+  "populationEstimate": "約15万人",
+  "origin": "「小さな松」を意味する地名・事物に由来し、各地の同名の地から発祥した。山形県東置賜郡川西町小松、福島県白河市表郷小松、山梨県甲府市小松町、石川県小松市など全国に同名の地名がある。高知県では平安時代の武将平重盛の別名「小松内府」にちなむとする伝えがあり、和歌山県や奈良県にも平氏の後裔を称する家が伝わる。高知県・秋田県・長野県に多い。",
+  "originRegion": "「小さな松」に由来する地名から起こり、平氏の後裔を称する家も各地に伝わる",
+  "regionDistribution": {
+    "多い": [
+      "高知",
+      "秋田"
+    ],
+    "やや多い": [
+      "長野",
+      "山形",
+      "宮城"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "小松左京",
+      "note": "小説家。本名は小松実。『日本沈没』『果しなき流れの果に』などで知られるSFの大家。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%B0%8F%E6%9D%BE",
+    "https://name-power.net/fn/%E5%B0%8F%E6%9D%BE.html",
+    "https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%9D%BE%E5%B7%A6%E4%BA%AC"
+  ]
+}

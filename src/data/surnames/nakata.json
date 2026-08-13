@@ -1,0 +1,41 @@
+{
+  "slug": "nakata",
+  "kanji": "中田",
+  "readings": [
+    "なかだ",
+    "なかた",
+    "ちゅうだ"
+  ],
+  "rankNational": 122,
+  "populationEstimate": "約15万人",
+  "origin": "田の中ほど、中央部の田を意味する地形に由来し、各地の「中田」という地名からも発祥した。静岡県浜松市中央区中田町は遠江国長上郡の中田村にあたり、室町時代に記録がある。富山県高岡市中田も室町時代、岩手県奥州市江刺梁川の旧中田は戦国時代の記録がある。和歌山県田辺市秋津町では、田中姓が多いため明治期に文字を逆にしたと伝える家がある。石川県・富山県に多い。",
+  "originRegion": "中央部の田を意味する地形に由来し、遠江国の中田村（静岡県浜松市）など各地から発祥した",
+  "regionDistribution": {
+    "多い": [
+      "石川",
+      "富山"
+    ],
+    "やや多い": [
+      "鳥取",
+      "広島",
+      "和歌山"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "中田英寿",
+      "note": "元プロサッカー選手・実業家。山梨県甲府市出身のミッドフィールダーで、日本代表として活躍した。"
+    },
+    {
+      "name": "中田喜直",
+      "note": "作曲家。本名の読みは「よしただ」。「ちいさい秋みつけた」などの歌曲で知られる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%B8%AD%E7%94%B0",
+    "https://name-power.net/fn/%E4%B8%AD%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E4%B8%AD%E7%94%B0%E8%8B%B1%E5%AF%BF",
+    "https://ja.wikipedia.org/wiki/%E4%B8%AD%E7%94%B0%E5%96%9C%E7%9B%B4"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "matsushita",
+  "kanji": "松下",
+  "readings": [
+    "まつした"
+  ],
+  "rankNational": 150,
+  "populationEstimate": "約13万人",
+  "origin": "松の木の下、松のふもとを意味する地形に由来する。静岡県袋井市浅名の旧松下では、室町時代の武将佐々木貞氏の子がこの地で松下を称したと伝え、三河国碧海郡（現在の愛知県碧南市付近）の松下は後に移った土地とする伝えもある。薩摩には門割制度の松下門があり、明治期にそこから名乗った家も多い。静岡県・鹿児島県に多い。",
+  "originRegion": "松の木の下を意味する地形に由来し、遠江の松下や三河国碧海郡の松下から発祥した",
+  "regionDistribution": {
+    "多い": [
+      "静岡",
+      "鹿児島"
+    ],
+    "やや多い": [
+      "和歌山",
+      "熊本",
+      "香川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "松下幸之助",
+      "note": "実業家・発明家。松下電器産業（現パナソニック）の創業者。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9D%BE%E4%B8%8B",
+    "https://name-power.net/fn/%E6%9D%BE%E4%B8%8B.html",
+    "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%B8%8B%E5%B9%B8%E4%B9%8B%E5%8A%A9"
+  ]
+}

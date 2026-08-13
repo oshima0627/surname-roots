@@ -1,0 +1,35 @@
+{
+  "slug": "matsuura",
+  "kanji": "松浦",
+  "readings": [
+    "まつうら",
+    "まつら"
+  ],
+  "rankNational": 157,
+  "populationEstimate": "約13万人",
+  "origin": "肥前国松浦郡（現在の長崎県松浦市周辺）に由来する。奈良時代に記録のある地名で、古い発音は「まつら」だった。この地に興った一族は嵯峨源氏の流れを称し、安土桃山から江戸時代にかけては平戸藩主を務めた。現在の分布は発祥地である九州北部よりも、島根県・静岡県・徳島県などのほうが濃い。",
+  "originRegion": "肥前国松浦郡（長崎県松浦市周辺）に由来し、平戸藩主を務めた一族が知られる",
+  "regionDistribution": {
+    "多い": [
+      "島根",
+      "静岡"
+    ],
+    "やや多い": [
+      "徳島",
+      "宮崎",
+      "愛媛"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "松浦清",
+      "note": "江戸時代中後期の大名。肥前国平戸藩の第9代藩主で、随筆『甲子夜話』を著した。号は静山。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9D%BE%E6%B5%A6",
+    "https://name-power.net/fn/%E6%9D%BE%E6%B5%A6.html",
+    "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%B5%A6%E6%B8%85"
+  ]
+}

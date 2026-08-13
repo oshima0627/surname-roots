@@ -1,0 +1,40 @@
+{
+  "slug": "hattori",
+  "kanji": "服部",
+  "readings": [
+    "はっとり",
+    "はとり"
+  ],
+  "rankNational": 124,
+  "populationEstimate": "約15万人",
+  "origin": "古代に機を織った職業集団「機織部（はたおりべ）」に由来する。発音はハタオリベからハトリベ、ハトリを経てハットリに変化したと推定されている。三重県伊賀市服部町は奈良時代に記録のある地名で、江戸時代には岡崎藩士・加納藩士や幕臣にもみられた。ほかに大阪府豊中市服部本町付近や愛知県名古屋市中川区服部など各地に同名の地名がある。三重県・愛知県・岐阜県に集中している。",
+  "originRegion": "古代に機を織った職業集団「機織部」に由来し、伊賀国の服部（三重県伊賀市）が知られる",
+  "regionDistribution": {
+    "多い": [
+      "三重",
+      "愛知"
+    ],
+    "やや多い": [
+      "岐阜",
+      "滋賀",
+      "静岡"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "服部半蔵",
+      "note": "戦国時代から江戸時代にかけて徳川氏に仕えた服部家の当主が代々名乗った通称。"
+    },
+    {
+      "name": "服部良一",
+      "note": "作曲家・編曲家。「東京ブギウギ」「青い山脈」などを手がけ、国民栄誉賞を受けた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9C%8D%E9%83%A8",
+    "https://name-power.net/fn/%E6%9C%8D%E9%83%A8.html",
+    "https://ja.wikipedia.org/wiki/%E6%9C%8D%E9%83%A8%E5%8D%8A%E8%94%B5",
+    "https://ja.wikipedia.org/wiki/%E6%9C%8D%E9%83%A8%E8%89%AF%E4%B8%80"
+  ]
+}

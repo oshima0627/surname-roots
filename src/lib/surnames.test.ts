@@ -36,6 +36,27 @@ describe("getAllSurnames", () => {
       expect(多い.filter((p) => やや多い.includes(p))).toEqual([]);
     }
   });
+
+  // 「独立2ソース」のうち機械的に検証できる部分を固定する。
+  // 同一サイト内の別ページを2本並べて「2ソース」と称する経路を塞ぐのが目的。
+  // 実測（2026-08-14）では既存100件すべてが sources 4本以上・ホスト2種類以上だった
+  it("sources が2本以上あり、異なるホストを2つ以上含む", () => {
+    const violations = all
+      .map((entry) => ({
+        slug: entry.slug,
+        count: entry.sources.length,
+        hosts: new Set(entry.sources.map((url) => new URL(url).host)).size,
+      }))
+      .filter((v) => v.count < 2 || v.hosts < 2);
+    expect(violations).toEqual([]);
+  });
+
+  it("rankNational に重複がない", () => {
+    const ranks = all.map((e) => e.rankNational).filter((r): r is number => r !== null);
+    const seen = new Set<number>();
+    const duplicated = ranks.filter((r) => (seen.has(r) ? true : (seen.add(r), false)));
+    expect(duplicated).toEqual([]);
+  });
 });
 
 describe("getSurnameBySlug", () => {

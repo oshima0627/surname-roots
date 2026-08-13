@@ -1,0 +1,35 @@
+{
+  "slug": "okubo",
+  "kanji": "大久保",
+  "readings": [
+    "おおくぼ",
+    "おくぼ"
+  ],
+  "rankNational": 149,
+  "populationEstimate": "約13万人",
+  "origin": "周囲より低く大きくくぼんだ土地を意味する「大窪」の表記違いとされる。江戸時代には小田原藩・沼津藩・烏山藩・佐倉藩・加納藩・明石藩・唐津藩などの藩主を務めた大名家として知られる。薩摩には門割制度の大久保門があり、明治期にそこから名乗った家も多い。分布は特定の地域に偏らず全国に広く、茨城県・福井県にやや多い。",
+  "originRegion": "大きくくぼんだ土地を意味する「大窪」の表記違いとされ、江戸時代には小田原藩主などを出した",
+  "regionDistribution": {
+    "多い": [
+      "茨城",
+      "福井"
+    ],
+    "やや多い": [
+      "青森",
+      "山梨",
+      "徳島"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "大久保利通",
+      "note": "政治家・薩摩藩士。明治維新を主導した維新の三傑の一人で、初代内務卿を務めた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%A4%A7%E4%B9%85%E4%BF%9D",
+    "https://name-power.net/fn/%E5%A4%A7%E4%B9%85%E4%BF%9D.html",
+    "https://ja.wikipedia.org/wiki/%E5%A4%A7%E4%B9%85%E4%BF%9D%E5%88%A9%E9%80%9A"
+  ]
+}

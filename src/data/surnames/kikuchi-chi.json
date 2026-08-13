@@ -1,0 +1,46 @@
+{
+  "slug": "kikuchi-chi",
+  "kanji": "菊池",
+  "readings": [
+    "きくち",
+    "きくいけ"
+  ],
+  "rankNational": 114,
+  "populationEstimate": "約15万人",
+  "origin": "肥後国菊池郡（現在の熊本県菊池市）に由来する。698年に「鞠智」の表記で記録のある古い地名で、古い発音は「ククチ」と推定されている。ここを本拠とした菊池氏からは鎌倉幕府の御家人となった一族が出た。南北朝期に各地へ散った一族は東北にも根づき、岩手県奥州市江刺には戦国時代から居住したと伝えられる。現在は岩手県への集中が際立ち、県内では人口の2%を超える。",
+  "originRegion": "肥後国菊池郡（現在の熊本県菊池市）を本拠とした菊池氏に由来し、一族は東北へも広がった",
+  "regionDistribution": {
+    "多い": [
+      "岩手",
+      "茨城"
+    ],
+    "やや多い": [
+      "愛媛",
+      "青森",
+      "栃木"
+    ]
+  },
+  "kamon": [
+    {
+      "name": "丸に並び鷹の羽",
+      "description": "菊池氏が用いた家紋。「丸に違い鷹の羽」を用いる家もある。岩手県遠野の一族は、海路で移ったことを表す波紋を加えた「丸に並び鷹の羽に波紋」を使うと伝えられる。"
+    }
+  ],
+  "famousPeople": [
+    {
+      "name": "菊池寛",
+      "note": "小説家・劇作家。文藝春秋社を興し、芥川賞と直木賞の創設に携わった。"
+    },
+    {
+      "name": "菊池雄星",
+      "note": "プロ野球選手（投手）。岩手県盛岡市出身で、日本の球団を経てメジャーリーグでプレーする。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E8%8F%8A%E6%B1%A0",
+    "https://name-power.net/fn/%E8%8F%8A%E6%B1%A0.html",
+    "https://ja.wikipedia.org/wiki/%E8%8F%8A%E6%B1%A0%E5%AF%9B",
+    "https://ja.wikipedia.org/wiki/%E8%8F%8A%E6%B1%A0%E9%9B%84%E6%98%9F",
+    "https://ja.wikipedia.org/wiki/%E8%8F%8A%E6%B1%A0%E6%B0%8F"
+  ]
+}

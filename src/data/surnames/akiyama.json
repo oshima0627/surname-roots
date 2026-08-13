@@ -1,0 +1,39 @@
+{
+  "slug": "akiyama",
+  "kanji": "秋山",
+  "readings": [
+    "あきやま"
+  ],
+  "rankNational": 133,
+  "populationEstimate": "約14万人",
+  "origin": "甲斐国巨摩郡の秋山（現在の山梨県南アルプス市秋山）に由来する。同地では平安時代に秋山を名乗ったと伝え、甲斐源氏の流れをくむ一族が知られる。香川県三豊市の高瀬町には鎌倉時代に移り住んだとの伝えがある。奈良県宇陀市大宇陀春日付近の旧秋山荘も平安時代に記録があり、ここから起こった一族もある。山梨県・香川県に多い。",
+  "originRegion": "甲斐国巨摩郡の秋山（山梨県南アルプス市）に由来し、甲斐源氏の流れをくむ一族が知られる",
+  "regionDistribution": {
+    "多い": [
+      "山梨",
+      "香川"
+    ],
+    "やや多い": [
+      "静岡",
+      "岡山",
+      "茨城"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "秋山好古",
+      "note": "陸軍軍人・教育者。日露戦争で騎兵を率い、退役後は郷里の中学校長を務めた。"
+    },
+    {
+      "name": "秋山豊寛",
+      "note": "ジャーナリスト。1990年に日本人として初めて宇宙へ行き、宇宙から報道を行った。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%A7%8B%E5%B1%B1",
+    "https://name-power.net/fn/%E7%A7%8B%E5%B1%B1.html",
+    "https://ja.wikipedia.org/wiki/%E7%A7%8B%E5%B1%B1%E5%A5%BD%E5%8F%A4",
+    "https://ja.wikipedia.org/wiki/%E7%A7%8B%E5%B1%B1%E8%B1%8A%E5%AF%9B"
+  ]
+}

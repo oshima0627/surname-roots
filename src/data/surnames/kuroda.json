@@ -1,0 +1,35 @@
+{
+  "slug": "kuroda",
+  "kanji": "黒田",
+  "readings": [
+    "くろだ",
+    "くろた"
+  ],
+  "rankNational": 159,
+  "populationEstimate": "約12万人",
+  "origin": "土の色が黒い田を意味する地形に由来し、各地の「黒田」という地名からも発祥した。兵庫県西脇市黒田庄町黒田は奈良時代に記録があり「久路田」とも書いた。滋賀県長浜市木之本町黒田は近江国伊香郡の黒田村にあたり、ここを本貫とする一族が江戸時代に福岡藩・中津藩・秋月藩の藩主を務めたと伝える。富山県・兵庫県に多い。",
+  "originRegion": "土の色が黒い田を意味する地形に由来し、近江国伊香郡の黒田村から福岡藩主が出たと伝える",
+  "regionDistribution": {
+    "多い": [
+      "富山",
+      "兵庫"
+    ],
+    "やや多い": [
+      "宮崎",
+      "山形",
+      "愛媛"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "黒田孝高",
+      "note": "戦国時代から江戸時代初期の武将。通称は官兵衛。豊臣秀吉の軍師として知られる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E9%BB%92%E7%94%B0",
+    "https://name-power.net/fn/%E9%BB%92%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E9%BB%92%E7%94%B0%E5%AD%9D%E9%AB%98"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "honda",
+  "kanji": "本田",
+  "readings": [
+    "ほんだ",
+    "ほんた",
+    "もとだ"
+  ],
+  "rankNational": 131,
+  "populationEstimate": "約14万人",
+  "origin": "中心となる田、もとからある田を意味する「本田」に由来し、各地の同名の地名からも発祥した。埼玉県深谷市本田は南北朝時代に記録のある地名で、「本多」とも書いた。大隅国（現在の鹿児島県東部）には南北朝時代に本田氏がおり、鎌倉時代から居住したと伝えられる。薩摩の門割制度の本田門から明治期に名乗った家もある。熊本県・福島県・長崎県に多い。",
+  "originRegion": "中心となる田を意味する「本田」に由来し、大隅国や武蔵国の同名の地から発祥した",
+  "regionDistribution": {
+    "多い": [
+      "熊本",
+      "福島"
+    ],
+    "やや多い": [
+      "長崎",
+      "大分",
+      "石川"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "本田宗一郎",
+      "note": "実業家・技術者。本田技研工業の創業者で、二輪・四輪メーカーを世界的企業に育てた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9C%AC%E7%94%B0",
+    "https://name-power.net/fn/%E6%9C%AC%E7%94%B0.html",
+    "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E5%AE%97%E4%B8%80%E9%83%8E"
+  ]
+}

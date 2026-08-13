@@ -1,0 +1,35 @@
+{
+  "slug": "oishi",
+  "kanji": "大石",
+  "readings": [
+    "おおいし",
+    "おいし"
+  ],
+  "rankNational": 182,
+  "populationEstimate": "約11万人",
+  "origin": "大きな石のある土地を意味する地名に由来する。滋賀県大津市の大石は近江国栗太郡の大石荘にあたり、藤原秀郷の流れをくむ一族が伝わる。江戸時代にはこの流れをくむ家が赤穂藩士となった。静岡県富士宮市上条付近の旧大石は鎌倉時代に記録があり、同地では平安時代末期に大石を名乗ったと伝える。分布は静岡県に強く集中している。",
+  "originRegion": "大きな石のある土地を意味する地名に由来し、近江国栗太郡の大石荘から赤穂藩士が出た",
+  "regionDistribution": {
+    "多い": [
+      "静岡",
+      "佐賀"
+    ],
+    "やや多い": [
+      "長崎",
+      "高知",
+      "福岡"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "大石良雄",
+      "note": "赤穂藩の家老。通称は内蔵助。赤穂事件で四十七士を率いた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%A4%A7%E7%9F%B3",
+    "https://name-power.net/fn/%E5%A4%A7%E7%9F%B3.html",
+    "https://ja.wikipedia.org/wiki/%E5%A4%A7%E7%9F%B3%E8%89%AF%E9%9B%84"
+  ]
+}
