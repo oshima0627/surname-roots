@@ -15,7 +15,11 @@ const entry: SurnameEntry = {
   regionDistribution: { 多い: ["岩手"], やや多い: [] },
   kamon: [{ name: "下がり藤", description: "藤原氏ゆかりの家紋。" }],
   famousPeople: [{ name: "佐藤栄作", note: "第61-63代内閣総理大臣" }],
-  sources: ["https://example.com/sato"],
+  sources: [
+    "https://ja.wikipedia.org/wiki/佐藤",
+    "https://ja.wikipedia.org/wiki/佐藤氏",
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%BD%90%E8%97%A4",
+  ],
 };
 
 const kamonWithSvg: SurnameEntry["kamon"][number] = {
@@ -104,9 +108,66 @@ describe("SurnameDetail", () => {
     expect(screen.queryByText(/名字由来net/)).toBeNull();
   });
 
-  it("裏取り用の sources を画面に出さない", () => {
-    render(<SurnameDetail entry={entry} />);
-    expect(screen.queryByText(/example\.com/)).toBeNull();
+  describe("参考資料（sources）の表示", () => {
+    it("sources の全URLを、元のURLへのリンクとして出す", () => {
+      render(<SurnameDetail entry={entry} />);
+      const heading = screen.getByRole("heading", { name: "参考資料" });
+      const list = heading.parentElement?.querySelector("ul") as HTMLElement;
+      const links = Array.from(list.querySelectorAll("a"));
+      expect(links).toHaveLength(entry.sources.length);
+      expect(links.map((a) => a.getAttribute("href")).sort()).toEqual(
+        [...entry.sources].sort(),
+      );
+    });
+
+    it("外部リンクとして安全な属性（target=_blank・rel=noopener noreferrer）を付ける", () => {
+      render(<SurnameDetail entry={entry} />);
+      const heading = screen.getByRole("heading", { name: "参考資料" });
+      const links = heading.parentElement?.querySelectorAll("ul a") ?? [];
+      expect(links.length).toBeGreaterThan(0);
+      for (const link of links) {
+        expect(link.getAttribute("target")).toBe("_blank");
+        const rel = link.getAttribute("rel") ?? "";
+        expect(rel).toContain("noopener");
+        expect(rel).toContain("noreferrer");
+      }
+    });
+
+    it("スクリーンリーダー向けに外部サイトであることを伝えるテキストを持つ", () => {
+      render(<SurnameDetail entry={entry} />);
+      const heading = screen.getByRole("heading", { name: "参考資料" });
+      const links = heading.parentElement?.querySelectorAll("ul a") ?? [];
+      for (const link of links) {
+        expect(link.textContent).toContain("（外部サイト）");
+      }
+    });
+
+    it("URLをパーセントエンコードのまま出さず、日本語を読める形にデコードして出す", () => {
+      const { container } = render(<SurnameDetail entry={entry} />);
+      // %E4%BD%90%E8%97%A4 は「佐藤」のパーセントエンコード表記
+      expect(screen.queryByText(/%E4%BD%90%E8%97%A4/)).toBeNull();
+      const link = container.querySelector(
+        'a[href="https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%BD%90%E8%97%A4"]',
+      );
+      expect(link?.textContent).toContain("myoji-yurai.net/searchResult.htm?myojiKanji=佐藤");
+    });
+
+    it("同じホストの複数URLでも、リンク文字列が互いに異なり区別できる", () => {
+      render(<SurnameDetail entry={entry} />);
+      const heading = screen.getByRole("heading", { name: "参考資料" });
+      const links = Array.from(heading.parentElement?.querySelectorAll("ul a") ?? []);
+      const wikipediaLinks = links.filter((a) =>
+        (a.getAttribute("href") ?? "").includes("ja.wikipedia.org"),
+      );
+      expect(wikipediaLinks.length).toBeGreaterThan(1);
+      const labels = wikipediaLinks.map((a) => a.textContent);
+      expect(new Set(labels).size).toBe(labels.length);
+    });
+
+    it("sources が空なら参考資料セクション自体を出さない", () => {
+      render(<SurnameDetail entry={{ ...entry, sources: [] }} />);
+      expect(screen.queryByRole("heading", { name: "参考資料" })).toBeNull();
+    });
   });
 
   it("推定人口が空文字なら人口を出さない", () => {

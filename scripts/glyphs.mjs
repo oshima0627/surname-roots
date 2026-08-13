@@ -81,6 +81,11 @@ export const UI_TEXT = [
   // 「図案未収録」のような内部事情めいた言い方や、「準備中」のような
   // 将来の追加を約束する言い方を避け、短く中立にした表現。
   "画像なし",
+  // 詳細ページ末尾に追加した「参考資料」セクション（sources を表示するようになった変更）。
+  // 見出しの「参考資料」自体の文字は既存の別の文言（「参考値」「資料」）で拾えているが、
+  // 明示のため追加する。「（外部サイト）」はリンクごとに付けるスクリーンリーダー向けの
+  // sr-only テキストで、ここでしか使わない新規の文字（外・部）を含む。
+  "参考資料（外部サイト）",
   // ランキング順位が null のときのフォールバック表示（src/app/ranking/page.tsx の
   // `{entry.rankNational ?? "―"}`）。JSONを舐める collectGlyphs() では拾えない、
   // .tsx にハードコードされた文字なので、ここに明示しておく必要がある。
@@ -97,6 +102,36 @@ export const UI_TEXT = [
   // 画面には出ないが、安全側に倒してここに追加する。
   "旨避固藍委飾途壊→ぱ効束短未欄",
 ].join("");
+
+/**
+ * 参考資料として画面に出す表示用ラベルに変換する。
+ * 生のURL（`https://myoji-yurai.net/searchResult.htm?myojiKanji=%E4%BD%90%E8%97%A4` 等）は
+ * パーセントエンコードされていて読みにくいうえ、スキーム部分は情報として不要なので、
+ * ホスト名＋パス＋クエリをデコードして返す。同じホストの複数URLも、パスやクエリが
+ * 異なれば別の文字列として区別できる。
+ *
+ * SurnameDetail（表示側）とここ（フォントサブセットの文字収集側）の両方から呼び、
+ * 実装を1箇所に集約することで、表示する文字とサブセットに含める文字が食い違わない
+ * ようにしている（食い違うと、サブセットに無い文字だけ別書体にフォールバックする）。
+ */
+export function formatSourceLabel(url) {
+  let parsed;
+  try {
+    parsed = new URL(url);
+  } catch {
+    return url;
+  }
+  const decode = (s) => {
+    try {
+      return decodeURIComponent(s);
+    } catch {
+      return s;
+    }
+  };
+  const path = parsed.pathname === "/" ? "" : decode(parsed.pathname);
+  const search = decode(parsed.search);
+  return `${parsed.hostname}${path}${search}`;
+}
 
 /**
  * サブセットに含める文字を重複なく集める。
@@ -117,9 +152,11 @@ export function collectGlyphs() {
 
   for (const file of fs.readdirSync(surnameDir).filter((f) => f.endsWith(".json"))) {
     const entry = JSON.parse(fs.readFileSync(path.join(surnameDir, file), "utf-8"));
-    // sources は画面に出ないので除く。URL の英数字を拾う必要はない
-    const { sources: _omitted, ...visible } = entry;
+    // sources の生URL自体（%XX のパーセントエンコード表記）は画面に出さないので拾わない。
+    // 代わりに、詳細ページで実際に表示する formatSourceLabel() 後の文字列を拾う。
+    const { sources, ...visible } = entry;
     add(visible);
+    sources.forEach((url) => add(formatSourceLabel(url)));
   }
 
   prefectures.forEach((p) => add(p.name));

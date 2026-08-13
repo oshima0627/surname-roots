@@ -10,13 +10,19 @@
 
 ```bash
 npm install
-npm run dev        # 開発サーバー
-npm test           # テスト
-npm run typecheck  # 型チェック
-npm run lint       # lint
-npm run build      # 静的エクスポート（out/ を生成）
-npm run deploy     # ビルドして Cloudflare Workers へデプロイ
+npm run dev          # 開発サーバー
+npm test             # テスト
+npm run typecheck    # 型チェック
+npm run lint         # lint
+npm run build        # 静的エクスポート（out/ を生成）
+npm run deploy       # ビルドして Cloudflare Workers へデプロイ
+npm run check:links  # sources のURLがすべて生きているか確認（公開前に手動で実行）
 ```
+
+`check:links` は全苗字の `sources` に載っているURLへ実際にリクエストを送り、
+到達できないものを報告する。**ネットワークに数百件のリクエストを投げるため、
+`npm test` や `npm run build` には含めていない。** リリース前に手動で実行すること。
+失敗があれば非0で終了するので、リリース判定のゲートにも使える。
 
 ## 構成
 
@@ -39,7 +45,8 @@ Next.js の静的エクスポート（`output: "export"`）を Cloudflare Worker
 - **独立した2つの情報源が一致した内容のみ採用する。** 1つしか無いものは本文で出典を明示するか、載せない
 - **有名人は1件ずつ本人のページを開いて確認する。** 芸名・旧姓・異体字で外れる例が実際にあった
 - **裏が取れない項目は空にする。** `kamon: []` や `rankNational: null` は正当な値。埋めるための創作をしない
-- 参照したURLは `sources` に記録する（画面には出さない、裏取りの証跡）
+- 参照したURLは `sources` に記録する。**詳細ページに「参考資料」として掲載される**ので、
+  読者が実際に開くリンクになる。開けないURLや、その苗字と無関係なURLを入れない
 
 ### 既知の限界
 

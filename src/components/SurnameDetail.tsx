@@ -1,5 +1,6 @@
 import { JapanMap } from "@/components/JapanMap";
 import { Kamon } from "@/components/Kamon";
+import { formatSourceLabel } from "@/lib/glyphs";
 import type { SurnameEntry } from "@/lib/schema";
 
 /**
@@ -130,6 +131,26 @@ export function SurnameDetail({ entry }: { entry: SurnameEntry }) {
           <ul className="list-disc pl-5 space-y-1">
             {entry.readings.map((reading) => (
               <li key={reading}>{reading}</li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
+      {entry.sources.length > 0 && (
+        <Section title="参考資料">
+          <ul className="space-y-2 text-sm">
+            {entry.sources.map((url) => (
+              <li key={url}>
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="break-all text-ai underline underline-offset-2"
+                >
+                  {formatSourceLabel(url)}
+                  <span className="sr-only">（外部サイト）</span>
+                </a>
+              </li>
             ))}
           </ul>
         </Section>
