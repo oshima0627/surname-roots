@@ -45,9 +45,13 @@ describe("クレジットページ", () => {
     expect(screen.getAllByText(/著作権/).length).toBeGreaterThan(0);
   });
 
-  it("CC BY-SAのライセンス表記はすべてライセンス文へのリンクになっている（Public domainはリンクなし）", () => {
+  it("CC BY-SAの家紋は1件残らずライセンス文へのリンクを持つ（Public domainはリンクなし）", () => {
     render(<CreditsPage />);
 
+    // クレジットページはSVGファイル単位で1件だけ表示する（getKamonCredits の重複排除）ため、
+    // ここも同じ単位（ファイル）で数える。同じライセンス文字列を持つファイルが複数あっても、
+    // 「1件でも欠けたら失敗する」検証にするには「少なくとも1件リンクがある」ではなく、
+    // 期待されるリンク数（＝CC BY-SAのファイル数）と実際のリンク数の完全一致を見る必要がある。
     const byFile = new Map<string, string>();
     for (const entry of getAllSurnames()) {
       for (const k of entry.kamon) {
@@ -56,26 +60,20 @@ describe("クレジットページ", () => {
       }
     }
     const licenses = [...byFile.values()];
-    expect(licenses.length).toBeGreaterThan(0);
+    const ccFileCount = licenses.filter((l) => l.startsWith("CC BY-SA")).length;
+    const publicDomainFileCount = licenses.filter((l) => l === "Public domain").length;
+    // 前提: CC BY-SAとPublic domainが両方実在すること（そうでなければ以下の検証が空振りする）
+    expect(ccFileCount).toBeGreaterThan(0);
+    expect(publicDomainFileCount).toBeGreaterThan(0);
 
-    const ccLicenses = licenses.filter((l) => l.startsWith("CC BY-SA"));
-    expect(ccLicenses.length).toBeGreaterThan(0);
-    // Public domain のファイルが実在することを前提に確認する（そうでなければ
-    // 後半の「リンクなし」検証が意味を持たない）
-    expect(licenses).toContain("Public domain");
-
-    for (const license of new Set(ccLicenses)) {
-      const matches = screen.getAllByText(license);
-      const linked = matches.filter((el) => el.tagName === "A");
-      expect(linked.length).toBeGreaterThan(0);
-      for (const link of linked) {
-        expect(link.getAttribute("href")).toBe("https://creativecommons.org/licenses/by-sa/3.0/");
-      }
-    }
+    const ccLinks = document.querySelectorAll(
+      'a[href="https://creativecommons.org/licenses/by-sa/3.0/"]',
+    );
+    expect(ccLinks.length).toBe(ccFileCount);
 
     // "Public domain" はライセンス文が存在しないためリンク化されていないこと
     const publicDomainMatches = screen.getAllByText("Public domain");
-    expect(publicDomainMatches.length).toBeGreaterThan(0);
+    expect(publicDomainMatches.length).toBe(publicDomainFileCount);
     for (const el of publicDomainMatches) {
       expect(el.tagName).not.toBe("A");
     }
