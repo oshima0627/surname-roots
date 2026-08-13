@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/noto-serif-jp-subset.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="bg-washi text-sumi antialiased">
         <header className="border-b border-keisen bg-surface">
           <div className="mx-auto max-w-3xl px-4 py-4">

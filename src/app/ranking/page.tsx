@@ -29,7 +29,9 @@ export default function RankingPage() {
         <tbody>
           {all.map((entry) => (
             <tr key={entry.slug} className="border-b border-keisen">
-              <td className="px-3 py-3 text-sumi-muted">{entry.rankNational ?? "―"}</td>
+              <td className="px-3 py-3 text-sumi-muted font-tabular tabular-nums">
+                {entry.rankNational ?? "―"}
+              </td>
               <td className="px-3 py-3">
                 <Link href={`/myoji/${entry.slug}`} className="font-bold underline">
                   {entry.kanji}

@@ -21,9 +21,11 @@ export function SurnameDetail({ entry }: { entry: SurnameEntry }) {
         {(entry.rankNational !== null || entry.populationEstimate !== "") && (
           <p className="mt-3 text-sm text-sumi-muted">
             {entry.rankNational !== null && (
-              <span className="mr-3">全国{entry.rankNational}位</span>
+              <span className="mr-3 font-tabular tabular-nums">全国{entry.rankNational}位</span>
             )}
-            {entry.populationEstimate !== "" && <span>{entry.populationEstimate}</span>}
+            {entry.populationEstimate !== "" && (
+              <span className="font-tabular tabular-nums">{entry.populationEstimate}</span>
+            )}
           </p>
         )}
         {entry.rankNational !== null && (
@@ -34,7 +36,7 @@ export function SurnameDetail({ entry }: { entry: SurnameEntry }) {
       </header>
 
       <Section title="由来">
-        <p className="leading-8 whitespace-pre-wrap">{entry.origin}</p>
+        <p className="text-lg leading-loose whitespace-pre-wrap">{entry.origin}</p>
         <p className="mt-4 text-sm text-sumi-muted">発祥: {entry.originRegion}</p>
       </Section>
 

@@ -1,7 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Noto Serif JP Subset";
+  src: url("/fonts/noto-serif-jp-subset.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
 @theme inline {
-  --font-sans: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", Meiryo, sans-serif;
+  /* 明朝が読み込まれるまではOS標準の明朝、無ければゴシックで表示する */
+  --font-sans: "Noto Serif JP Subset", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-tabular: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif;
 
   /* 配色。src/lib/colors.ts と必ず同じ値にすること */
   --color-washi: #f7f4ed;
