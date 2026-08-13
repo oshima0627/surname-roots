@@ -35,8 +35,8 @@ describe("本文の言語", () => {
 
   it("キリル文字・ハングルが混入していない", () => {
     const hits = texts
-      .map((t) => ({ ...t, found: t.text.match(NON_JAPANESE_SCRIPT) }))
-      .filter((t) => t.found)
+      .map((t) => ({ ...t, found: t.text.match(NON_JAPANESE_SCRIPT) ?? [] }))
+      .filter((t) => t.found.length > 0)
       .map((t) => `${t.slug}/${t.field}: ${t.found.join("")}`);
     expect(hits).toEqual([]);
   });
