@@ -1,0 +1,37 @@
+{
+  "slug": "higashi",
+  "kanji": "東",
+  "readings": [
+    "ひがし",
+    "あずま",
+    "あがり",
+    "とう"
+  ],
+  "rankNational": 127,
+  "populationEstimate": "約15万人",
+  "origin": "方角の「東」に由来し、集落の東側にあたる土地に住んだことなどから名乗ったとされる。読みは「ひがし」「あずま」のほか、沖縄県では東を意味する「あがり」と読む家がある。江戸時代の薩摩には門割制度の東門があり、明治期にそこから名乗った家が多い。石川県や富山県でも明治の新姓と伝える例がある。分布は鹿児島県・石川県・和歌山県に多い。",
+  "originRegion": "方角の「東」に由来し、集落の東側にあたる土地に住んだことから名乗ったとされる",
+  "regionDistribution": {
+    "多い": [
+      "鹿児島",
+      "石川"
+    ],
+    "やや多い": [
+      "和歌山",
+      "熊本",
+      "三重"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "東龍太郎",
+      "note": "医学者・厚生官僚・政治家。東京大学名誉教授を経て東京都知事を務め、東京オリンピックを迎えた。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%9D%B1",
+    "https://name-power.net/fn/%E6%9D%B1.html",
+    "https://ja.wikipedia.org/wiki/%E6%9D%B1%E9%BE%8D%E5%A4%AA%E9%83%8E"
+  ]
+}
