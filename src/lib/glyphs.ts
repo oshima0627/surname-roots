@@ -1,1 +1,1 @@
-export { collectGlyphs, UI_TEXT } from "../../scripts/glyphs.mjs";
+export { collectGlyphs, UI_TEXT, formatSourceLabel } from "../../scripts/glyphs.mjs";
