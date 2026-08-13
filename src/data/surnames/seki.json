@@ -1,0 +1,35 @@
+{
+  "slug": "seki",
+  "kanji": "関",
+  "readings": [
+    "せき",
+    "かん"
+  ],
+  "rankNational": 120,
+  "populationEstimate": "約15万人",
+  "origin": "人や物の通行をせき止める「関（関所）」に由来する地名から起こった。三重県亀山市の関町は平安時代、岐阜県関市は南北朝時代に記録のある地名で、それぞれから発祥した一族がある。伊勢亀山藩主や美作宮川藩主を務めた家も知られる。ほかに新潟県南魚沼市関、茨城県筑西市の関本など全国に同名の地名がある。分布は茨城県・長野県に多い。",
+  "originRegion": "通行をせき止める「関（関所）」に由来する地名から起こり、伊勢亀山藩主などを出した",
+  "regionDistribution": {
+    "多い": [
+      "茨城",
+      "長野"
+    ],
+    "やや多い": [
+      "新潟",
+      "群馬",
+      "千葉"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "関孝和",
+      "note": "江戸時代前期の和算家。内山氏に生まれて関氏の養子となり、「算聖」と称された。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E9%96%A2",
+    "https://name-power.net/fn/%E9%96%A2.html",
+    "https://ja.wikipedia.org/wiki/%E9%96%A2%E5%AD%9D%E5%92%8C"
+  ]
+}
