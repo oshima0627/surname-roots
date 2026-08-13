@@ -1,0 +1,30 @@
+{
+  "slug": "onishi",
+  "kanji": "大西",
+  "readings": ["おおにし", "だいさい"],
+  "rankNational": 104,
+  "populationEstimate": "約17万人",
+  "origin": "阿波国三好郡の大西（現在の徳島県三好市池田町大利大西）に由来する家がよく知られる。南北朝時代に記録のある地名で、ここから阿波を経て瀬戸内一帯に広がったとされ、現在も香川県・愛媛県など四国に多い。ほかに奈良県桜井市大西、島根県雲南市加茂町大西、岐阜県高山市久々野町大西など各地の同名の地名からも発祥しており、大きな西の土地を指す地形由来ともされる。島根県の一帯では「だいさい」と読む。",
+  "originRegion": "阿波国三好郡の大西（現在の徳島県三好市池田町）をはじめ、各地の「大西」という地名に由来する",
+  "regionDistribution": {
+    "多い": ["香川", "愛媛"],
+    "やや多い": ["徳島", "兵庫", "奈良"]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "大西卓哉",
+      "note": "JAXAの宇宙飛行士。東京都出身で、前職は全日本空輸のボーイング767型機副操縦士。"
+    },
+    {
+      "name": "大西瀧治郎",
+      "note": "海軍軍人。最終階級は海軍中将で、神風特別攻撃隊の創始者の一人とされる。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E5%A4%A7%E8%A5%BF",
+    "https://name-power.net/fn/%E5%A4%A7%E8%A5%BF.html",
+    "https://ja.wikipedia.org/wiki/%E5%A4%A7%E8%A5%BF%E5%8D%93%E5%93%89",
+    "https://ja.wikipedia.org/wiki/%E5%A4%A7%E8%A5%BF%E7%80%A7%E6%B2%BB%E9%83%8E"
+  ]
+}

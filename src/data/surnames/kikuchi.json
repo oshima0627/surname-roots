@@ -1,0 +1,30 @@
+{
+  "slug": "kikuchi",
+  "kanji": "菊地",
+  "readings": ["きくち", "きくじ"],
+  "rankNational": 101,
+  "populationEstimate": "約18万人",
+  "origin": "「菊地」は、肥後国菊池郡（現在の熊本県菊池市周辺）を本拠とした菊池氏に由来し、その表記違いとされる。改姓は南北朝時代ごろと推定されている。もとは九州の名字だが分布は東日本に大きく偏り、とくに東北地方に多い。江戸時代には仙台藩士にみられ、岩手県奥州市江刺の一帯には室町時代から居住したとの伝えがある。福島県本宮市や栃木県宇都宮市では草分けの家と伝えられる。",
+  "originRegion": "肥後国菊池郡（現在の熊本県菊池市周辺）の菊池氏に由来する表記違いとされ、分布は東北地方に偏る",
+  "regionDistribution": {
+    "多い": ["宮城", "岩手"],
+    "やや多い": ["秋田", "福島", "栃木"]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "菊地成孔",
+      "note": "サクソフォーン奏者・作曲家・文筆家。千葉県銚子市出身で、バンドマスターとしても活動する。"
+    },
+    {
+      "name": "菊地秀行",
+      "note": "小説家。千葉県銚子市生まれ。弟はジャズミュージシャンの菊地成孔。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E8%8F%8A%E5%9C%B0",
+    "https://name-power.net/fn/%E8%8F%8A%E5%9C%B0.html",
+    "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E6%88%90%E5%AD%94",
+    "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E7%A7%80%E8%A1%8C"
+  ]
+}
