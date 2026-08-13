@@ -23,29 +23,39 @@
 | `chigai-takanoha.svg` | 違い鷹の羽 | 阿部・高木 | 播磨屋 (Harimaya); vectorized by User:Razorbliss | Public domain | [Chigai-taka-no-ha.svg](https://commons.wikimedia.org/wiki/File:Chigai-taka-no-ha.svg) | あり |
 | `tsuki-boshi.svg` | 月星 | 千葉 | User:Los688 | Public domain | [Japanese_crest_Tsuki_ni_Hoshi.svg](https://commons.wikimedia.org/wiki/File:Japanese_crest_Tsuki_ni_Hoshi.svg) | あり |
 | `kuyo.svg` | 九曜 | 千葉・石田 | User:WTCA | Public domain | [Kuyo.svg](https://commons.wikimedia.org/wiki/File:Kuyo.svg) | あり |
-| `sasa-rindo.svg` | 笹竜胆 | 原・石川 | Misogi (original); SVG by User:Melian; edited by Jdx and others | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Sasa_rindo.svg](https://commons.wikimedia.org/wiki/File:Sasa_rindo.svg) | あり |
+| `sasa-rindo.svg` | 笹竜胆 | 原・石川 | Misogi (original); SVG by User:Melian; edited by Jdx and others | CC BY-SA 3.0 / GFDL 1.2+ [注1] | [Sasa_rindo.svg](https://commons.wikimedia.org/wiki/File:Sasa_rindo.svg) | あり |
 | `maru-ni-yotsume-yui.svg` | 丸に四つ目結 | 橋本 | LordAmeth (original); vectorized by Fvasconcellos | Public domain | [So_clan_mon.svg](https://commons.wikimedia.org/wiki/File:So_clan_mon.svg) | あり |
-| `bizen-cho.svg` | 備前蝶 | 池田 | User:Mukai | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Japanese_Crest_Bizenn_Chou.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Bizenn_Chou.svg) | あり |
-| `mokko.svg` | 木瓜 | 池田・内田 | User:Mukai | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Japanese_Crest_Mokkou.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Mokkou.svg) | あり |
-| `gosan-no-kiri.svg` | 五三の桐 | 石井 | User:Kazukiokumura | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Japanese_Crest_GosannKiri.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_GosannKiri.svg) | あり |
+| `bizen-cho.svg` | 備前蝶 | 池田 | User:Mukai | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_Crest_Bizenn_Chou.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Bizenn_Chou.svg) | あり |
+| `mokko.svg` | 木瓜 | 池田・内田 | User:Mukai | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_Crest_Mokkou.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Mokkou.svg) | あり |
+| `gosan-no-kiri.svg` | 五三の桐 | 石井 | User:Kazukiokumura | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_Crest_GosannKiri.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_GosannKiri.svg) | あり |
 | `maru-ni-mitsubiki.svg` | 丸に三つ引 | 石井 | User:Mukai | CC BY-SA 3.0 | [Japanese_Crest_Maru_ni_mitu_Hiki.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Maru_ni_mitu_Hiki.svg) | あり |
-| `sagari-fuji.svg` | 下がり藤／下り藤 | 加藤・上田 | User:Mukai | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Japanese_crest_Sagari_Fuji.svg](https://commons.wikimedia.org/wiki/File:Japanese_crest_Sagari_Fuji.svg) | あり |
+| `sagari-fuji.svg` | 下がり藤／下り藤 | 加藤・上田 | User:Mukai | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_crest_Sagari_Fuji.svg](https://commons.wikimedia.org/wiki/File:Japanese_crest_Sagari_Fuji.svg) | あり |
 | `janome.svg` | 蛇の目 | 加藤 | User:Mukai (original); vectorized by Los688; streamlined by AnonMoos | Public domain | [Japanese_Crest_janome.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_janome.svg) | あり |
 | `yotsume-yui.svg` | 四つ目結 | 木村 | Jjok (original); vector by Los688 and Sarang | Public domain | [Japanese_crest_Yotumeyui.svg](https://commons.wikimedia.org/wiki/File:Japanese_crest_Yotumeyui.svg) | あり |
-| `kaga-umebachi.svg` | 剣梅鉢（加賀梅鉢） | 前田 | User:Mukai | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Japanese_crest_Kaga_Umebachi.svg](https://commons.wikimedia.org/wiki/File:Japanese_crest_Kaga_Umebachi.svg) | あり |
-| `ageha-cho.svg` | 揚羽蝶 | 森田 | Júlio Reis and Misogi; SVG cleanup by Puck04 | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Ageha-cho.svg](https://commons.wikimedia.org/wiki/File:Ageha-cho.svg) | あり |
+| `kaga-umebachi.svg` | 剣梅鉢（加賀梅鉢） | 前田 | User:Mukai | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_crest_Kaga_Umebachi.svg](https://commons.wikimedia.org/wiki/File:Japanese_crest_Kaga_Umebachi.svg) | あり |
+| `ageha-cho.svg` | 揚羽蝶 | 森田 | Júlio Reis and Misogi; SVG cleanup by Puck04 | CC BY-SA 3.0 / GFDL 1.2+ [注1] | [Ageha-cho.svg](https://commons.wikimedia.org/wiki/File:Ageha-cho.svg) | あり |
 | `maru-ni-mokko.svg` | 丸に木瓜 | 中山・和田 | User:Mukai | CC BY-SA 3.0 | [Japanese_Crest_Maru_ni_Mokkou(White_background).svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Maru_ni_Mokkou(White_background).svg) | あり |
-| `katabami.svg` | 片喰 | 酒井 | User:Mukai | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Japanese_Crest_Katabami.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Katabami.svg) | あり |
-| `hidari-mitsudomoe.svg` | 左三つ巴 | 佐野・清水 | BraneJ (original); edited by Jdx | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Hidari_mitsudomoe.svg](https://commons.wikimedia.org/wiki/File:Hidari_mitsudomoe.svg) | あり |
+| `katabami.svg` | 片喰 | 酒井 | User:Mukai | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_Crest_Katabami.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Katabami.svg) | あり |
+| `hidari-mitsudomoe.svg` | 左三つ巴 | 佐野・清水 | BraneJ (original); edited by Jdx | CC BY-SA 3.0 / GFDL 1.2+ [注1] | [Hidari_mitsudomoe.svg](https://commons.wikimedia.org/wiki/File:Hidari_mitsudomoe.svg) | あり |
 | `sumitate-yotsume.svg` | 隅立て四つ目 | 佐々木 | User:Mukai | CC BY-SA 3.0 | [Sumitate_yotu_Meyui(No_background_and_Black_color_drawing).svg](https://commons.wikimedia.org/wiki/File:Sumitate_yotu_Meyui(No_background_and_Black_color_drawing).svg) | あり |
-| `genji-guruma.svg` | 源氏車 | 佐藤 | User:Mukai | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Japanese_Crest_Gennji_kuruma.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Gennji_kuruma.svg) | あり |
+| `genji-guruma.svg` | 源氏車 | 佐藤 | User:Mukai | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_Crest_Gennji_kuruma.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Gennji_kuruma.svg) | あり |
 | `futatsu-karigane.svg` | 二つ雁金 | 柴田 | User:Mukai | CC BY-SA 3.0 | [Japanese_Crest_futatu_Karigane.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_futatu_Karigane.svg) | あり |
-| `umebachi.svg` | 梅鉢 | 菅原 | User:Mukai | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Japanese_crest_Umebachi.svg](https://commons.wikimedia.org/wiki/File:Japanese_crest_Umebachi.svg) | あり |
-| `watanabe-boshi.svg` | 渡辺星 | 渡辺 | User:Mukai | CC BY-SA 3.0（GFDL 1.2+ も選択可） | [Japanese_Crest_Watanabe_Hosi.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Watanabe_Hosi.svg) | あり |
+| `umebachi.svg` | 梅鉢 | 菅原 | User:Mukai | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_crest_Umebachi.svg](https://commons.wikimedia.org/wiki/File:Japanese_crest_Umebachi.svg) | あり |
+| `watanabe-boshi.svg` | 渡辺星 | 渡辺 | User:Mukai | CC BY-SA 3.0 (also GFDL 1.2+) [注2] | [Japanese_Crest_Watanabe_Hosi.svg](https://commons.wikimedia.org/wiki/File:Japanese_Crest_Watanabe_Hosi.svg) | あり |
 
-「CC BY-SA 3.0（GFDL 1.2+ も選択可）」は、Wikimedia Commons のファイルページが
-GNU Free Documentation License 1.2+ と CC BY-SA 3.0/2.5/2.0/1.0 を利用者が選べる形で
-併記している場合の表記。このリポジトリでは実務上 CC BY-SA 3.0 の条件（表示・継承）に従う。
+「ライセンス」列は `src/data/surnames/*.json` の該当する `kamon[].svg.license` の値と
+一字一句一致させている（機械的に突き合わせられるように、日本語に言い換えていない）。
+このリポジトリでは実務上いずれも CC BY-SA 3.0 の条件（表示・継承）に従う。
+
+**[注1] `CC BY-SA 3.0 / GFDL 1.2+`** — 該当3ファイル（sasa-rindo, ageha-cho,
+hidari-mitsudomoe）のCommonsファイルページは、GFDL 1.2+ と CC BY-SA **3.0のみ**を提供している。
+2.5/2.0/1.0など他のバージョンの選択肢はない。
+
+**[注2] `CC BY-SA 3.0 (also GFDL 1.2+)`** — 該当9ファイル（bizen-cho, mokko, gosan-no-kiri,
+sagari-fuji, kaga-umebachi, katabami, genji-guruma, umebachi, watanabe-boshi）のCommons
+ファイルページは、GFDL 1.2+ に加えて CC BY-SA **3.0/2.5/2.0/1.0を利用者が選べる**形で提供している
+（Wikimedia Commonsの「複数ライセンスから選択可」テンプレート）。[注1]の3ファイルとは提供
+条件が異なるため、別の表記にしている。
 
 ## 改変の内容
 
