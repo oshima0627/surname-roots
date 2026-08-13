@@ -1,0 +1,35 @@
+{
+  "slug": "hidaka",
+  "kanji": "日高",
+  "readings": [
+    "ひだか",
+    "ひたか"
+  ],
+  "rankNational": 363,
+  "populationEstimate": "約5万人",
+  "origin": "和歌山県日高郡に由来する。奈良時代に「氷高」の表記で記録のある古い地名である。宮崎県日南市には、前九年の役の際に兜に鷹が留まった戦功で「日鷹」を称し、1063年に地名から「日高」へ改めたと伝える家がある。佐賀県唐津市浦の日高城は戦国時代の日高氏の築城とされる。宮崎県に強く集中している。",
+  "originRegion": "和歌山県日高郡に由来し、分布は宮崎県に強く集中する",
+  "regionDistribution": {
+    "多い": [
+      "宮崎",
+      "鹿児島"
+    ],
+    "やや多い": [
+      "島根",
+      "福岡",
+      "大分"
+    ]
+  },
+  "kamon": [],
+  "famousPeople": [
+    {
+      "name": "日高晤郎",
+      "note": "芸人・ラジオパーソナリティ。北海道で長寿のラジオ番組を持った。"
+    }
+  ],
+  "sources": [
+    "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E6%97%A5%E9%AB%98",
+    "https://name-power.net/fn/%E6%97%A5%E9%AB%98.html",
+    "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%AB%98%E6%99%A4%E9%83%8E"
+  ]
+}
