@@ -13,29 +13,31 @@ export default function RankingPage() {
   return (
     <div>
       <h1 className="text-2xl font-bold">全国ランキング</h1>
-      <p className="mt-2 text-sm text-stone-600">
+      <p className="mt-3 text-sm text-sumi-muted">
         順位は名字由来netの集計に基づく参考値です。他の資料では順位が異なることがあります。
       </p>
 
-      <table className="mt-6 w-full border-collapse bg-white text-left">
+      <table className="mt-10 w-full border-collapse text-left">
         <caption className="sr-only">全国順位順の苗字一覧</caption>
         <thead>
-          <tr className="border-b border-stone-300 text-sm text-stone-600">
-            <th scope="col" className="px-3 py-2 w-16">順位</th>
-            <th scope="col" className="px-3 py-2">苗字</th>
-            <th scope="col" className="px-3 py-2">読み</th>
+          <tr className="border-b border-keisen text-sm text-sumi-muted">
+            <th scope="col" className="w-16 px-3 py-3 font-normal">順位</th>
+            <th scope="col" className="px-3 py-3 font-normal">苗字</th>
+            <th scope="col" className="px-3 py-3 font-normal">読み</th>
           </tr>
         </thead>
         <tbody>
           {all.map((entry) => (
-            <tr key={entry.slug} className="border-b border-stone-200">
-              <td className="px-3 py-3 text-stone-600">{entry.rankNational ?? "―"}</td>
-              <td className="px-3 py-3">
+            <tr key={entry.slug} className="border-b border-keisen">
+              <td className="px-3 py-4 text-sumi-muted font-tabular tabular-nums">
+                {entry.rankNational ?? "―"}
+              </td>
+              <td className="px-3 py-4">
                 <Link href={`/myoji/${entry.slug}`} className="font-bold underline">
                   {entry.kanji}
                 </Link>
               </td>
-              <td className="px-3 py-3 text-stone-600">{entry.readings.join(" / ")}</td>
+              <td className="px-3 py-4 text-sumi-muted">{entry.readings.join(" / ")}</td>
             </tr>
           ))}
         </tbody>

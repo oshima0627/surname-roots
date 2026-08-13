@@ -8,7 +8,17 @@
   "originRegion": "「清らかな水が湧く場所」を意味する地名（地形姓）に由来するとされる",
   "regionDistribution": { "多い": ["東京", "埼玉", "神奈川"], "やや多い": ["大阪", "愛知", "兵庫", "北海道"] },
   "kamon": [
-    { "name": "左三つ巴", "description": "勾玉を三つ組み合わせて渦を描いた紋。戦国武将で備中高松城主だった清水宗治が用いたことで知られる。" },
+    {
+      "name": "左三つ巴",
+      "description": "勾玉を三つ組み合わせて渦を描いた紋。戦国武将で備中高松城主だった清水宗治が用いたことで知られる。",
+      "svg": {
+        "file": "hidari-mitsudomoe.svg",
+        "license": "CC BY-SA 3.0 / GFDL 1.2+",
+        "author": "BraneJ (original); edited by Jdx",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hidari_mitsudomoe.svg",
+        "modified": true
+      }
+    },
     { "name": "三つ柏", "description": "神饌を盛る器として古くから神聖視されてきた柏の葉を三枚あしらった紋。清水姓の家々で広く用いられてきた家紋の一つとされる。" }
   ],
   "famousPeople": [

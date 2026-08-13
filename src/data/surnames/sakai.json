@@ -8,7 +8,17 @@
   "originRegion": "三河国（現・愛知県）の地名に由来するとされ、徳川家譜代の酒井氏をはじめ複数の系統が伝わる",
   "regionDistribution": { "多い": ["愛知", "東京"], "やや多い": ["神奈川", "大阪"] },
   "kamon": [
-    { "name": "片喰", "description": "徳川家譜代の重臣として知られる酒井氏（左衛門尉家・雅楽頭家）が用いたとされる家紋。カタバミの葉を図案化したもので、繁殖力の強い植物であることから子孫繁栄の願いが込められているとされる。" }
+    {
+      "name": "片喰",
+      "description": "徳川家譜代の重臣として知られる酒井氏（左衛門尉家・雅楽頭家）が用いたとされる家紋。カタバミの葉を図案化したもので、繁殖力の強い植物であることから子孫繁栄の願いが込められているとされる。",
+      "svg": {
+        "file": "katabami.svg",
+        "license": "CC BY-SA 3.0 (also GFDL 1.2+)",
+        "author": "User:Mukai",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_Crest_Katabami.svg",
+        "modified": true
+      }
+    }
   ],
   "famousPeople": [
     { "name": "酒井忠次", "note": "戦国時代から江戸時代初期の武将。徳川家康の重臣で「徳川四天王」の一人に数えられ、長篠の戦いなど数々の合戦で活躍した（1527年〜1596年）。" },

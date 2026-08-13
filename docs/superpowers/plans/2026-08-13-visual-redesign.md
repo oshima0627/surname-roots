@@ -146,6 +146,41 @@ Expected: PASS（12件）
 }
 ```
 
+- [ ] **Step 4b: colors.ts と globals.css の同期をテストで守る**
+
+色を2箇所（TypeScript と CSS）に書く構成になっている。Tailwind v4 の `@theme` は
+TypeScript から値を取れないため、この重複は避けられない。
+**コメントだけで守ると、片方を直して他方を忘れたときに静かにズレる。**
+
+`src/lib/colors.test.ts` に追加する。
+
+```ts
+import fs from "node:fs";
+import path from "node:path";
+
+describe("globals.css との同期", () => {
+  const css = fs.readFileSync(path.join(process.cwd(), "src/app/globals.css"), "utf-8");
+
+  // COLORS のキー → CSS 変数名（地図の色は @theme に置かないので除く）
+  const themeTokens: [keyof typeof COLORS, string][] = [
+    ["washi", "--color-washi"],
+    ["surface", "--color-surface"],
+    ["sumi", "--color-sumi"],
+    ["sumiMuted", "--color-sumi-muted"],
+    ["ai", "--color-ai"],
+    ["keisen", "--color-keisen"],
+  ];
+
+  it.each(themeTokens)("%s が globals.css と一致する", (key, cssVar) => {
+    const m = css.match(new RegExp(`${cssVar}:\\s*(#[0-9a-fA-F]{6})`));
+    expect(m, `${cssVar} が globals.css に無い`).not.toBeNull();
+    expect(m![1].toLowerCase()).toBe(COLORS[key].toLowerCase());
+  });
+});
+```
+
+このテストは Step 4 で `globals.css` を書いた後に通る。先に書いて落ちることを確認すること。
+
 - [ ] **Step 5: 全コンポーネントの色クラスを置き換える**
 
 既存の stone / amber 系クラスを、対応するトークンに置き換える。

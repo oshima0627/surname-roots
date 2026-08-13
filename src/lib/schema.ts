@@ -32,7 +32,26 @@ export const surnameEntrySchema = z.object({
   }, {
     message: "同じ県が「多い」と「やや多い」に重複して登録されている",
   }),
-  kamon: z.array(z.object({ name: z.string().min(1), description: z.string().min(1) })),
+  kamon: z.array(
+    z.object({
+      name: z.string().min(1),
+      description: z.string().min(1),
+      /**
+       * 家紋のSVG。持つなら出典情報を必須にする。
+       * 意匠自体の著作権は切れているが、SVG表現には作者の著作権がある。
+       * ここを任意項目にすると出典不明のSVGが混入するので、必ず必須のままにすること。
+       */
+      svg: z
+        .object({
+          file: z.string().min(1),
+          license: z.string().min(1),
+          author: z.string().min(1),
+          sourceUrl: z.string().regex(/^https?:\/\//),
+          modified: z.boolean(),
+        })
+        .optional(),
+    }),
+  ),
   famousPeople: z.array(z.object({ name: z.string().min(1), note: z.string().min(1) })),
   /**
    * 裏取りに使ったURL。画面には出さない。

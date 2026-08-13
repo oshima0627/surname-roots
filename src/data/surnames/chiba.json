@@ -8,8 +8,28 @@
   "originRegion": "下総国千葉郡（現在の千葉市周辺）の地名に由来し、桓武平氏の流れをくむ千葉氏が本拠としたとされる",
   "regionDistribution": { "多い": ["宮城", "岩手"], "やや多い": ["北海道"] },
   "kamon": [
-    { "name": "月星", "description": "妙見菩薩信仰から形成されたとされる紋で、千葉氏の代表的な家紋として知られる。" },
-    { "name": "九曜", "description": "月星紋のバリエーションの一つで、時代や支流によって九曜に半月を加えた形など複数の意匠が伝わる。" }
+    {
+      "name": "月星",
+      "description": "妙見菩薩信仰から形成されたとされる紋で、千葉氏の代表的な家紋として知られる。",
+      "svg": {
+        "file": "tsuki-boshi.svg",
+        "license": "Public domain",
+        "author": "User:Los688",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_crest_Tsuki_ni_Hoshi.svg",
+        "modified": true
+      }
+    },
+    {
+      "name": "九曜",
+      "description": "月星紋のバリエーションの一つで、時代や支流によって九曜に半月を加えた形など複数の意匠が伝わる。",
+      "svg": {
+        "file": "kuyo.svg",
+        "license": "Public domain",
+        "author": "User:WTCA",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuyo.svg",
+        "modified": true
+      }
+    }
   ],
   "famousPeople": [
     { "name": "千葉雄大", "note": "俳優。2010年『天装戦隊ゴセイジャー』の主演で注目され、2017年に映画『殿、利息でござる！』で日本アカデミー賞新人俳優賞を受賞した。" },

@@ -14,10 +14,19 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body className="bg-stone-50 text-stone-900 antialiased">
-        <header className="border-b border-stone-200 bg-white">
-          <div className="mx-auto max-w-3xl px-4 py-4">
-            <Link href="/" className="text-lg font-bold tracking-wide">
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/noto-serif-jp-subset.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body className="bg-washi text-sumi antialiased">
+        <header className="border-b border-keisen">
+          <div className="mx-auto max-w-3xl px-4 py-6">
+            <Link href="/" className="text-base tracking-[0.2em] text-sumi">
               苗字ルーツ辞典
             </Link>
           </div>

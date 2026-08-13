@@ -8,7 +8,17 @@
   "originRegion": "近江国佐々木荘（現・滋賀県近江八幡市）の地名に由来するとされる",
   "regionDistribution": { "多い": ["岩手", "秋田"], "やや多い": ["宮城", "北海道"] },
   "kamon": [
-    { "name": "隅立て四つ目", "description": "近江源氏佐々木氏を代表する家紋で、目結紋の一種。江戸時代の記録『寛政重修諸家譜』では目結紋を用いた幕臣77家が佐々木氏族を称したと伝わり、嫡流の六角氏などが用いた。" }
+    {
+      "name": "隅立て四つ目",
+      "description": "近江源氏佐々木氏を代表する家紋で、目結紋の一種。江戸時代の記録『寛政重修諸家譜』では目結紋を用いた幕臣77家が佐々木氏族を称したと伝わり、嫡流の六角氏などが用いた。",
+      "svg": {
+        "file": "sumitate-yotsume.svg",
+        "license": "CC BY-SA 3.0",
+        "author": "User:Mukai",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumitate_yotu_Meyui(No_background_and_Black_color_drawing).svg",
+        "modified": true
+      }
+    }
   ],
   "famousPeople": [
     { "name": "佐々木朗希", "note": "プロ野球選手（投手）。2022年4月10日、千葉ロッテマリーンズ在籍時にオリックス戦で完全試合を達成し、19奪三振と13者連続奪三振の記録を樹立した。" },

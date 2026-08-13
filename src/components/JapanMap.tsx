@@ -1,4 +1,5 @@
 import { PREFECTURES, TILE_COLS, TILE_ROWS } from "@/lib/prefectures";
+import { COLORS } from "@/lib/colors";
 import type { Distribution } from "@/lib/schema";
 
 const TILE = 36;
@@ -7,15 +8,15 @@ const GAP = 3;
 type Level = "high" | "mid" | "none";
 
 const FILL: Record<Level, string> = {
-  high: "#b45309",
-  mid: "#fbbf24",
-  none: "#e7e5e4",
+  high: COLORS.mapHigh,
+  mid: COLORS.mapMid,
+  none: COLORS.mapNone,
 };
 
 const TEXT: Record<Level, string> = {
-  high: "#ffffff",
-  mid: "#44403c",
-  none: "#57534e",
+  high: COLORS.washi,
+  mid: COLORS.sumi,
+  none: COLORS.mapNoneText,
 };
 
 export function JapanMap({ distribution }: { distribution: Distribution }) {
@@ -57,6 +58,7 @@ export function JapanMap({ distribution }: { distribution: Distribution }) {
                   dominantBaseline="central"
                   fontSize={11}
                   fill={TEXT[level]}
+                  className="font-tabular"
                 >
                   {pref.name}
                 </text>
@@ -66,21 +68,21 @@ export function JapanMap({ distribution }: { distribution: Distribution }) {
           {/* In-SVG legend for wide screens (sm and above) */}
           <g className="hidden sm:block" data-testid="svg-legend">
             {/* Background for legend */}
-            <rect x="10" y="10" width="130" height="70" fill="#ffffff" rx="4" opacity="0.95" />
+            <rect x="10" y="10" width="130" height="70" fill={COLORS.surface} rx="4" opacity="0.95" />
             {/* High level swatch and label */}
             <rect x="20" y="20" width="12" height="12" fill={FILL.high} rx="2" />
-            <text x="38" y="28" fontSize="11" fill="#44403c" fontWeight="500">
+            <text x="38" y="28" fontSize="11" fill={COLORS.sumi} fontWeight="500" className="font-tabular">
               多い
             </text>
             {/* Mid level swatch and label */}
             <rect x="20" y="40" width="12" height="12" fill={FILL.mid} rx="2" />
-            <text x="38" y="48" fontSize="11" fill="#44403c" fontWeight="500">
+            <text x="38" y="48" fontSize="11" fill={COLORS.sumi} fontWeight="500" className="font-tabular">
               やや多い
             </text>
           </g>
         </svg>
       </div>
-      <figcaption className="mt-3 text-sm text-stone-600">
+      <figcaption className="mt-3 text-sm text-sumi-muted">
         {/* HTML swatch legend for narrow screens (below sm) */}
         <span className="inline-flex items-center gap-4 sm:hidden" data-testid="html-legend">
           <span className="inline-flex items-center gap-1">
