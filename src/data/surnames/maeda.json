@@ -10,7 +10,14 @@
   "kamon": [
     {
       "name": "剣梅鉢（加賀梅鉢）",
-      "description": "梅鉢紋に剣をあしらった意匠。加賀藩主前田家が用いたことで知られ、祖と称した菅原道真ゆかりの梅にちなむと伝わるが、その系譜自体は後世の権威づけとみる見方もある。"
+      "description": "梅鉢紋に剣をあしらった意匠。加賀藩主前田家が用いたことで知られ、祖と称した菅原道真ゆかりの梅にちなむと伝わるが、その系譜自体は後世の権威づけとみる見方もある。",
+      "svg": {
+        "file": "kaga-umebachi.svg",
+        "license": "CC BY-SA 3.0 (also GFDL 1.2+)",
+        "author": "User:Mukai",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_crest_Kaga_Umebachi.svg",
+        "modified": true
+      }
     }
   ],
   "famousPeople": [

@@ -8,8 +8,28 @@
   "originRegion": "「池のほとりの田」を意味する地形、各地の池田という地名から独立に発祥したとされる",
   "regionDistribution": { "多い": ["東京", "大阪", "神奈川"], "やや多い": ["埼玉", "福岡"] },
   "kamon": [
-    { "name": "備前蝶", "description": "岡山藩主となった池田氏本家（備前池田家）が用いたとされる蝶紋。" },
-    { "name": "木瓜", "description": "摂津池田氏の系統が用いたとされる紋。" }
+    {
+      "name": "備前蝶",
+      "description": "岡山藩主となった池田氏本家（備前池田家）が用いたとされる蝶紋。",
+      "svg": {
+        "file": "bizen-cho.svg",
+        "license": "CC BY-SA 3.0 (also GFDL 1.2+)",
+        "author": "User:Mukai",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_Crest_Bizenn_Chou.svg",
+        "modified": true
+      }
+    },
+    {
+      "name": "木瓜",
+      "description": "摂津池田氏の系統が用いたとされる紋。",
+      "svg": {
+        "file": "mokko.svg",
+        "license": "CC BY-SA 3.0 / GFDL 1.2+",
+        "author": "User:Mukai",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_Crest_Mokkou.svg",
+        "modified": true
+      }
+    }
   ],
   "famousPeople": [
     { "name": "池田勇人", "note": "政治家。1960年7月から1964年11月まで内閣総理大臣を務め、所得倍増計画を主導した。" },

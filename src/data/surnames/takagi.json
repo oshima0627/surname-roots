@@ -8,7 +8,17 @@
   "originRegion": "「高い木」を意味する地形由来の地名姓とされ、肥前国高木や三河国高木など複数の発祥地・系統が伝わる",
   "regionDistribution": { "多い": ["東京", "愛知"], "やや多い": ["千葉", "神奈川"] },
   "kamon": [
-    { "name": "違い鷹の羽", "description": "三河高木氏など武家の高木氏が用いたとされる家紋。二本の鷹の羽を交差させた意匠で、武家に好まれた鷹の羽紋の一種。" }
+    {
+      "name": "違い鷹の羽",
+      "description": "三河高木氏など武家の高木氏が用いたとされる家紋。二本の鷹の羽を交差させた意匠で、武家に好まれた鷹の羽紋の一種。",
+      "svg": {
+        "file": "chigai-takanoha.svg",
+        "license": "Public domain",
+        "author": "播磨屋 (Harimaya); vectorized by User:Razorbliss",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chigai-taka-no-ha.svg",
+        "modified": true
+      }
+    }
   ],
   "famousPeople": [
     { "name": "高木豊", "note": "元プロ野球選手（1958年生まれ、山口県出身）。横浜大洋（現DeNA）などで内野手として活躍し、1984年に盗塁王を獲得した。引退後は野球解説者として活動している。" },
