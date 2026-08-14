@@ -19,7 +19,10 @@ const NON_JAPANESE_SCRIPT = /[Ѐ-ӿ가-힯]/g;
  * 出典としてドメイン名を本文に書く場合がある（例: 「myoji-yurai.netも…と伝えている」）。
  * これは意図した表記なので、走査の前に取り除く。
  */
-const DOMAIN = /[a-z0-9-]+(?:\.[a-z0-9-]+)+/g;
+// 大文字を含む社名・サービス名（DMM.com など）も同じ形なので大小を区別しない。
+// ドットを挟まない語（women, главный といった実際に起きた混入）は素通りしないので、
+// 検出力は落ちない
+const DOMAIN = /[a-z0-9-]+(?:\.[a-z0-9-]+)+/gi;
 /** 出典サービス名。ドット無しでラテン文字が混じるので個別に除く */
 const SERVICE_NAMES = /名字由来net/g;
 const strip = (s: string) => s.replace(SERVICE_NAMES, "").replace(DOMAIN, "");
