@@ -55,51 +55,124 @@ Next.js の静的エクスポート（`output: "export"`）を Cloudflare Worker
   （例: 市川 99位 / 105位）。詳細ページとランキングページにその旨を明記している
 - **101位以降は由来の資料が薄い。** `origin` の最低文字数を60字に下げてある。
   下げたのは文字数だけで、**「実際に fetch して本文を読んだ独立2ソースの一致のみ採用する」原則は据え置いている**
-  （実際には全500件が98字以上書けており、緩和した下限は使っていない）
-- **101位以降は家紋がほぼ空。** 400件中、2ソースで裏が取れたのは菊池の1件のみ。
+  （実際には全1000件が98字以上書けており、緩和した下限は使っていない）
+- **101位以降は家紋がほぼ空。** 900件中、2ソースで裏が取れたのは菊池の1件のみ。
   Wikimedia Commons からの画像取得も行っていないため、`svg` を持つ新規エントリはない
-- **有名人が0人のエントリが約40件ある。** 候補が見つからなかったのではなく、
+- **有名人が0人のエントリが71件ある。** 候補が見つからなかったのではなく、
   **候補の本名・戸籍表記がその苗字と一致しなかったため除外した**結果である
-  （例: 沢田研二＝戸籍「澤田」、小沢一郎＝旧字体「小澤」、谷崎潤一郎は「谷崎」であって「谷」ではない）
-- **異体字は日本姓氏語源辞典に立項が無いことがある**（奧村・奧田など）。
-  その場合は素の字体のページを出典に使っている（由来は同じであるため）
+  （例: 沢田研二＝戸籍「澤田」、小沢一郎＝旧字体「小澤」、谷崎潤一郎は「谷崎」であって「谷」ではない、
+  高嶋ちさ子＝本名「盛田」かつ旧姓は「はしご高」の髙嶋、川嶋あい＝本名「川島」）
+- **異体字は日本姓氏語源辞典に立項が無いことがある**（奧村・奧田・奧山など）。
+  その場合は素の字体のページを出典に使っている（由来は同じであるため）。
+  奧山は名字由来netにも由来の記述が無く、その旨を本文に明記している
+- **`/ranking` は1000行で HTML 767KB（実測）。** ただし brotli 圧縮後は41KB、gzip でも64KB で、
+  Cloudflare は圧縮して配信するため分割や遅延描画は入れていない。
+  さらに収録件数を増やす場合はこの数字を測り直すこと
 - 苗字の由来には諸説ある。全ページのフッターに「本サイトの解説は諸説あるうちの一説です。」を常時表示している
 
 ## 字体違いの扱い
 
 斎藤と斉藤のように字体が異なる苗字は別ページにする。URLは半角英字のみなので、
 **最も一般的な字体が素の slug を取り、以降は区別する漢字の音読みを付す**（斎藤=`saito` / 斉藤=`saito-sei`）。
+素の slug は全国順位が上のほうが取る。
 
-同じ読みで字が違う苗字も同じ規則で扱う。
+同じ読みで字が違う苗字も同じ規則で扱う（笠井 `kasai` / 河西 `kasai-ka`）。
+一字姓が既存の slug と衝突する場合も、その一字の音読みを付す（大木 `oki` / 沖 `oki-chu`）。
 
 **音読みが元の字と同じ異体字・旧字体には `-itaiji` を付す**（音読みでは区別できないため）。
+同じ素の字に `-itaiji` が複数必要な場合は甲乙丙の順で足す
+（渡辺 `watanabe` / 渡邊 `watanabe-itaiji` / 渡邉 `watanabe-itaiji-otsu`）。
+**slug に数字は使えない**（`src/lib/schema.ts` が `/^[a-z][a-z-]*$/` で弾く）ため、
+`watanabe-itaiji2` のような命名は取れない。
 
-現在の該当は24組。
+読みが本当に分かれている場合は、音読みを付けずにその読みを slug にしてよい
+（渡辺 `watanabe` / 渡部 `watabe`、川端 `kawabata` / 川畑 `kawahata`、森谷 `moritani`）。
+
+現在の該当は84組。
 
 | 素の slug | 区別する側 |
 |---|---|
-| 伊藤 `ito` | 伊東 `ito-to`（東＝トウ） |
-| 新井 `arai` | 荒井 `arai-ko`（荒＝コウ） |
-| 菊地 `kikuchi` | 菊池 `kikuchi-chi`（池＝チ） |
-| 阿部 `abe` | 安部 `abe-an`（安＝アン） |
-| 足立 `adachi` | 安達 `adachi-an`（安＝アン） |
-| 太田 `ota` | 大田 `ota-dai`（大＝ダイ） |
-| 本田 `honda` | 本多 `honda-ta`（多＝タ） |
-| 川村 `kawamura` | 河村 `kawamura-ka`（河＝カ） |
-| 川原 `kawahara` | 河原 `kawahara-ka`（河＝カ） |
-| 長野 `nagano` | 永野 `nagano-ei`（永＝エイ） |
-| 久保田 `kubota` | 窪田 `kubota-wa`（窪＝ワ） |
-| 武田 `takeda` | 竹田 `takeda-chiku`（竹＝チク） |
-| 酒井 `sakai` | 坂井 `sakai-han`（坂＝ハン） |
-| 上田 `ueda` | 植田 `ueda-shoku`（植＝ショク） |
-| 渡辺 `watanabe` | 渡部 `watabe`（読みに「わたべ」があるため音読みを付けずに済んだ） |
-| 斎藤 `saito` | 斉藤 `saito-sei`（斉＝セイ）／齋藤 `saito-itaiji` |
-| 渡辺 `watanabe` | 渡邊 `watanabe-itaiji` |
-| 奥村 `okumura` | 奧村 `okumura-itaiji` |
-| 奥田 `okuda` | 奧田 `okuda-itaiji` |
-| 小沢 `ozawa` | 小澤 `ozawa-itaiji` |
-| 沢田 `sawada` | 澤田 `sawada-itaiji` |
-| 富田 `tomita` | 冨田 `tomita-itaiji` |
-| 島田 `shimada` | 嶋田 `shimada-itaiji` |
+| 斎藤 `saito` | 斉藤 `saito-sei` |
+| 菊地 `kikuchi` | 菊池 `kikuchi-chi` |
+| 新井 `arai` | 荒井 `arai-ko` |
+| 伊藤 `ito` | 伊東 `ito-to` |
+| 武田 `takeda` | 竹田 `takeda-chiku` |
+| 酒井 `sakai` | 坂井 `sakai-han` |
+| 斎藤 `saito` | 齋藤 `saito-itaiji` |
+| 上田 `ueda` | 植田 `ueda-shoku` |
+| 川村 `kawamura` | 河村 `kawamura-ka` |
+| 阿部 `abe` | 安部 `abe-an` |
 | 中島 `nakajima` | 中嶋 `nakajima-itaiji` |
+| 本田 `honda` | 本多 `honda-ta` |
+| 足立 `adachi` | 安達 `adachi-an` |
+| 島田 `shimada` | 嶋田 `shimada-itaiji` |
+| 久保田 `kubota` | 窪田 `kubota-wa` |
+| 小沢 `ozawa` | 小澤 `ozawa-itaiji` |
+| 奥村 `okumura` | 奧村 `okumura-itaiji` |
+| 長野 `nagano` | 永野 `nagano-ei` |
+| 富田 `tomita` | 冨田 `tomita-itaiji` |
+| 太田 `ota` | 大田 `ota-dai` |
+| 沢田 `sawada` | 澤田 `sawada-itaiji` |
+| 奥田 `okuda` | 奧田 `okuda-itaiji` |
+| 川原 `kawahara` | 河原 `kawahara-ka` |
+| 渡辺 `watanabe` | 渡邊 `watanabe-itaiji` |
 | 小島 `kojima` | 小嶋 `kojima-itaiji` |
+| 古谷 `furuya` | 古屋 `furuya-oku` |
+| 斎藤 `saito` | 齊藤 `saito-sei-itaiji` |
+| 大沢 `osawa` | 大澤 `osawa-itaiji` |
+| 渡辺 `watanabe` | 渡邉 `watanabe-itaiji-otsu` |
+| 井手 `ide` | 井出 `ide-shutsu` |
+| 永井 `nagai` | 長井 `nagai-cho` |
+| 河合 `kawai` | 川合 `kawai-sen` |
+| 川田 `kawada` | 河田 `kawada-ka` |
+| 加納 `kano` | 狩野 `kano-shu` |
+| 緒方 `ogata` | 尾形 `ogata-kei` |
+| 竹内 `takeuchi` | 武内 `takeuchi-bu` |
+| 小田 `oda` | 織田 `oda-shoku` |
+| 川本 `kawamoto` | 河本 `kawamoto-ka` |
+| 河合 `kawai` | 川井 `kawai-i` |
+| 遠山 `toyama` | 外山 `toyama-gai` |
+| 橘 `tachibana` | 立花 `tachibana-ritsu` |
+| 坂本 `sakamoto` | 阪本 `sakamoto-han` |
+| 中村 `nakamura` | 仲村 `nakamura-chu` |
+| 笠井 `kasai` | 葛西 `kasai-katsu` |
+| 山崎 `yamazaki` | 山﨑 `yamazaki-itaiji` |
+| 畑 `hata` | 秦 `hata-shin` |
+| 中沢 `nakazawa` | 中澤 `nakazawa-itaiji` |
+| 泉 `izumi` | 和泉 `izumi-wa` |
+| 土井 `doi` | 土居 `doi-kyo` |
+| 奥野 `okuno` | 奧野 `okuno-itaiji` |
+| 平 `taira` | 平良 `taira-ryo` |
+| 小畑 `obata` | 小幡 `obata-han` |
+| 大場 `oba` | 大庭 `oba-tei` |
+| 菅 `suga` | 須賀 `suga-su` |
+| 坂本 `sakamoto` | 坂元 `sakamoto-gen` |
+| 奥山 `okuyama` | 奧山 `okuyama-itaiji` |
+| 長島 `nagashima` | 永島 `nagashima-ei` |
+| 小倉 `ogura` | 小椋 `ogura-ryo` |
+| 浜田 `hamada` | 濱田 `hamada-itaiji` |
+| 松本 `matsumoto` | 松元 `matsumoto-gen` |
+| 山本 `yamamoto` | 山元 `yamamoto-gen` |
+| 桜井 `sakurai` | 櫻井 `sakurai-itaiji` |
+| 吉沢 `yoshizawa` | 吉澤 `yoshizawa-itaiji` |
+| 大島 `oshima` | 大嶋 `oshima-itaiji` |
+| 田畑 `tabata` | 田端 `tabata-tan` |
+| 喜多 `kita` | 北 `kita-hoku` |
+| 児玉 `kodama` | 小玉 `kodama-gyoku` |
+| 坂口 `sakaguchi` | 阪口 `sakaguchi-han` |
+| 増田 `masuda` | 益田 `masuda-eki` |
+| 金沢 `kanazawa` | 金澤 `kanazawa-itaiji` |
+| 木戸 `kido` | 城戸 `kido-jo` |
+| 大木 `oki` | 沖 `oki-chu` |
+| 玉置 `tamaki` | 玉木 `tamaki-boku` |
+| 小島 `kojima` | 児島 `kojima-ji` |
+| 庄司 `shoji` | 東海林 `shoji-to` |
+| 高島 `takashima` | 高嶋 `takashima-itaiji` |
+| 広瀬 `hirose` | 廣瀬 `hirose-itaiji` |
+| 川島 `kawashima` | 川嶋 `kawashima-itaiji` |
+| 秋元 `akimoto` | 秋本 `akimoto-hon` |
+| 富永 `tominaga` | 冨永 `tominaga-itaiji` |
+| 畑中 `hatanaka` | 畠中 `hatanaka-itaiji` |
+| 小関 `ozeki` | 大関 `ozeki-dai` |
+| 笠井 `kasai` | 河西 `kasai-ka` |
+| 今野 `konno` | 紺野 `konno-kon` |
