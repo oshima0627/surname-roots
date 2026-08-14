@@ -7,6 +7,13 @@ const DATA_DIR = path.join(process.cwd(), "src/data/surnames");
 /** Module-level cache: parsed and sorted surnames (null until first load) */
 let cachedEntries: SurnameEntry[] | null = null;
 
+/**
+ * slug 引きの索引。詳細ページ1枚につき1回引かれるので、
+ * getAllSurnames() の全件コピーを経由すると収録件数の二乗に比例して遅くなる
+ * （530件で実測1.5秒だった）
+ */
+let cachedBySlug: Map<string, SurnameEntry> | null = null;
+
 /** 検索インデックス。本文を含めずクライアントへ渡す */
 export type SearchTarget = {
   slug: string;
@@ -55,13 +62,17 @@ export function getAllSurnames(): SurnameEntry[] {
 
   // Cache the sorted result
   cachedEntries = sorted;
+  cachedBySlug = new Map(sorted.map((entry) => [entry.slug, entry]));
 
   // Return a copy to prevent external mutation of the cache
   return JSON.parse(JSON.stringify(cachedEntries)) as SurnameEntry[];
 }
 
 export function getSurnameBySlug(slug: string): SurnameEntry | undefined {
-  return getAllSurnames().find((entry) => entry.slug === slug);
+  if (cachedBySlug === null) getAllSurnames(); // 索引ごと構築される
+  const entry = cachedBySlug!.get(slug);
+  // 呼び出し側の書き換えでキャッシュが汚れないよう、1件だけ複製して返す
+  return entry === undefined ? undefined : (JSON.parse(JSON.stringify(entry)) as SurnameEntry);
 }
 
 export function getSearchIndex(): SearchTarget[] {

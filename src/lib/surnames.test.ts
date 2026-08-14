@@ -25,6 +25,25 @@ describe("getAllSurnames", () => {
     }
   });
 
+  // getSurnameBySlug は詳細ページ1枚につき1回呼ばれるので、収録件数に対して
+  // 線形時間で済まなければならない。全件を deep clone してから find すると
+  // O(n^2) になり、530件で実測1.5秒かかっていた（1000件では約4倍）。
+  // Map 参照なら件数によらず数ミリ秒で終わるので、1秒は十分に緩い上限
+  it("全件を slug 引きしても1秒以内に終わる", () => {
+    const started = Date.now();
+    for (const entry of all) getSurnameBySlug(entry.slug);
+    expect(Date.now() - started).toBeLessThan(1000);
+  });
+
+  // 呼び出し側が書き換えてもキャッシュが汚れないことを保証する。
+  // 高速化のために参照をそのまま返すと、この保証が静かに壊れる
+  it("getSurnameBySlug の戻り値を書き換えてもキャッシュが汚れない", () => {
+    const slug = all[0].slug;
+    const original = getSurnameBySlug(slug)!.kanji;
+    getSurnameBySlug(slug)!.kanji = "改竄";
+    expect(getSurnameBySlug(slug)!.kanji).toBe(original);
+  });
+
   it("全国順位の昇順で返る", () => {
     const ranks = all.map((e) => e.rankNational ?? Number.MAX_SAFE_INTEGER);
     expect([...ranks].sort((a, b) => a - b)).toEqual(ranks);

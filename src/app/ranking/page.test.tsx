@@ -14,52 +14,45 @@ import { getAllSurnames } from "@/lib/surnames";
  *
  * `getAllByRole("link")` はツリー全体を舐めてアクセシブルロールを
  * 計算し直す高コストな呼び出しなので、苗字ごとのループの中で毎回
- * 呼ぶと O(n^2) になる（100件で約100回のフルスキャン）。
- * 呼び出し側で一度だけ取得したリストを受け取り、href で引くだけにする。
+ * 呼ぶと O(n^2) になる。一度だけ取得して href の索引に変換する。
+ *
+ * 検証項目ごとにテストを分けると、そのたびに全行を描画し直すことになる。
+ * jsdom での描画は530件で実測7.7秒かかり、4テストで5秒のタイムアウトを
+ * 超えて落ちた（実ブラウザの描画コストではなく jsdom の事情）。
+ * 収録件数はこの先も増えるので、描画は1回だけにして、
+ * どの検証で落ちたかは expect のメッセージで区別する。
  */
-function findLinkBySlug(links: HTMLElement[], slug: string) {
-  return links.find((link) => link.getAttribute("href") === `/myoji/${slug}`);
-}
-
 describe("RankingPage (全国ランキング)", () => {
-  it("データディレクトリに存在する苗字ごとに行を出す", () => {
+  it("全件を順位順に、それぞれ自身の詳細ページへのリンクとして描画する", () => {
     render(<RankingPage />);
     const all = getAllSurnames();
-    const table = screen.getByRole("table");
-    const tbody = table.querySelector("tbody");
+
+    const tbody = screen.getByRole("table").querySelector("tbody");
     expect(tbody).not.toBeNull();
     const rows = within(tbody as HTMLElement).getAllByRole("row");
     // 行数は苗字の件数と一致する（ヘッダー行は tbody に含まれない）
-    expect(rows).toHaveLength(all.length);
-  });
+    expect(rows, "行数が収録件数と一致しない").toHaveLength(all.length);
 
-  it("各苗字が自身の詳細ページへリンクする", () => {
-    render(<RankingPage />);
-    const all = getAllSurnames();
     const links = screen.getAllByRole("link");
+    const byHref = new Map(links.map((link) => [link.getAttribute("href"), link]));
     for (const entry of all) {
-      const link = findLinkBySlug(links, entry.slug);
+      const link = byHref.get(`/myoji/${entry.slug}`);
       expect(link, `${entry.slug} へのリンクが見つからない`).toBeTruthy();
-      expect(link).toHaveAttribute("href", `/myoji/${entry.slug}`);
-      expect(link).toHaveTextContent(entry.kanji);
+      expect(link, `${entry.slug} のリンク文字列が苗字と一致しない`).toHaveTextContent(entry.kanji);
     }
-  });
 
-  it("順位の典拠と参照元による違いを明示する注記を出す", () => {
-    render(<RankingPage />);
+    // 並び順は表示上の意味を持つので、リンクの出現順そのものを比較する
+    expect(
+      links.map((link) => link.getAttribute("href")),
+      "行が全国順位の昇順で並んでいない",
+    ).toEqual(all.map((entry) => `/myoji/${entry.slug}`));
+
+    // 順位が絶対的な事実ではないことを、表と同じ画面で必ず断る
     expect(
       screen.getByText(
         "順位は名字由来netの集計に基づく参考値です。他の資料では順位が異なることがあります。",
       ),
+      "順位の典拠を示す注記が出ていない",
     ).toBeTruthy();
-  });
-
-  it("行が全国順位の昇順で並ぶ", () => {
-    render(<RankingPage />);
-    const all = getAllSurnames();
-    const links = screen.getAllByRole("link");
-    const renderedSlugOrder = links.map((link) => link.getAttribute("href"));
-    const expectedOrder = all.map((entry) => `/myoji/${entry.slug}`);
-    expect(renderedSlugOrder).toEqual(expectedOrder);
-  });
+  }, 60_000);
 });
