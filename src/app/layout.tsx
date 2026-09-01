@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  // canonical を相対パスで書けるようにする基準URL。
+  // ここに alternates.canonical を書くと、自前の canonical を持たない全ページが
+  // それを継承してトップページを指してしまうため、canonical は各ページ側で持つ。
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "苗字ルーツ辞典",
     template: "%s | 苗字ルーツ辞典",

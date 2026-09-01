@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${entry.kanji}（${entry.readings.join("・")}）の由来とルーツ`,
     description,
+    alternates: { canonical: `/myoji/${slug}` },
   };
 }
 

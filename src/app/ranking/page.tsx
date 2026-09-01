@@ -5,6 +5,7 @@ import { getAllSurnames } from "@/lib/surnames";
 export const metadata: Metadata = {
   title: "全国ランキング",
   description: "収録している苗字を全国順位の順に一覧できます。",
+  alternates: { canonical: "/ranking" },
 };
 
 export default function RankingPage() {

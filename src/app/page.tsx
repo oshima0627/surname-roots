@@ -1,6 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { SurnameSearch } from "@/components/SurnameSearch";
 import { getAllSurnames, getSearchIndex } from "@/lib/surnames";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 /**
  * カードの漢字サイズを文字数で調整する。

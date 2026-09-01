@@ -12,6 +12,7 @@ import type { SurnameEntry } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "クレジット",
   description: "掲載している家紋画像の出典・作者・ライセンスと、改変内容の一覧です。",
+  alternates: { canonical: "/credits" },
 };
 
 type KamonSvg = NonNullable<SurnameEntry["kamon"][number]["svg"]>;
