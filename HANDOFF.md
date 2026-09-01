@@ -1,127 +1,111 @@
 # HANDOFF
 
-最終更新: 2026-08-25
+最終更新: 2026-09-01
 
 ## いま何をしているのか
 
-検索エンジンにサイトを認識させるための最低限の設定（robots.txt / sitemap.xml）を整えている。
-このリポジトリは 2026-08-25 時点で **sitemap.xml が 404、robots.txt はアプリのHTMLが返る**状態だった。
-Google Search Console（ドメインプロパティ `nexeed-lab.com`）の直近3ヶ月で、myoji サブドメインは
-**検索パフォーマンスに1行も出てこない**（＝実質どのクエリでも表示されていない）。
-1000件の詳細ページがあるのに、その存在をクローラに一切伝えていなかったことになる。
+**myoji.nexeed-lab.com は公開済みで、Google もクロールを始めている。**
+だが 2026-09-01 時点で**インデックス登録されていないページが多い**ことが分かった。
+いまは「クロールさせる」段階を終えて、**「クロールされた上で登録されるか」を上げる段階**にいる。
 
-## 今回やったこと
+今回は、その前提として抜けていた canonical を全ページに出した。
 
-- `src/lib/site.ts` を新規作成（`SITE_URL = "https://myoji.nexeed-lab.com"`。`wrangler.jsonc` の
-  `routes[].pattern` と一致させている）
-- `src/app/robots.ts` を新規作成（`MetadataRoute.Robots`、`dynamic = "force-static"`）
-- `src/app/sitemap.ts` を新規作成（`MetadataRoute.Sitemap`、`dynamic = "force-static"`）
-  - 詳細ページの一覧は `getAllSurnames()` から作る。
-    `src/app/myoji/[slug]/page.tsx` の `generateStaticParams()` と**同じ関数**なので、
-    データを足せば sitemap も自動で追随し、ズレようがない
-  - `lastModified` は付けていない。苗字データに更新日を持たせていないため、
-    ビルド日時を入れると「更新されていないページを更新済み」と偽ることになる
-- `npm run build` → `npx wrangler dev --local` で実際に配信して確認
+## 今回やったこと（2026-09-01）
 
-## 検証済みの事実（実際に画面に出した出力のみ）
+### Search Console のプロパティとサイトマップ
 
-- `npm run build`（`font:build` → `font:verify` → `next build`）成功。
-  `✓ Generating static pages using 12 workers (1010/1010) in 10.1s`。
-  Route 一覧に `/`, `/_not-found`, `/apple-icon.png`, `/credits`, `/icon.svg`, `/myoji/[slug]`（+997 more paths）,
-  `/ranking`, `/robots.txt`, `/sitemap.xml`
-- `out/robots.txt` の中身:
+- `sc-domain:myoji.nexeed-lab.com` の個別プロパティを新規作成した（所有権はドメイン名プロバイダで自動確認）。
+  親 `sc-domain:nexeed-lab.com` の DNS 所有権が継承されるので、TXT レコードの追加は不要だった
+- サイトマップは親プロパティ経由で既に登録済みだった（二重登録は不要）
 
-  ```
-  User-Agent: *
-  Allow: /
+### canonical を全ページに追加（コミット `b81d1a3`、push 済み）
 
-  Sitemap: https://myoji.nexeed-lab.com/sitemap.xml
-  ```
+これまで `metadataBase` も `alternates.canonical` も無く、**本番の全ページに canonical タグが
+1つも出ていなかった**（下記「検証済みの事実」参照）。
 
-- `out/sitemap.xml` は **`<loc>` が 1003件**（トップ + `/ranking` + `/credits` + 苗字詳細1000件）。先頭:
+- `src/app/layout.tsx` に `metadataBase: new URL(SITE_URL)` を追加
+- **layout には `alternates` を置いていない。** 置くと自前の canonical を持たないページが
+  それを継承してトップページを指す。同じ不具合が ikunavi で実際に起きていた（そちらも今回修正済み）
+- `/`・`/ranking`・`/credits`・`/myoji/[slug]` の各ページに `alternates.canonical` を追加
 
-  ```xml
-  <?xml version="1.0" encoding="UTF-8"?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-  <loc>https://myoji.nexeed-lab.com</loc>
-  <changefreq>weekly</changefreq>
-  <priority>1</priority>
-  </url>
-  <url>
-  <loc>https://myoji.nexeed-lab.com/ranking</loc>
-  ...
-  <loc>https://myoji.nexeed-lab.com/myoji/sato</loc>
-  ```
+コミットは Stop フックの自動コミット（`chore: 作業終了時の自動コミット`）に取り込まれた。
+既に push 済みだったため履歴は書き換えていない。**変更内容自体は上記のとおりで欠けはない。**
 
-- **sitemap の全URLと生成HTMLの1対1一致を機械的に確認した**（推測ではない）。
-  sitemap の `<loc>` から作ったパス一覧と、`out/` 配下の `.html`（404 / _not-found を除く）を
-  `sort` して `comm` で突き合わせた結果:
+## 検証済みの事実（実際に画面へ出した出力のみ）
 
-  ```
-  sitemap件数: 1003
-  生成HTML件数(404/_not-found除く): 1003
-  --- sitemapにあるがHTMLが無い ---
-  （0件）
-  --- HTMLはあるがsitemapに無い ---
-  （0件）
-  ```
+### canonical が無かったことの実測（2026-09-01、本番を curl）
 
-  → 存在しないURLは1件も書いておらず、存在するページも1件も取りこぼしていない
-- `npx wrangler dev --local --port 8792`（本番と同じ `wrangler.jsonc` = `not_found_handling: 404-page`）に対する実測:
+サイトマップ掲載の全2,127URL（nexeed-lab.com 配下の全サイト）を走査した結果、
+**myoji は 1,003件すべてが canonical タグ無し**だった。他サイトの内訳:
+ai 9件 / pre-meet 7件 / shift-craft 5件 / nisa 2件 / typiq 1件。
 
-  ```
-  PATH /robots.txt       -> HTTP 200 text/plain; charset=utf-8      74bytes
-  PATH /sitemap.xml      -> HTTP 200 application/xml            125374bytes
-  PATH /                 -> HTTP 200 text/html; charset=utf-8   140309bytes
-  PATH /ranking          -> HTTP 200 text/html; charset=utf-8   785525bytes
-  PATH /myoji/sato       -> HTTP 200 text/html; charset=utf-8   119879bytes
-  PATH /no-such-path-xyz -> HTTP 404 text/html; charset=utf-8     9480bytes
-  ```
+### 修正後のビルド出力
 
-  配信された `/sitemap.xml` の `<loc>` 件数も 1003 で一致。
-  → **ホスティング側（`_routes.json` 等）の追加設定は不要。ファイルを置くだけで直る。**
-- `npm run lint`（0 errors / 5 warnings、既存の未使用変数warningのみ）、`npm run typecheck` 無出力（成功）、
-  `npm test` 164 passed（18ファイル）
+- `npm run build` 成功。`✓ Generating static pages using 12 workers (1010/1010) in 5.2s`
+- `out/` 配下の全HTMLを走査し、canonical が**自分自身のURL**を指すことを確認:
+
+  | ファイル | canonical |
+  |---|---|
+  | `out/index.html` | `https://myoji.nexeed-lab.com` |
+  | `out/ranking.html` | `https://myoji.nexeed-lab.com/ranking` |
+  | `out/credits.html` | `https://myoji.nexeed-lab.com/credits` |
+  | `out/myoji/sato.html` | `https://myoji.nexeed-lab.com/myoji/sato` |
+  | `out/myoji/watanabe.html` | `https://myoji.nexeed-lab.com/myoji/watanabe` |
+
+- canonical を持つHTML: **1,003 / 1,005**。持たない2件は `out/404.html` と `out/_not-found.html`（意図どおり）
+- `out/myoji/` 配下で canonical が `/myoji/` 以外を指すものは **0件**
+
+### 本番の状態（2026-09-01、curl と GSC の画面）
+
+- `https://myoji.nexeed-lab.com/sitemap.xml` は **HTTP 200・`<loc>` 1,003件**
+  （前回 HANDOFF で「デプロイ未実行・404のままか未確認」としていた点は解消済み）
+- `robots.txt` は `User-Agent: * / Allow: /` と Sitemap 行を返す
+- GSC のサイトマップ画面: 送信 2026/08/25・最終読み込み 2026/08/28・**ステータス「成功しました」・検出 1,003ページ**
+- GSC「クロール済み - インデックス未登録」の例に myoji のページが並び、**前回のクロール日は 2026/08/29**:
+  `/myoji/shimazaki`、`/myoji/otaki`、`/myoji/hamaguchi`
+  → **クロールはされている。その上で登録されていない。**
 
 ## 未検証のもの
 
-- **本番へのデプロイは実行していない。** 上記は全てローカルの `wrangler dev` での実測であり、
-  `https://myoji.nexeed-lab.com/sitemap.xml` が 404 でなくなることは**未確認**
-- Cloudflare 側で GitHub 連携（Workers Builds）が有効かどうかはリポジトリからは判定できない。
-  有効なら `git push` で自動デプロイされる可能性がある（このリポジトリには `.github/workflows` は無い）
-- `src/app/layout.tsx` に `metadataBase` が無く、`canonical` も出していない。今回は手を付けていない
+- **canonical の修正が本番に反映されたかは未確認。** ビルド出力で確認しただけで、
+  `https://myoji.nexeed-lab.com/myoji/sato` を curl して canonical が出ることは**まだ見ていない**。
+  このリポジトリに `.github/workflows` は無く、Cloudflare Workers Builds が
+  `git push` で自動デプロイするかどうかも未確定のまま
+- **myoji 個別プロパティの数値はまだ出ていない。** 2026-09-01 に作成したばかりで
+  「データを処理しています。1日後にもう一度ご確認ください」の状態
+- **1,003ページのうち何件が登録済みかは未測定。** 親プロパティ側の「検出 - インデックス未登録」
+  1,398件のうち myoji が何件を占めるかも**未確認**（推測はしているが数えていない）
+- canonical を足したことで登録率が上がるかどうかは**未検証**。canonical は重複判定の
+  入口を塞ぐだけで、登録されない理由そのものへの対策ではない
 
 ## 次にやること
 
-1. デプロイする（本人が判断して実行）:
+1. **本番に反映されているか確認する**（未反映なら `npm run deploy`）:
 
    ```bash
-   cd C:/Users/oshim/Documents/projects/surname-roots
-   npx wrangler login   # 初回のみ
-   npm run deploy       # npm run build → wrangler deploy
+   curl -s https://myoji.nexeed-lab.com/myoji/sato | grep -o '<link rel="canonical" href="[^"]*"'
    ```
 
-2. デプロイ後に実測で確認する:
+   `https://myoji.nexeed-lab.com/myoji/sato` が出れば反映済み。
 
-   ```bash
-   curl -s  https://myoji.nexeed-lab.com/robots.txt
-   curl -s  https://myoji.nexeed-lab.com/sitemap.xml | grep -c "<loc>"   # 1003 になるはず
-   curl -sI https://myoji.nexeed-lab.com/myoji/sato
-   ```
+2. **2026-09-02 以降に myoji 個別プロパティの数字を見る。**
+   `https://search.google.com/search-console/index?resource_id=sc-domain:myoji.nexeed-lab.com`
+   見るのは「登録済み」と「未登録の理由の内訳」の2つ。
 
-3. Google Search Console（ドメインプロパティ `nexeed-lab.com`）で
-   `https://myoji.nexeed-lab.com/sitemap.xml` を送信し、数日後に「検出されたページ数」を見る
-4. 1000ページあってインデックスされていないのが現状なので、まず**クロールされ始めるか**を測る。
-   それが確認できてから、タイトル・description・内部リンクの改善へ進む
+3. **登録されない理由に応じて手を打つ。**
+   - 「検出 - インデックス未登録」が多い → クロール自体が足りない。内部リンクを増やす
+   - 「クロール済み - インデックス未登録」が多い → 中身の問題。1,003ページが
+     互いに区別のつかない内容になっていないかを疑う（uchina-money で同じ問題が起きている）
 
 ## 触ってはいけないところ
 
-- `next.config.ts` の `output: "export"`。Cloudflare Workers の静的アセット配信（`wrangler.jsonc` の
-  `assets.directory: "./out"`）がこの出力を前提にしている
+- **`src/app/layout.tsx` に `alternates.canonical` を書かない。** 自前の canonical を持たない
+  ページが継承してトップページを指す。canonical は必ず各ページ側で持たせる
+- `next.config.ts` の `output: "export"`。Cloudflare Workers の静的アセット配信
+  （`wrangler.jsonc` の `assets.directory: "./out"`）がこの出力を前提にしている
 - `wrangler.jsonc` の `not_found_handling: "404-page"`。存在しない苗字のURLで正しく404を返すための設定
 - `src/app/robots.ts` / `src/app/sitemap.ts` の `export const dynamic = "force-static"` を外さない
 - `src/app/sitemap.ts` は `getAllSurnames()` を使う。詳細ページの `generateStaticParams()` と
-  同じ関数を使うことがズレを防ぐ仕組みなので、ここで別のデータ源に差し替えない
+  同じ関数を使うことがズレを防ぐ仕組みなので、別のデータ源に差し替えない
 - 苗字データ（`src/data/surnames/*.json`）は「実際に fetch して読んだ独立2ソースの一致のみ採用」が原則
-  （`AGENTS.md` / `src/lib/schema.ts` のコメント参照）。sitemap 対応では一切触っていない
+  （`AGENTS.md` / `src/lib/schema.ts` のコメント参照）
