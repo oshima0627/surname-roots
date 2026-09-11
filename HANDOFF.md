@@ -18,7 +18,8 @@ Cloudflare Worker・DNS の4つがすべて消えていた（経緯はセッシ�
 3. `npm ci`（652 packages）→ `npm run deploy`
    - `wrangler deploy` が Worker `surname-roots` を再作成し、`myoji.nexeed-lab.com (custom domain)` を再設定した
    - Version ID `d8da91b3-ed46-445a-ad49-88170068237d`。5,072 ファイルをアップロード
-4. この HANDOFF を書き直した
+4. GSC 親プロパティのサイトマップ一覧に myoji が無かった（13件中0）ので `https://myoji.nexeed-lab.com/sitemap.xml` を再送信した
+5. この HANDOFF を書き直した
 
 ## 検証済みの事実（実際に画面へ出した出力のみ）
 
@@ -45,6 +46,9 @@ Cloudflare Worker・DNS の4つがすべて消えていた（経緯はセッシ�
 - 上位ページ: `/myoji/tominaga` 5クリック、`/myoji/moriya` 4、`/myoji/matsunaga` 4、`/myoji/umeda` 101表示1クリック
 
 ## 未検証のもの
+
+- **再送信したサイトマップの読み込み結果。** 送信直後の画面は「取得できませんでした・最終読み込み 2026/08/28・検出 1,003」で、
+  これは落ちていた間の古い結果。次回 GSC を開いて「成功しました」に変わっているか見る（変わっていなければもう一度送信）
 
 - **落ちていた期間にクロールされた分がインデックスから消えたかどうか。** 9/8 時点でも表示は続いていたが、
   9/9〜9/11 の 3 日間は未確認（GSC のデータが追いついていない）
