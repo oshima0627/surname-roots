@@ -1,104 +1,78 @@
 # HANDOFF
 
-最終更新: 2026-09-01
+最終更新: 2026-09-11
 
 ## いま何をしているのか
 
-**myoji.nexeed-lab.com は公開済みで、Google もクロールを始めている。**
-だが 2026-09-01 時点で**インデックス登録されていないページが多い**ことが分かった。
-いまは「クロールさせる」段階を終えて、**「クロールされた上で登録されるか」を上げる段階**にいる。
+**消えていたサイトを復元して、本番へ戻した。** 2026-09-01〜05 の間に GitHub リポジトリ・ローカル・
+Cloudflare Worker・DNS の4つがすべて消えていた（経緯はセッション記録に無く、不明）。
+一方 Google 側は 375 ページを検索結果に出し続けており、9/2〜9/8 は毎日 400〜880 表示・4〜17 クリックが
+付いていた（親プロパティ `sc-domain:nexeed-lab.com` で実測）。**落ちていた分は全部取りこぼしだった。**
 
-今回は、その前提として抜けていた canonical を全ページに出した。
+2026-09-11 に本人の指示（「myoji を戻す」）で復元。コードは 9/1 の最終コミット `ac0c84d` のまま、変更なし。
 
-## 今回やったこと（2026-09-01）
+## 今回やったこと（2026-09-11）
 
-### Search Console のプロパティとサイトマップ
-
-- `sc-domain:myoji.nexeed-lab.com` の個別プロパティを新規作成した（所有権はドメイン名プロバイダで自動確認）。
-  親 `sc-domain:nexeed-lab.com` の DNS 所有権が継承されるので、TXT レコードの追加は不要だった
-- サイトマップは親プロパティ経由で既に登録済みだった（二重登録は不要）
-
-### canonical を全ページに追加（コミット `b81d1a3`、push 済み）
-
-これまで `metadataBase` も `alternates.canonical` も無く、**本番の全ページに canonical タグが
-1つも出ていなかった**（下記「検証済みの事実」参照）。
-
-- `src/app/layout.tsx` に `metadataBase: new URL(SITE_URL)` を追加
-- **layout には `alternates` を置いていない。** 置くと自前の canonical を持たないページが
-  それを継承してトップページを指す。同じ不具合が ikunavi で実際に起きていた（そちらも今回修正済み）
-- `/`・`/ranking`・`/credits`・`/myoji/[slug]` の各ページに `alternates.canonical` を追加
-
-コミットは Stop フックの自動コミット（`chore: 作業終了時の自動コミット`）に取り込まれた。
-既に push 済みだったため履歴は書き換えていない。**変更内容自体は上記のとおりで欠けはない。**
+1. GitHub Settings → Deleted repositories から `oshima0627/surname-roots` を復元（公開リポジトリのまま）
+2. `git clone` → `projects/surname-roots/`
+3. `npm ci`（652 packages）→ `npm run deploy`
+   - `wrangler deploy` が Worker `surname-roots` を再作成し、`myoji.nexeed-lab.com (custom domain)` を再設定した
+   - Version ID `d8da91b3-ed46-445a-ad49-88170068237d`。5,072 ファイルをアップロード
+4. この HANDOFF を書き直した
 
 ## 検証済みの事実（実際に画面へ出した出力のみ）
 
-### canonical が無かったことの実測（2026-09-01、本番を curl）
+### 復元前（2026-09-11 午前）
 
-サイトマップ掲載の全2,127URL（nexeed-lab.com 配下の全サイト）を走査した結果、
-**myoji は 1,003件すべてが canonical タグ無し**だった。他サイトの内訳:
-ai 9件 / pre-meet 7件 / shift-craft 5件 / nisa 2件 / typiq 1件。
+- `nslookup myoji.nexeed-lab.com` → Non-existent domain。`curl` は 000
+- Cloudflare API: Worker 一覧に `surname-roots` 無し。Workers カスタムドメイン一覧に `myoji.nexeed-lab.com` 無し
+- `gh repo list` に無し。ローカルにも無し
 
-### 修正後のビルド出力
+### 復元後（2026-09-11、デプロイ直後に curl）
 
-- `npm run build` 成功。`✓ Generating static pages using 12 workers (1010/1010) in 5.2s`
-- `out/` 配下の全HTMLを走査し、canonical が**自分自身のURL**を指すことを確認:
+| 確認項目 | 結果 |
+|---|---|
+| `nslookup` | 104.21.32.16 / 172.67.182.68（Cloudflare）に解決 |
+| `/` `/myoji/sato` `/myoji/tominaga` `/sitemap.xml` `/robots.txt` | **すべて HTTP 200** |
+| `/myoji/zzz-not-exist` | **404**（`not_found_handling: "404-page"` が効いている） |
+| `/myoji/sato` の canonical | `https://myoji.nexeed-lab.com/myoji/sato`（9/1 の修正が本番に出ている） |
+| `sitemap.xml` の `<loc>` | **1,003 件** |
 
-  | ファイル | canonical |
-  |---|---|
-  | `out/index.html` | `https://myoji.nexeed-lab.com` |
-  | `out/ranking.html` | `https://myoji.nexeed-lab.com/ranking` |
-  | `out/credits.html` | `https://myoji.nexeed-lab.com/credits` |
-  | `out/myoji/sato.html` | `https://myoji.nexeed-lab.com/myoji/sato` |
-  | `out/myoji/watanabe.html` | `https://myoji.nexeed-lab.com/myoji/watanabe` |
+### GSC の実績（親プロパティ、2026-09-11 に画面で確認、期間 06/09〜09/08）
 
-- canonical を持つHTML: **1,003 / 1,005**。持たない2件は `out/404.html` と `out/_not-found.html`（意図どおり）
-- `out/myoji/` 配下で canonical が `/myoji/` 以外を指すものは **0件**
-
-### 本番の状態（2026-09-01、curl と GSC の画面）
-
-- `https://myoji.nexeed-lab.com/sitemap.xml` は **HTTP 200・`<loc>` 1,003件**
-  （前回 HANDOFF で「デプロイ未実行・404のままか未確認」としていた点は解消済み）
-- `robots.txt` は `User-Agent: * / Allow: /` と Sitemap 行を返す
-- GSC のサイトマップ画面: 送信 2026/08/25・最終読み込み 2026/08/28・**ステータス「成功しました」・検出 1,003ページ**
-- GSC「クロール済み - インデックス未登録」の例に myoji のページが並び、**前回のクロール日は 2026/08/29**:
-  `/myoji/shimazaki`、`/myoji/otaki`、`/myoji/hamaguchi`
-  → **クロールはされている。その上で登録されていない。**
+- myoji を含むページ: クリック 81 / 表示 5,020 / CTR 1.6% / 平均掲載順位 9.7。375 ページに表示あり
+- **全量が 8/30 以降。** 日次: 9/1 353表示 → 9/3 879表示（17クリック）→ 9/8 425表示（4クリック）
+- 上位ページ: `/myoji/tominaga` 5クリック、`/myoji/moriya` 4、`/myoji/matsunaga` 4、`/myoji/umeda` 101表示1クリック
 
 ## 未検証のもの
 
-- **canonical の修正が本番に反映されたかは未確認。** ビルド出力で確認しただけで、
-  `https://myoji.nexeed-lab.com/myoji/sato` を curl して canonical が出ることは**まだ見ていない**。
-  このリポジトリに `.github/workflows` は無く、Cloudflare Workers Builds が
-  `git push` で自動デプロイするかどうかも未確定のまま
-- **myoji 個別プロパティの数値はまだ出ていない。** 2026-09-01 に作成したばかりで
-  「データを処理しています。1日後にもう一度ご確認ください」の状態
-- **1,003ページのうち何件が登録済みかは未測定。** 親プロパティ側の「検出 - インデックス未登録」
-  1,398件のうち myoji が何件を占めるかも**未確認**（推測はしているが数えていない）
-- canonical を足したことで登録率が上がるかどうかは**未検証**。canonical は重複判定の
-  入口を塞ぐだけで、登録されない理由そのものへの対策ではない
+- **落ちていた期間にクロールされた分がインデックスから消えたかどうか。** 9/8 時点でも表示は続いていたが、
+  9/9〜9/11 の 3 日間は未確認（GSC のデータが追いついていない）
+- **復元後に流入が 9/3 の水準（17 クリック/日）へ戻るか。** 答え合わせは 2026-09-21 ごろ、
+  親プロパティのページフィルタ `*myoji.nexeed-lab.com` で日次を見る
+- 個別プロパティ `sc-domain:myoji.nexeed-lab.com` は **2026-09-11 時点で「アクセス権がありません」** と出た
+  （9/1 に作ったはずのプロパティが無い。削除の際に消したのかは不明）。親プロパティで代用できているので急がない
+- 削除の理由。検索スニペットに「名字由来net は〜」「日本姓氏語源辞典も〜」と他サイトを引く文が見える。
+  **出典の扱いを理由に消したのなら、本文の書き方を見直す必要がある**（未確認）
+- `npm test` / `npm run typecheck` / `npm run lint` は今回走らせていない（コード変更が無いため）。
+  ビルドは `npm run deploy` の中で通った（font:build → font:verify → next build → 1010 ページ生成）
 
 ## 次にやること
 
-1. **本番に反映されているか確認する**（未反映なら `npm run deploy`）:
-
-   ```bash
-   curl -s https://myoji.nexeed-lab.com/myoji/sato | grep -o '<link rel="canonical" href="[^"]*"'
-   ```
-
-   `https://myoji.nexeed-lab.com/myoji/sato` が出れば反映済み。
-
-2. **2026-09-02 以降に myoji 個別プロパティの数字を見る。**
-   `https://search.google.com/search-console/index?resource_id=sc-domain:myoji.nexeed-lab.com`
-   見るのは「登録済み」と「未登録の理由の内訳」の2つ。
-
-3. **登録されない理由に応じて手を打つ。**
-   - 「検出 - インデックス未登録」が多い → クロール自体が足りない。内部リンクを増やす
-   - 「クロール済み - インデックス未登録」が多い → 中身の問題。1,003ページが
-     互いに区別のつかない内容になっていないかを疑う（uchina-money で同じ問題が起きている）
+1. **2026-09-21 ごろ: 流入が戻ったか見る。**
+   `https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Anexeed-lab.com&num_of_days=28&breakdown=date&page=*myoji.nexeed-lab.com`
+   9/11 以降の日次クリックが 9/3 前後の水準（10〜17）に戻っていれば復旧完了
+2. **削除した理由を本人に確認する。** 出典表記が理由なら、`/myoji/[slug]` の本文で他サイト名を引いている箇所を
+   自分の言葉に書き換える（`src/data/surnames/*.json` の `sources` は残してよい）
+3. 個別プロパティ `sc-domain:myoji.nexeed-lab.com` を作り直すか決める（親で見えているので任意）
+4. 9/1 の HANDOFF にあった宿題（インデックス登録率の改善）は、1 の結果を見てから
 
 ## 触ってはいけないところ
 
+- **このリポジトリを消さない。** 消すと Worker とカスタムドメインも手で消すことになり、
+  Google 側の 375 ページ分の流入がまるごと落ちる。閉じるなら先に GSC で削除リクエストを出し、
+  この HANDOFF に理由を書いてから
+- `wrangler.jsonc` の `routes[].custom_domain: true`。これがカスタムドメインの再作成をしている
 - **`src/app/layout.tsx` に `alternates.canonical` を書かない。** 自前の canonical を持たない
   ページが継承してトップページを指す。canonical は必ず各ページ側で持たせる
 - `next.config.ts` の `output: "export"`。Cloudflare Workers の静的アセット配信
@@ -109,3 +83,5 @@ ai 9件 / pre-meet 7件 / shift-craft 5件 / nisa 2件 / typiq 1件。
   同じ関数を使うことがズレを防ぐ仕組みなので、別のデータ源に差し替えない
 - 苗字データ（`src/data/surnames/*.json`）は「実際に fetch して読んだ独立2ソースの一致のみ採用」が原則
   （`AGENTS.md` / `src/lib/schema.ts` のコメント参照）
+- **デプロイは手動 `npm run deploy` のみ。** `.github/workflows` は無く、Cloudflare Workers Builds の
+  Git 連携も無い（復元後の Worker は wrangler が作ったので連携は付いていない）
