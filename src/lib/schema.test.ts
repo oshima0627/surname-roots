@@ -10,7 +10,6 @@ const valid = {
   origin: "藤原氏に由来するとされる。".repeat(20),
   originRegion: "藤原氏の流れを汲むとされる",
   regionDistribution: { 多い: ["岩手", "秋田"], やや多い: ["宮城"] },
-  kamon: [{ name: "下がり藤", description: "藤原氏ゆかりの家紋。" }],
   famousPeople: [{ name: "佐藤栄作", note: "第61-63代内閣総理大臣" }],
   sources: ["https://example.com/sato"],
 };
@@ -54,10 +53,8 @@ describe("surnameEntrySchema", () => {
     expect(() => surnameEntrySchema.parse({ ...valid, rankNational: null })).not.toThrow();
   });
 
-  it("kamon と famousPeople は空配列を許す", () => {
-    expect(() =>
-      surnameEntrySchema.parse({ ...valid, kamon: [], famousPeople: [] }),
-    ).not.toThrow();
+  it("famousPeople は空配列を許す", () => {
+    expect(() => surnameEntrySchema.parse({ ...valid, famousPeople: [] })).not.toThrow();
   });
 
   it("sources が空配列だと弾く（裏取りの証跡を必須にする）", () => {

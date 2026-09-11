@@ -1,5 +1,4 @@
 import { JapanMap } from "@/components/JapanMap";
-import { Kamon } from "@/components/Kamon";
 import { formatSourceLabel } from "@/lib/glyphs";
 import type { SurnameEntry } from "@/lib/schema";
 

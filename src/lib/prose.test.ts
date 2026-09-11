@@ -33,7 +33,6 @@ describe("本文の言語", () => {
     { slug: e.slug, field: "origin", text: e.origin },
     { slug: e.slug, field: "originRegion", text: e.originRegion },
     ...e.famousPeople.map((p) => ({ slug: e.slug, field: `famousPeople:${p.name}`, text: p.note })),
-    ...e.kamon.map((k) => ({ slug: e.slug, field: `kamon:${k.name}`, text: k.description })),
   ]);
 
   it("キリル文字・ハングルが混入していない", () => {

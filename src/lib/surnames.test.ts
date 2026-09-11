@@ -76,16 +76,13 @@ describe("getAllSurnames", () => {
     const duplicated = ranks.filter((r) => (seen.has(r) ? true : (seen.add(r), false)));
     expect(duplicated).toEqual([]);
   });
-  it("本文（origin）と家紋の説明に参照サイト名を書かない（出典は sources に置く）", () => {
+  it("本文（origin）に参照サイト名を書かない（出典は sources に置く）", () => {
     // 2026-09-11: 本文が「名字由来netは〜、日本姓氏語源辞典も〜」と他サイトの説を並べる形になっていたのを直した。
     // 出典は各ページの参考資料（sources）で示す。本文にサイト名を書く形へ戻さないためのガード。
     const banned = ["名字由来net", "日本姓氏語源辞典", "ウィキペディア", "Wikipedia", "myoji-yurai", "name-power", ".com", ".net"];
     for (const entry of getAllSurnames()) {
-      const texts = [entry.origin, ...entry.kamon.map((k) => k.description)];
-      for (const text of texts) {
-        for (const word of banned) {
-          expect(text, `${entry.slug}: 本文に「${word}」が残っている`).not.toContain(word);
-        }
+      for (const word of banned) {
+        expect(entry.origin, `${entry.slug}: 本文に「${word}」が残っている`).not.toContain(word);
       }
     }
   });
